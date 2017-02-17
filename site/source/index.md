@@ -2,6 +2,8 @@
 
 > A lightweight, flexible css framework that focus on mobile.
 
+**WARNING: This is version 1 of Mobi.css, please checkout http://getmobicss.com to get the latest version!**
+
 ## Languages
 
 English | [简体中文](zh-cn)

@@ -12,9 +12,9 @@
 
 # [Mobi.css](http://getmobicss.com)
 
-> A lightweight, flexible css framework that focus on mobile.
-
 **WARNING: This is version 1 of Mobi.css, please checkout http://getmobicss.com to get the latest version!**
+
+> A lightweight, flexible css framework that focus on mobile.
 
 ## Introduction
 
@@ -128,9 +128,9 @@ Mobi.css use [Travis CI](https://travis-ci.org/xcatliu/mobi.css) as continuous i
 
 # [Mobi.css](http://getmobicss.com/zh-cn/)
 
-> 轻量灵活的移动端 CSS 框架。
-
 **注意：这是 Mobi.css 的第一个版本，请访问 http://getmobicss.com 获取最新的版本！**
+
+> 轻量灵活的移动端 CSS 框架。
 
 ## 介绍
 

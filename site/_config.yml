@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://getmobicss.com
+url: http://v1.getmobicss.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -72,7 +72,7 @@ theme: mobi
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo: git@github.com:xcatliu/mobi.css.git
+  repo: git@github.com:xcatliu/mobi.css-v1.git
   branch: gh-pages
   message:
 # - type: git

@@ -1,8 +1,6 @@
 # [v1.getmobicss.com](http://v1.getmobicss.com)
 
-This site is built with [hexo](https://hexo.io/).
-
-Site content is written in Markdown format located in `source`. Pull requests welcome!
+This is the repo for version 1 of Mobi.css.
 
 ## Developing
 

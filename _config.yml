@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Mobi.css
+title: Mobi.css - v1.1.0
 subtitle:
 description: A lightweight, flexible css framework that focus on mobile
 author: xcatliu
@@ -72,10 +72,6 @@ theme: mobi
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo: git@github.com:xcatliu/mobi.css-v1.git
+  repo: git@github.com:xcatliu/v1.getmobicss.com.git
   branch: gh-pages
   message:
-# - type: git
-#   repo: git@git.coding.net:xcatliu/mobi.css.git
-#   branch: coding-pages
-#   message:

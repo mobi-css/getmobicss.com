@@ -1,6 +1,4 @@
-# Mobi.css
-
-**注意：这是 Mobi.css 的第一个版本，请访问 http://getmobicss.com 获取最新的版本！**
+# Mobi.css - v1.1.0
 
 > 轻量灵活的移动端 CSS 框架。
 

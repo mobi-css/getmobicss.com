@@ -1,4 +1,4 @@
-# Mobi.css - v1.1.0
+# Mobi.css
 
 > A lightweight, flexible css framework that focus on mobile.
 

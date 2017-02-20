@@ -1,4 +1,4 @@
-# Mobi.css - v1.1.0
+# Mobi.css
 
 > 轻量灵活的移动端 CSS 框架。
 

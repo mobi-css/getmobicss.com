@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Mobi.css - v1.1.0
+title: Mobi.css
 subtitle:
 description: A lightweight, flexible css framework that focus on mobile
 author: xcatliu
@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://v1.getmobicss.com
+url: http://getmobicss.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -72,6 +72,6 @@ theme: mobi
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo: git@github.com:xcatliu/v1.getmobicss.com.git
+  repo: git@github.com:mobi-css/getmobicss.com.git
   branch: gh-pages
   message:

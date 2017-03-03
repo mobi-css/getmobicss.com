@@ -5,7 +5,7 @@
 # Site
 title: Mobi.css
 subtitle:
-description: A lightweight, flexible css framework that focus on mobile
+description: A lightweight, flexible css framework with focus on mobile
 author: xcatliu
 language:
   - en
@@ -13,7 +13,7 @@ language:
 timezone: Asia/Shanghai
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+## If your site is inside a subdirectory, set the url as 'http://yoursite.com/child' and root as '/child/'
 url: http://getmobicss.com
 root: /
 permalink: :year/:month/:day/:title/

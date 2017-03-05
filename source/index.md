@@ -1,6 +1,6 @@
 # Mobi.css
 
-> A lightweight, flexible css framework that focus on mobile.
+> A lightweight, flexible css framework with focus on mobile.
 
 ## Languages
 
@@ -9,12 +9,12 @@ English | [简体中文](zh-cn)
 ## Introduction
 
 - Only 3.6kb after gzipped, less than Skeleton, Pure.css and Bootstrap v4, etc
-- Heavy use of flexbox, super flexible, less than 10 lines of custom style in the official site
-- Focus on mobile, show mobile pages in desktop with a sidebar on the left or right
+- Heavy use of flexbox, super flexible, less than 10 lines of custom styles on the official site
+- Focus on mobile, show mobile pages on desktop with a sidebar on the left or right
 
 ## Getting started
 
-You can download Mobi.css in [this page](https://github.com/xcatliu/mobi.css/releases), then use `dist/mobi.min.css` for the compressed version.
+You can download Mobi.css [here](https://github.com/xcatliu/mobi.css/releases), then use `dist/mobi.min.css` for the compressed version.
 
 Or use [cdnjs](https://cdnjs.com/libraries/mobi.css):
 
@@ -28,7 +28,7 @@ Or use npm to install:
 npm install --save mobi.css
 ```
 
-You can also build Mobi.css to your project if you are using Sass:
+You can also build Mobi.css in your project if you are using Sass:
 
 ```scss
 @import 'mobi.css/src/mobi';
@@ -80,6 +80,6 @@ Be sure you have added `node_modules` to your Sass's [load_paths](http://stackov
 ## What's next
 
 - [Documentations](docs): Design philosophy and tutorial
-- [Reference](reference): All the Mobi.css styles in one page
+- [Reference](reference): All the Mobi.css styles on one page
 - [Extensions](extensions): Plugins, themes, etc
 - [GitHub](https://github.com/xcatliu/mobi.css): Open an issue, contributing to Mobi.css

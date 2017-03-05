@@ -10,13 +10,13 @@
 
 ## Layout
 
-Most of CSS frameworks have a responsive design, they use media queries to resize, hide, shrink, enlarge, or move the content to make it look good on any screen:
+Most CSS frameworks have a responsive design, they use media queries to resize, hide, shrink, enlarge, or move the content to make it look good on any screen:
 
 ![Responsive design](/assets/img/responsive-design.jpg)
 
 It sounds like a good idea, however, it's not suitable for all situations.
 
-Although frameworks help you reduce a lot of works, you still need to design for each screen size, to write redundant classes (an example for Bootstrap: `<div class="col-xs-12 col-sm-6 col-md-8">`), and to test on every devices.
+Although frameworks help you reduce workload, you still need to design for each screen size, to write redundant classes (an example for Bootstrap: `<div class="col-xs-12 col-sm-6 col-md-8">`), and test on every devices.
 
 If you are building a website for mobile devices, Mobi.css provides a simpler and easier solution.
 
@@ -78,9 +78,9 @@ Mobi.css also provides three classes, `top-gap-big`, `top-gap` and `top-gap-0` t
 
 ## Flexbox
 
-Mobi.css use flexbox for layout. It's super flexible, you'll love it.
+Mobi.css uses flexbox for layout. It's super flexible, you'll love it.
 
-According to [caniuse flexbox](http://caniuse.com/#feat=flexbox), now it's safe to use flexbox on all mobile devices as well as the last version of all major desktop browsers.
+According to [caniuse flexbox](http://caniuse.com/#feat=flexbox), it's now safe to use flexbox on all mobile devices as well as the latest versions of all major desktop browsers.
 
 ### Grid system
 
@@ -112,7 +112,7 @@ First of all, you can create a `flex-left` which contains several `unit`s. In th
 </div>
 ```
 
-You can add `units-gap` class to ensure there are gaps between each `unit`. This is useful when your `unit`s have text in it.
+You can add the `units-gap` class to ensure there are gaps between each `unit`. This is useful when your `unit`s contain text.
 
 {% raw %}
 <div class="flex-left units-gap top-gap">
@@ -194,7 +194,7 @@ Finally, you can use `unit-0` as a custom size unit. Set a `width` to it, or let
   <div class="unit site-box" style="padding:7px; margin-right:32px;">Hi, xcatliu, do you know about Mobi.css?</div>
 </div>
 <div class="flex-left units-gap top-gap">
-  <div class="unit site-box" style="padding:7px; margin-left:32px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
+  <div class="unit site-box" style="padding:7px; margin-left:32px;">I sure do! Mobi.css is a lightweight, flexible css framework with focus on mobile.</div>
   <div class="unit-0"><img alt="xcatliu" src="/assets/img/xcatliu.png" width="48"/></div>
 </div>
 {% endraw %}
@@ -205,7 +205,7 @@ Finally, you can use `unit-0` as a custom size unit. Set a `width` to it, or let
   <div class="unit site-box" style="padding:7px; margin-right:32px;">Hi, xcatliu, do you know about Mobi.css?</div>
 </div>
 <div class="flex-left units-gap top-gap">
-  <div class="unit site-box" style="padding:7px; margin-left:32px;">I sure do! Mobi.css is a lightweight, flexible css framework that focuses on mobile.</div>
+  <div class="unit site-box" style="padding:7px; margin-left:32px;">I sure do! Mobi.css is a lightweight, flexible css framework with focus on mobile.</div>
   <div class="unit-0"><img alt="xcatliu" src="/assets/img/xcatliu.png" width="48"/></div>
 </div>
 ```
@@ -264,7 +264,7 @@ Forget `margin:0 auto;` and `top:50%; margin-top:-100px;`. You can align easily 
 
 ### Vertical flex layout
 
-What's more? You can use `flex-vertical` to easily achieve vertical flexbox layout.
+What's more? You can use `flex-vertical` to easily achieve a vertical flexbox layout.
 
 {% raw %}
 <div class="flex-vertical site-box top-gap" style="height:300px;">

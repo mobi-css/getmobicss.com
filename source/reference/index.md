@@ -14,7 +14,7 @@ Classes:
 - [`.table`](#Table-content)
 - [`.form`](#Forms)
 
-Elemens:
+Elements:
 
 - [Content sectioning](#Content-sectioning)
 - [Text content](#Text-content)
@@ -390,7 +390,7 @@ Use `units-gap` to add gap between each `unit`:
 </div>
 ```
 
-If there is no `units-gap` class in the parent element, the child element will has the same behave no matter you use `unit-0` or not:
+If there is no `units-gap` class in the parent element, the child element will have the same behaviour if you use `unit-0` or not:
 
 {% raw %}
 <div class="flex-left top-gap">
@@ -735,7 +735,7 @@ Use `<dfn>` to create a defining instance of a term:
 What is Mobi.css? You can find the definition <a href="#dfn-mobicss">here</a>.
 
 ```html
-<dfn id="dfn-mobicss">Mobi.css</dfn> is a lightweight, flexible css framework that focus on mobile.
+<dfn id="dfn-mobicss">Mobi.css</dfn> is a lightweight, flexible css framework with focus on mobile.
 What is Mobi.css? You can find the definition <a href="#dfn-mobicss">here</a>.
 ```
 
@@ -1330,7 +1330,7 @@ All the date inputs look ugly in iOS, and their styles cannot be changed. Please
 <label class="flex-middle"><input type="checkbox" disabled/><span disabled>I agree to terms.</span></label>
 ```
 
-Radio and checkbox cannot set to `readonly`.
+Radio and checkbox cannot be set to `readonly`.
 
 {% raw %}
 <select disabled>
@@ -1348,7 +1348,7 @@ Radio and checkbox cannot set to `readonly`.
 </select>
 ```
 
-Select inputs cannot set to `readonly`.
+Select inputs cannot be set to `readonly`.
 
 {% raw %}
 <input type="file" disabled/>
@@ -1358,7 +1358,7 @@ Select inputs cannot set to `readonly`.
 <input type="file" disabled/>
 ```
 
-File inputs cannot set to `readonly`.
+File inputs cannot be set to `readonly`.
 
 {% raw %}
 <input type="button" class="btn" value=".btn" disabled/>
@@ -1384,7 +1384,7 @@ File inputs cannot set to `readonly`.
 <a href="javascript:void(0);" class="btn btn-danger" disabled>.btn.btn-danger</a>
 ```
 
-Buttons cannot set to `readonly`.
+Buttons cannot be set to `readonly`.
 
 {% raw %}
 <input type="datetime-local" disabled/>

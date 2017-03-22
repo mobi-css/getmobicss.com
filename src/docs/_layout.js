@@ -1,4 +1,4 @@
-const header = require('./_header');
+const header = require('../_header');
 
 module.exports = ({ content, relativeToRoot }) => `
 <!doctype html>
@@ -16,7 +16,18 @@ module.exports = ({ content, relativeToRoot }) => `
   </head>
   <body>
     ${header({ relativeToRoot })}
-    ${content}
+    <div class="flex-center">
+      <div class="container-wider">
+        <div class="flex-left units-gap-big">
+          <div class="site-side-width unit-0 hide-on-mobile">
+            Sidebar
+          </div>
+          <div class="unit unit-1-on-mobile">
+            ${content}
+          </div>
+        </div>
+      </div>
+    <div>
   </body>
 </html>
 `;

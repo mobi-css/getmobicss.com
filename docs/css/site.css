@@ -1,15 +1,5 @@
-.site-header {
-  background-color: #333;
-  color: #eee;
-}
-
-.site-logo {
+.site-side-width {
   width: 250px;
-}
-
-.site-logo-link {
-  color: #eee;
-  font-weight: 200;
 }
 
 .site-logo-link:hover {
@@ -17,40 +7,44 @@
 }
 
 .site-logo-text {
+  color: #333;
   display: inline-block;
-  font-weight: 300;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 .site-nav-item {
-  color: #eee;
-  font-weight: 300;
+  color: #333;
 }
 
 .site-nav-item:hover {
   text-decoration: none;
 }
 
-.site-description {
-  background-color: #333;
-  color: #eee;
-  padding-bottom: 48px;
-}
-
 .site-description-title {
-  font-size: 4rem;
-  font-weight: normal;
-  font-weight: 200;
+  font-size: 3.6rem;
 }
 
 .site-intro {
-  max-width: 300px;
-}
-
-.site-intro-title {
-  font-weight: 300;
+  max-width: 400px;
 }
 
 .site-btn-big {
-  padding: 10px 20px;
+  padding: 1rem 2rem;
+}
+
+.site-font-weight-normal {
+  font-weight: normal;
+}
+
+.site-padding-bottom-big {
+  padding-bottom: 6rem;
+}
+
+.site-color-background-faded {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.site-iframe {
+  width: 100%;
+  border: 0;
 }

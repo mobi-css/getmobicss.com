@@ -1,21 +1,30 @@
 {
   "name": "getmobicss.com",
   "version": "0.0.0",
-  "private": true,
+  "description": "The official website for Mobi.css",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
-    "start": "hexo clean && hexo serve",
-    "deploy": "hexo clean && hexo deploy"
+    "start": "pagic build -ws",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "hexo": {
-    "version": "3.2.2"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobi-css/getmobicss.com.git"
   },
-  "dependencies": {
-    "hexo": "^3.2.0",
-    "hexo-cli": "^1.0.2",
-    "hexo-deployer-git": "^0.2.0",
-    "hexo-renderer-ejs": "^0.2.0",
-    "hexo-renderer-marked": "^0.2.11",
-    "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0"
+  "keywords": [
+    "mobi-css",
+    "website"
+  ],
+  "author": "xcatliu <xcatliu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mobi-css/getmobicss.com/issues"
+  },
+  "homepage": "https://github.com/mobi-css/getmobicss.com#readme",
+  "devDependencies": {
+    "pagic": "^0.5.0"
   }
 }

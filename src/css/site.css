@@ -1,0 +1,56 @@
+.site-header {
+  background-color: #333;
+  color: #eee;
+}
+
+.site-logo {
+  width: 250px;
+}
+
+.site-logo-link {
+  color: #eee;
+  font-weight: 200;
+}
+
+.site-logo-link:hover {
+  text-decoration: none;
+}
+
+.site-logo-text {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 2.4rem;
+}
+
+.site-nav-item {
+  color: #eee;
+  font-weight: 300;
+}
+
+.site-nav-item:hover {
+  text-decoration: none;
+}
+
+.site-description {
+  background-color: #333;
+  color: #eee;
+  padding-bottom: 48px;
+}
+
+.site-description-title {
+  font-size: 4rem;
+  font-weight: normal;
+  font-weight: 200;
+}
+
+.site-intro {
+  max-width: 300px;
+}
+
+.site-intro-title {
+  font-weight: 300;
+}
+
+.site-btn-big {
+  padding: 10px 20px;
+}

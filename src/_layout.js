@@ -1,8 +1,8 @@
-const header = require('./_header');
+const header = require('./_partial/_header');
 
 module.exports = ({ content, relativeToRoot }) => `
 <!doctype html>
-<html lang="en">
+<html lang="en" class="site-height-100">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -11,12 +11,18 @@ module.exports = ({ content, relativeToRoot }) => `
 
     <title>Mobi.css</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/mobi.css@2.0.0-alpha.5/dist/mobi.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/mobi.css/dist/mobi.min.css" />
     <link rel="stylesheet" href="${relativeToRoot}/css/site.css" />
   </head>
-  <body>
-    ${header({ relativeToRoot })}
-    ${content}
+  <body class="site-height-100">
+    <div class="site-height-100 flex-vertical">
+      <div class="unit-0">
+        ${header({ relativeToRoot })}
+      </div>
+      <div class="unit scroll-view">
+        ${content}
+      </div>
+    </div>
   </body>
 </html>
 `;

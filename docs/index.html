@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="site-height-100">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,70 +9,85 @@
 
     <title>Mobi.css</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/mobi.css@2.0.0-alpha.5/dist/mobi.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/mobi.css/dist/mobi.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
   </head>
-  <body>
-    
-<div class="site-color-background-faded flex-center">
-  <header class="container-wider top-gap">
-    <div class="flex-left units-gap-big">
-      <div class="site-side-width flex-left unit-0">
-        <a href="/" class="site-logo-link flex-middle">
-          <img src="./img/mobi-logo.png" height="32" />
-          &nbsp;&nbsp;
-          <h1 class="site-logo-text top-gap-0">Mobi.css</h1>
-        </a>
-      </div>
-      <nav class="site-nav flex-middle units-gap-big unit">
-        <a href="/docs" class="site-nav-item unit-0">Docs</a>
-        <a href="/plugins" class="site-nav-item unit-0">Plugins</a>
-        <a href="/themes" class="site-nav-item unit-0">Themes</a>
-        <div class="unit"></div>
-        <a href="https://github.com/mobi-css/mobi.css" class="site-nav-item unit-0">GitHub</a>
-      </nav>
-    </div>
-  </header>
-</div>
-
-    <div class="flex-center">
-  <div class="site-padding-bottom-big container-wider">
-    <div class="flex-center top-gap-big">
-      <h2 class="text-center site-font-weight-normal site-description-title top-gap-big">
-        A mobile-first, pluginable & themeable css framework
-      </h2>
-    </div>
-    <div class="flex-center top-gap-big units-gap-big">
-      <div class="unit-0 top-gap-big">
-        <a href="docs" class="btn btn-primary site-btn-big">Get Started</a>
-      </div>
-      <div class="unit-0 top-gap-big">
-        <a href="https://github.com/mobi-css/mobi.css/releases" class="btn site-btn-big">Download Mobi.css</a>
+  <body class="site-height-100">
+    <div class="site-height-100 flex-vertical">
+      <div class="unit-0">
+        
+<header class="container-fluid">
+  <div class="flex-left top-gap show-on-mobile">
+    <input type="checkbox" id="menu-toggle" class="site-mobile-menu-toggle" />
+    <label for="menu-toggle" class="site-mobile-menu-button"><img src="./img/menu.png" height="24" /></label>
+    <div class="site-mobile-menu-container">
+      <div class="site-side">
+        <ul>
+          <li><a href="/" class="site-text-plain">Mobi.css</a></li>
+          <li><a class="site-text-plain" href="/docs">Docs</a></li>
+          <li><a class="site-text-plain" href="/plugins">Plugins</a></li>
+          <li><a class="site-text-plain" href="/themes">Themes</a></li>
+          <li><a class="site-text-plain" href="https://github.com/mobi-css/mobi.css">GitHub</a></li>
+        </ul>
       </div>
     </div>
   </div>
-</div>
-<div class="flex-center">
-  <div class="site-padding-bottom-big container-wider">
-    <div class="flex-center units-gap-big">
-      <div class="site-intro text-center unit">
-        <h3 class="site-font-weight-normal text-primary">Mobile-First</h3>
+  <div class="flex-left top-gap hide-on-mobile">
+    <div class="unit-0">
+      <div class="site-side flex-left">
+        <a href="/" class="site-text-plain flex-middle">
+          <img src="./img/mobi-logo.png" height="32" />
+          <div>&nbsp;Mobi.css</div>
+        </a>
+      </div>
+    </div>
+    <nav class="flex-left flex-middle unit units-gap-big">
+      <a href="/docs" class="site-text-plain unit-0">Docs</a>
+      <a href="/plugins" class="site-text-plain unit-0">Plugins</a>
+      <a href="/themes" class="site-text-plain unit-0">Themes</a>
+      <div class="unit"></div>
+      <a href="https://github.com/mobi-css/mobi.css" class="site-text-plain unit-0">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+      </div>
+      <div class="unit scroll-view">
+        <div class="site-content">
+  <div class="container-fluid text-center">
+    <img src="img/mobi-logo.png" class="top-gap-big" height="120" />
+    <h1 class="site-text-plain top-gap-big">
+      A mobile-first, pluginable & themeable css framework
+    </h1>
+    <div class="flex-center units-gap">
+      <div class="unit-0">
+        <a href="docs" class="btn btn-primary top-gap-big">Get Started</a>
+      </div>
+      <div class="unit-0">
+        <a href="https://github.com/mobi-css/mobi.css/releases" class="btn top-gap-big">Download Mobi.css</a>
+      </div>
+    </div>
+  </div>
+  <div class="flex-center text-center">
+    <div class="container-wider flex-center flex-wrap">
+      <div class="unit unit-1-on-mobile">
+        <h3 class="site-text-plain text-primary">Mobile-First</h3>
         <p>
           Only 2.8kb after gzipped<br/>
           Designed for mobile<br/>
           Use flexbox for layout<br/>
         </p>
       </div>
-      <div class="site-intro text-center unit">
-        <h3 class="site-font-weight-normal text-primary">Pluginable</h3>
+      <div class="unit unit-1-on-mobile">
+        <h3 class="site-text-plain text-primary">Pluginable</h3>
         <p>
           Provide standalone compressed version<br/>
           A plugin is compatible with any themes<br/>
           Combine plugins as you like
         </p>
       </div>
-      <div class="site-intro text-center unit">
-        <h3 class="site-font-weight-normal text-primary">Themeable</h3>
+      <div class="unit unit-1-on-mobile">
+        <h3 class="site-text-plain text-primary">Themeable</h3>
         <p>
           Easy to create a theme<br/>
           Only a few basic variables<br/>
@@ -81,19 +96,18 @@
       </div>
     </div>
   </div>
-</div>
-<div class="site-color-background-faded flex-center">
-  <div class="container-wider text-center">
-    <h2 class="site-font-weight-normal text-small text-muted">Proudly Sponsored By</h2>
-    <div class="top-gap">
+  <div class="flex-center text-center">
+    <div class="container-wider">
+      <h2 class="site-text-plain text-small"><span class="text-muted">Proudly Sponsored By</span></h2>
       <a href="http://chuangzaoshi.com/" target="_blank">
-        <img src="img/chuangzaoshi.svg" height="100" />
+        <img src="img/chuangzaoshi.svg" class="top-gap" height="60" />
       </a>
-    </div>
-    <div class="text-center text-muted text-small">
-      <p class="top-gap-big">Copyright &copy; 2017 <a href="https://github.com/xcatliu" class="text-muted">xcatliu</a><br/>Released under the <a href="https://opensource.org/licenses/MIT" class="text-muted">MIT License</a></p>
+      <p class="text-muted text-small top-gap-big">Copyright &copy; 2017 <a href="https://github.com/xcatliu" class="text-muted">xcatliu</a><br/>Released under the <a href="https://opensource.org/licenses/MIT" class="text-muted">MIT License</a></p>
     </div>
   </div>
 </div>
+
+      </div>
+    </div>
   </body>
 </html>

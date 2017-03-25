@@ -1,26 +1,26 @@
 module.exports = ({ relativeToRoot, frontMatter }) => `
-<aside class="show-on-mobile">
-  <input type="checkbox" id="menu-toggle" class="site-mobile-menu-toggle" />
-  <div class="site-mobile-menu-container flex-vertical">
-    <div class="unit-1 scroll-view">
-      <div class="site-side top-gap container">
-        <ul>
-          <li>
-            <a href="/" class="site-text-plain active">Mobi.css</a>
-            <ul>
-              <li><a class="site-text-plain" href="/docs">Docs</a></li>
-              <li><a class="site-text-plain" href="/plugins">Plugins</a></li>
-              <li><a class="site-text-plain" href="/themes">Themes</a></li>
-            </ul>
-          </li>
-          <li class="top-gap"></li>
-          ${getDocsMenuItems({ relativeToRoot })}
-        </ul>
+  <aside class="show-on-mobile">
+    <input type="checkbox" id="menu-toggle" class="site-mobile-menu-toggle" />
+    <div class="site-mobile-menu-container flex-vertical">
+      <div class="unit-1 scroll-view">
+        <div class="site-side top-gap container">
+          <ul>
+            <li>
+              <a href="/" class="site-text-plain active">Mobi.css</a>
+              <ul>
+                <li><a class="site-text-plain" href="/docs">Docs</a></li>
+                <li><a class="site-text-plain" href="/plugins">Plugins</a></li>
+                <li><a class="site-text-plain" href="/themes">Themes</a></li>
+              </ul>
+            </li>
+            <li class="top-gap"></li>
+            ${getDocsMenuItems({ relativeToRoot })}
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</aside>
-${relativeToRoot === '.' ? '' : desktopAside({ relativeToRoot })}
+  </aside>
+  ${relativeToRoot === '.' ? '' : desktopAside({ relativeToRoot })}
 `;
 
 function desktopAside({ relativeToRoot }) {

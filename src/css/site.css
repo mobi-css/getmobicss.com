@@ -22,6 +22,18 @@
   width: calc(100vw - 20rem);
 }
 
+.site-warning {
+  background-color: #db5757;
+  color: white;
+  margin-top: 0;
+  padding: 1rem 1.5rem;
+}
+
+.site-warning a {
+  color: white;
+  text-decoration: underline;
+}
+
 
 /* utils */
 .site-text-plain {

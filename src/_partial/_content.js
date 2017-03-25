@@ -1,17 +1,17 @@
 module.exports = ({ relativeToRoot, content, frontMatter }) => {
   if (frontMatter.isIframe) {
     return `
-      <div class="unit flex-vertical">
+      <article class="unit flex-vertical">
         ${content}
-      </div>
+      </article>
     `;
   }
   if (relativeToRoot === '.') {
     return `
       <div class="unit flex-vertical">
-        <div class="scroll-view">
+        <article class="scroll-view">
           ${content}
-        </div>
+        </article>
       </div>
     `;
   }
@@ -19,9 +19,9 @@ module.exports = ({ relativeToRoot, content, frontMatter }) => {
     <div class="site-content unit flex-vertical">
       <div class="scroll-view">
         <div class="flex-center">
-          <div class="container">
+          <article class="container">
             ${content}
-          </div>
+          </article>
         </div>
       </div>
     </div>

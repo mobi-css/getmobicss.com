@@ -1,7 +1,5 @@
-.DS_Store
-Thumbs.db
-db.json
+node_modules
+.sass-cache
 *.log
-node_modules/
-public/
-.deploy*/
+.DS_Store
+.vscode

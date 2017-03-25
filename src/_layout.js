@@ -1,28 +1,22 @@
+const head = require('./_partial/_head');
 const header = require('./_partial/_header');
+const sidebar = require('./_partial/_sidebar');
+const mainContent = require('./_partial/_content');
 
-module.exports = ({ content, relativeToRoot }) => `
-<!doctype html>
-<html lang="en" class="site-height-100">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,
-      maximum-scale=1.0, user-scalable=no"/>
-
-    <title>Mobi.css</title>
-
-    <link rel="stylesheet" href="https://unpkg.com/mobi.css/dist/mobi.min.css" />
-    <link rel="stylesheet" href="${relativeToRoot}/css/site.css" />
-  </head>
-  <body class="site-height-100">
-    <div class="site-height-100 flex-vertical">
-      <div class="unit-0">
-        ${header({ relativeToRoot })}
+module.exports = ({ content, relativeToRoot, frontMatter, path }) => `
+  <!doctype html>
+  <html lang="en" class="site-height-100">
+    ${head({ relativeToRoot, frontMatter })}
+    <body class="site-height-100">
+      <div class="site-height-100 flex-vertical">
+        <div class="unit-0">
+          ${header({ relativeToRoot, frontMatter, path })}
+        </div>
+        <div class="unit flex-left">
+          ${sidebar({ relativeToRoot })}
+          ${mainContent({ relativeToRoot, content, frontMatter })}
+        </div>
       </div>
-      <div class="unit scroll-view">
-        ${content}
-      </div>
-    </div>
-  </body>
-</html>
+    </body>
+  </html>
 `;

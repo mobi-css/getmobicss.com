@@ -13,7 +13,7 @@ module.exports = ({ content, relativeToRoot, frontMatter, path }) => `
           ${header({ relativeToRoot, frontMatter, path })}
         </div>
         <div class="unit flex-left">
-          ${sidebar({ relativeToRoot })}
+          ${sidebar({ relativeToRoot, path })}
           ${mainContent({ relativeToRoot, content, frontMatter })}
         </div>
       </div>

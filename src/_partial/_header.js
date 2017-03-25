@@ -1,8 +1,10 @@
+const getActiveClass = require('./_get-active-class');
+
 module.exports = ({ relativeToRoot, frontMatter, path }) => `
-  <header class="site-header">
+  <header>
     <div class="flex-left top-gap">
       <div class="site-side unit-0 container flex-left hide-on-mobile">
-        <a href="/" class="site-text-plain ${getActiveClass({ path, start: '' })} flex-middle">
+        <a href="/" class="site-text-plain ${getActiveClass({ path, start: 'index' })} flex-middle">
           <img src="${relativeToRoot}/img/mobi-logo.png" height="24" />
           <div>&nbsp;&nbsp;Mobi.css</div>
         </a>
@@ -33,17 +35,4 @@ function next({ relativeToRoot, frontMatter }) {
       <img src="${relativeToRoot}/img/next.png" height="14" />
     </a>
   `;
-}
-
-function getActiveClass({ path, start }) {
-  if (start === '') {
-    if (path === 'index.md' || path === './index.md') {
-      return 'active';
-    }
-    return '';
-  }
-  if (path.indexOf(start) === 0 || path.indexOf('./' + start) === 0) {
-    return 'active';
-  }
-  return '';
 }

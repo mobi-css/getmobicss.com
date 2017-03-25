@@ -56,7 +56,7 @@ next:
 <div class="flex-center text-center">
   <div class="container-wider">
     <h2 class="site-text-plain text-small"><span class="text-muted">Proudly Sponsored By</span></h2>
-    <a href="http://chuangzaoshi.com/" target="_blank">
+    <a href="http://chuangzaoshi.com/" class="site-sponsored-link" target="_blank">
       <img src="img/chuangzaoshi.svg" class="top-gap" height="60" />
     </a>
     <p class="text-muted text-small top-gap-big">Copyright &copy; 2017 <a href="https://github.com/xcatliu" class="text-muted">xcatliu</a><br/>Released under the <a href="https://opensource.org/licenses/MIT" class="text-muted">MIT License</a></p>

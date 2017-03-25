@@ -1,7 +1,4 @@
 module.exports = ({ relativeToRoot, frontMatter, path }) => `
-  <p class="site-warning text-center">
-    WARNING: This is the alpha version of Mobi.css v2, please goto <a href="http://v1.getmobicss.com">http://v1.getmobicss.com</a> for a stable version.
-  </p>
   <header class="site-header">
     <div class="flex-left top-gap">
       <div class="site-side unit-0 container flex-left hide-on-mobile">

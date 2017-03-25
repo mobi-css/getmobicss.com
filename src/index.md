@@ -5,6 +5,10 @@ next:
   url: /docs
 ---
 
+<p class="site-warning text-center">
+  WARNING: This is the alpha version of Mobi.css v2, please goto <a href="http://v1.getmobicss.com">http://v1.getmobicss.com</a> for a stable version.
+</p>
+
 <div class="container-fluid text-center">
   <img src="img/mobi-logo.png" class="top-gap-big" height="150" />
   <h1 class="site-text-plain top-gap-big">

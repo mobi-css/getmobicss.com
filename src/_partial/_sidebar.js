@@ -36,7 +36,7 @@ function desktopAside({ relativeToRoot, path }) {
           ${getDocsMenuItems({ relativeToRoot, path })}
         </ul>
       </aside>
-      <div class="container"></div>
+      <div class="site-height-0 container"></div>
     </div>
   `;
 }

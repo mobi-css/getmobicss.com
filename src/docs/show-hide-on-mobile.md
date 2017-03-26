@@ -1,5 +1,4 @@
 ---
-title: Show Hide on Mobile | Mobi.css
 next:
   text: Flexbox
   url: /docs/flexbox.html

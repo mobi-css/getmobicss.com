@@ -1,5 +1,4 @@
 ---
-title: Scroll View | Mobi.css
 next:
   text: Table
   url: /docs/table.html

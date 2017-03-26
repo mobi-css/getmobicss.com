@@ -1,5 +1,4 @@
 ---
-title: Table | Mobi.css
 next:
   text: Text
   url: /docs/text.html

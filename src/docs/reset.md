@@ -1,5 +1,4 @@
 ---
-title: Reset | Mobi.css
 next:
   text: Top Gap
   url: /docs/top-gap.html

@@ -1,5 +1,4 @@
 ---
-title: Button | Mobi.css
 next:
   text: Form
   url: /docs/form.html

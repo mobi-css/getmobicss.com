@@ -1,5 +1,4 @@
 ---
-title: Flexbox | Mobi.css
 next:
   text: Container
   url: /docs/container.html

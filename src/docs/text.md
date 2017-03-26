@@ -1,5 +1,7 @@
 ---
-title: Text | Mobi.css
+next:
+  text: Plugins
+  url: /plugins
 ---
 
 # Text

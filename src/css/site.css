@@ -6,7 +6,6 @@
   padding-top: 1.5rem;
   top: 0;
   left: 0;
-  z-index: 1;
 }
 
 
@@ -30,7 +29,7 @@
   padding-left: 1.5rem;
 }
 
-.site-article {
+.site-article-wrapper {
   margin-top: 5.4rem;
 }
 
@@ -44,7 +43,6 @@
   left: 0;
   margin: 1.5rem;
   line-height: 1px;
-  z-index: 3;
 }
 
 .site-aside-mobile-wrapper {
@@ -57,8 +55,7 @@
   height: 100%;
   padding-top: 5.4rem;
   margin-left: -100%;
-  transition: margin-left 500ms;
-  z-index: 2;
+  transition: margin-left 300ms;
 }
 #site-aside-toggle-checkbox:checked ~ .site-aside-mobile-wrapper {
   margin-left: 0;
@@ -103,3 +100,30 @@ a.site-text-plain.active {
   color: white;
   text-decoration: underline;
 }
+
+
+/* z-index */
+.site-header {
+  z-index: 10;
+}
+
+.site-article {
+  z-index: 1;
+}
+
+.site-aside-mobile-wrapper {
+  z-index: 20;
+}
+
+.site-aside-toggle-button {
+  z-index: 30;
+}
+
+.site-height-0 {
+  height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+

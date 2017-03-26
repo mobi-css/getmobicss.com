@@ -1,5 +1,4 @@
 ---
-title: Get Mobi.css | Mobi.css
 next:
   text: Boilerplate
   url: /docs/boilerplate.html

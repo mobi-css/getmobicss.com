@@ -1,5 +1,4 @@
 ---
-title: Top Gap | Mobi.css
 next:
   text: Show Hide on Mobile
   url: /docs/show-hide-on-mobile.html

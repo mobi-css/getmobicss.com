@@ -1,5 +1,4 @@
 ---
-title: Form | Mobi.css
 next:
   text: Scroll View
   url: /docs/scroll-view.html

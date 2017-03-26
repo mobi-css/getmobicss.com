@@ -1,5 +1,4 @@
 ---
-title: Overview | Mobi.css
 next:
   text: Get Mobi.css
   url: /docs/get-mobi-css.html
@@ -11,9 +10,9 @@ Mobi.css is a mobile-first, pluginable & themeable css framework.
 
 ## Mobile-first
 
-The web is being accessed more and more on mobile devices. It's important to design your websites to be mobile friendly.
+The web is being accessed more and more on mobile devices. It's important to design your websites mobile friendly.
 
-Mobi.css is such a css framework which designed for mobile, and also works awesome on other devices.
+Mobi.css is a css framework designed for mobile, and also works awesome on desktop.
 
 It's less than 3kb after gzipped, however, it's much more powerful than you think.
 
@@ -29,9 +28,7 @@ Plugin system makes css scalable.
 
 The default bundled Mobi.css only contains basic plugin (aka reset, container, flexbox, e.g.). With SASS, you can `@import` any plugins as you like.
 
-Don't want to use SASS?
-
-No problem!
+Don't want to use SASS? No problem!
 
 Actually each plugin provides a standalone version, which means you can simply add `<link rel="stylesheet" href="path/to/plugin-a.css"/>` to include the plugin.
 

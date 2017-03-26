@@ -1,5 +1,4 @@
 ---
-title: Container | Mobi.css
 next:
   text: Button
   url: /docs/button.html

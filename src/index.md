@@ -1,5 +1,4 @@
 ---
-title: Mobi.css
 next:
   text: Overview
   url: /docs

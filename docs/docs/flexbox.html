@@ -1,6 +1,6 @@
 
   <!doctype html>
-  <html lang="en" class="site-height-100">
+  <html lang="en">
     
   <head>
     <meta charset="utf-8">
@@ -14,49 +14,43 @@
     <link rel="stylesheet" href="../css/site.css" />
   </head>
 
-    <body class="site-height-100">
-      <div class="site-height-100 flex-vertical">
-        <div class="unit-0">
-          
-  <header>
-    <div class="flex-left top-gap">
-      <div class="site-side unit-0 container flex-left hide-on-mobile">
-        <a href="/" class="site-text-plain  flex-middle">
-          <img src="../img/mobi-logo.png" height="24" />
-          <div>&nbsp;&nbsp;Mobi.css</div>
-        </a>
-      </div>
-      <div class="unit flex-center">
-        <nav class="container">
-          <div class="flex-middle units-gap-big">
-            <label for="menu-toggle" class="site-mobile-menu-button show-on-mobile unit-0"><img src="../img/menu.png" height="24" /></label>
-            <a href="/docs" class="site-text-plain active unit-0 hide-on-mobile">Docs</a>
-            <a href="/plugins" class="site-text-plain  unit-0 hide-on-mobile">Plugins</a>
-            <a href="/themes" class="site-text-plain  unit-0 hide-on-mobile">Themes</a>
-            
+    <body>
+      
+  <header class="site-header flex-center">
+    <div class="site-aside container hide-on-mobile">
+      <a href="/" class="site-text-plain title flex-middle">
+        <img src="../img/mobi-logo.png" height="24" />
+        <div>&nbsp;&nbsp;Mobi.css</div>
+      </a>
+    </div>
+    <div class="container">
+      <div class="flex-middle units-gap-big">
+        <a href="/docs" class="site-text-plain active unit-0 hide-on-mobile">Docs</a>
+        <a href="/plugins" class="site-text-plain  unit-0 hide-on-mobile">Plugins</a>
+        <a href="/themes" class="site-text-plain  unit-0 hide-on-mobile">Themes</a>
+        
     <div class="unit"></div>
     <a class="site-text-plain flex-middle unit-0" href="/docs/container.html">
       <div>Container&nbsp;&nbsp;</div>
       <img src="../img/next.png" height="14" />
     </a>
   
-          </div>
-        </nav>
       </div>
     </div>
   </header>
 
-        </div>
-        <div class="unit flex-left">
-          
+      
   <aside class="show-on-mobile">
-    <input type="checkbox" id="menu-toggle" class="site-mobile-menu-toggle" />
-    <div class="site-mobile-menu-container flex-vertical">
+    <input type="checkbox" id="site-aside-toggle-checkbox" class="hide-on-mobile" />
+    <label class="site-aside-toggle-button" for="site-aside-toggle-checkbox">
+      <img src="../img/menu.png" height="24" />
+    </label>
+    <div class="site-aside-mobile-wrapper flex-vertical">
       <div class="unit-1 scroll-view">
-        <div class="site-side top-gap container">
+        <div class="site-aside top-gap container">
           <ul>
             <li>
-              <a href="/" class="site-text-plain active">Mobi.css</a>
+              <a href="/" class="site-text-plain title">Mobi.css</a>
               <ul>
                 <li><a class="site-text-plain text-small active" href="/docs">Docs</a></li>
                 <li><a class="site-text-plain text-small " href="/plugins">Plugins</a></li>
@@ -66,7 +60,7 @@
             <li class="top-gap"></li>
             
     <li>
-      <a href="/docs" class="site-text-plain active">Getting Started</a>
+      <a href="/docs" class="site-text-plain title">Getting Started</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs">Overview</a></li>
         <li><a class="site-text-plain text-small " href="../docs/get-mobi-css.html">Get Mobi.css</a></li>
@@ -75,7 +69,7 @@
       </ul>
     </li>
     <li class="top-gap">
-      <a href="/docs/reset.html" class="site-text-plain active">Built-in Plugins</a>
+      <a href="/docs/reset.html" class="site-text-plain title">Built-in Plugins</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs/reset.html">Reset</a></li>
         <li><a class="site-text-plain text-small " href="../docs/top-gap.html">Top Gap</a></li>
@@ -96,12 +90,12 @@
     </div>
   </aside>
   
-    <aside class="site-side hide-on-mobile scroll-view">
-      <div class="top-gap container">
+    <div class="site-aside-desktop-wrapper flex-center hide-on-mobile">
+      <aside class="site-aside container top-gap scroll-view">
         <ul>
           
     <li>
-      <a href="/docs" class="site-text-plain active">Getting Started</a>
+      <a href="/docs" class="site-text-plain title">Getting Started</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs">Overview</a></li>
         <li><a class="site-text-plain text-small " href="../docs/get-mobi-css.html">Get Mobi.css</a></li>
@@ -110,7 +104,7 @@
       </ul>
     </li>
     <li class="top-gap">
-      <a href="/docs/reset.html" class="site-text-plain active">Built-in Plugins</a>
+      <a href="/docs/reset.html" class="site-text-plain title">Built-in Plugins</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs/reset.html">Reset</a></li>
         <li><a class="site-text-plain text-small " href="../docs/top-gap.html">Top Gap</a></li>
@@ -126,17 +120,221 @@
     </li>
   
         </ul>
-      </div>
-    </aside>
+      </aside>
+      <div class="container"></div>
+    </div>
   
 
-          
-      <article class="unit flex-vertical">
-        <iframe src="https://mobi-css.github.io/mobi-plugin-flexbox/" class="site-iframe unit"></iframe>
+      
+    <div class="site-article flex-center">
+      <div class="site-aside container hide-on-mobile"></div>
+      <article class="container">
+        <h1 id="flexbox">Flexbox</h1>
+<h2 id="container-and-units">Container and Units</h2>
+<p>First of all, let's create a <code>.flex-left</code> container which contains several <code>.unit</code>s. In this case, <code>.flex-left</code>'s width is divided equally between <code>.unit</code>s.</p>
+<div class="flex-left top-gap text-center">
+  <div class="unit site-box">unit</div>
+  <div class="unit site-box">unit</div>
+  <div class="unit site-box">unit</div>
+</div>
+<div class="flex-left top-gap text-center">
+  <div class="unit site-box">unit</div>
+  <div class="unit site-box">unit</div>
+  <div class="unit site-box">unit</div>
+  <div class="unit site-box">unit</div>
+  <div class="unit site-box">unit</div>
+</div>
+<pre><code class="language-html">&lt;div class=&quot;flex-left&quot;&gt;
+  &lt;div class=&quot;unit&quot;&gt;unit&lt;/div&gt;
+  &lt;div class=&quot;unit&quot;&gt;unit&lt;/div&gt;
+  &lt;div class=&quot;unit&quot;&gt;unit&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex-left&quot;&gt;
+  &lt;div class=&quot;unit&quot;&gt;unit&lt;/div&gt;
+  &lt;div class=&quot;unit&quot;&gt;unit&lt;/div&gt;
+  &lt;div class=&quot;unit&quot;&gt;unit&lt;/div&gt;
+  &lt;div class=&quot;unit&quot;&gt;unit&lt;/div&gt;
+  &lt;div class=&quot;unit&quot;&gt;unit&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Secondly, let's see how to achieve a maximum 4# grid.</p>
+<div class="flex-left top-gap text-center">
+  <div class="unit-1 site-box">.unit-1</div>
+</div>
+<div class="flex-left top-gap text-center">
+  <div class="unit-1-2 site-box">.unit-1-2</div>
+  <div class="unit-1-2 site-box">.unit-1-2</div>
+</div>
+<div class="flex-left top-gap text-center">
+  <div class="unit-1-3 site-box">.unit-1-3</div>
+  <div class="unit-2-3 site-box">.unit-2-3</div>
+</div>
+<div class="flex-left top-gap text-center">
+  <div class="unit-1-4 site-box">.unit-1-4</div>
+  <div class="unit-3-4 site-box">.unit-3-4</div>
+</div>
+<div class="flex-left top-gap text-center">
+  <div class="unit-1-2 site-box">.unit-1-2</div>
+  <div class="unit-1-4 site-box">.unit-1-4</div>
+</div>
+<pre><code class="language-html">&lt;div class=&quot;flex-left&quot;&gt;
+  &lt;div class=&quot;unit-1-2&quot;&gt;.unit-1-2&lt;/div&gt;
+  &lt;div class=&quot;unit-1-2&quot;&gt;.unit-1-2&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex-left&quot;&gt;
+  &lt;div class=&quot;unit-1-3&quot;&gt;.unit-1-3&lt;/div&gt;
+  &lt;div class=&quot;unit-2-3&quot;&gt;.unit-2-3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex-left&quot;&gt;
+  &lt;div class=&quot;unit-1-4&quot;&gt;.unit-1-4&lt;/div&gt;
+  &lt;div class=&quot;unit-3-4&quot;&gt;.unit-3-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex-left&quot;&gt;
+  &lt;div class=&quot;unit-1-2&quot;&gt;.unit-1-2&lt;/div&gt;
+  &lt;div class=&quot;unit-1-4&quot;&gt;.unit-1-4&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Finally, we can use <code>.unit-0</code> as a custom size unit. Set a width to it, or let the content decide the width.</p>
+<div class="flex-left top-gap text-center">
+  <div class="unit site-box">.unit</div>
+  <div class="unit-0 site-box" style="width:200px">.unit-0 which has 200px width</div>
+  <div class="unit site-box">.unit</div>
+</div>
+<div class="flex-left top-gap text-center">
+  <div class="unit-0 site-box">.unit-0 which has no width set</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit-1-4 site-box">.unit-1-4</div>
+</div>
+<pre><code class="language-html">&lt;div class=&quot;flex-left&quot;&gt;
+  &lt;div class=&quot;unit&quot;&gt;.unit&lt;/div&gt;
+  &lt;div class=&quot;unit-0&quot; style=&quot;width:200px&quot;&gt;.unit-0 which has 200px width&lt;/div&gt;
+  &lt;div class=&quot;unit&quot;&gt;.unit&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex-left&quot;&gt;
+  &lt;div class=&quot;unit-0&quot;&gt;.unit-0 which has no width set&lt;/div&gt;
+  &lt;div class=&quot;unit&quot;&gt;.unit&lt;/div&gt;
+  &lt;div class=&quot;unit-1-4&quot;&gt;.unit-1-4&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="flexbox-aligning">Flexbox Aligning</h2>
+<p>Forget <code>margin:0 auto</code>. We can align easily with flexbox!</p>
+<div class="flex-left site-box top-gap">
+  <div class="site-box">.flex-left > div</div>
+</div>
+<div class="flex-center site-box top-gap">
+  <div class="site-box">.flex-center > div</div>
+</div>
+<div class="flex-right site-box top-gap">
+  <div class="site-box">.flex-right > div</div>
+</div>
+<div class="flex-top site-box top-gap" style="height:60px;">
+  <div class="site-box">.flex-top > div</div>
+</div>
+<div class="flex-middle site-box top-gap" style="height:60px;">
+  <div class="site-box">.flex-middle > div</div>
+</div>
+<div class="flex-bottom site-box top-gap" style="height:60px;">
+  <div class="site-box">.flex-bottom > div</div>
+</div>
+<div class="flex-center flex-middle site-box top-gap" style="height:60px;">
+  <div class="site-box">.flex-center.flex-middle > div</div>
+</div>
+<pre><code class="language-html">&lt;div class=&quot;flex-left&quot;&gt;
+  &lt;div&gt;.flex-left &gt; div&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex-center&quot;&gt;
+  &lt;div&gt;.flex-center &gt; div&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex-right&quot;&gt;
+  &lt;div&gt;.flex-right &gt; div&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex-top&quot; style=&quot;height:60px;&quot;&gt;
+  &lt;div&gt;.flex-top &gt; div&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex-middle&quot; style=&quot;height:60px;&quot;&gt;
+  &lt;div&gt;.flex-middle &gt; div&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex-bottom&quot; style=&quot;height:60px;&quot;&gt;
+  &lt;div&gt;.flex-bottom &gt; div&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex-center flex-middle&quot; style=&quot;height:60px;&quot;&gt;
+  &lt;div&gt;.flex-center.flex-middle &gt; div&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="vertical-flexbox">Vertical Flexbox</h2>
+<p>We can use <code>.flex-vertical</code> to easily achieve vertical flexbox layout.</p>
+<div class="flex-vertical top-gap text-center" style="height:200px;">
+  <div class="unit-0 site-box">.unit-0</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit-1-4 site-box">.unit-1-4</div>
+</div>
+<pre><code class="language-html">&lt;div class=&quot;flex-vertical&quot; style=&quot;height:200px;&quot;&gt;
+  &lt;div class=&quot;unit-0&quot;&gt;.unit-0&lt;/div&gt;
+  &lt;div class=&quot;unit&quot;&gt;.unit&lt;/div&gt;
+  &lt;div class=&quot;unit-1-4&quot;&gt;.unit-1-4&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="wrapable-flexbox">Wrapable flexbox</h2>
+<p>By default the <code>flex-wrap</code> of flexbox container is set to <code>nowrap</code>, this is to prevent some unexpected wrap. We can set it to <code>wrap</code> using <code>.flex-wrap</code>:</p>
+<div class="flex-left top-gap text-center">
+  <div class="unit-0 site-box">.unit-0 with a lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot of text</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit-1-4 site-box">.unit-1-4</div>
+</div>
+<div class="flex-left flex-wrap top-gap text-center">
+  <div class="unit-0 site-box">.flex-wrap > .unit-0 with a lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot of text</div>
+  <div class="unit site-box">.unit</div>
+  <div class="unit-1-4 site-box">.unit-1-4</div>
+</div>
+<pre><code class="language-html">&lt;div class=&quot;flex-left&quot;&gt;
+  &lt;div class=&quot;unit-0&quot;&gt;.unit-0 with a lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot of text&lt;/div&gt;
+  &lt;div class=&quot;unit&quot;&gt;.unit&lt;/div&gt;
+  &lt;div class=&quot;unit-1-4&quot;&gt;.unit-1-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex-left flex-wrap&quot;&gt;
+  &lt;div class=&quot;unit-0&quot;&gt;.flex-wrap &gt; .unit-0 with a lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot lot of text&lt;/div&gt;
+  &lt;div class=&quot;unit&quot;&gt;.unit&lt;/div&gt;
+  &lt;div class=&quot;unit-1-4&quot;&gt;.unit-1-4&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="unit-1-on-mobile">Unit 1 on Mobile</h2>
+<p>Sometimes we need to show <code>.unit-1-3</code> on desktop, and <code>.unit-1</code> on mobile. We can use <code>.unit-1-on-mobile</code> inside <code>.flex-wrap</code> to achieve this:</p>
+<div class="flex-left flex-wrap top-gap text-center">
+  <div class="unit-1-3 unit-1-on-mobile site-box">.flex-wrap > .unit-1-3.unit-1-on-mobile</div>
+  <div class="unit-2-3 unit-1-on-mobile site-box">.flex-wrap > .unit-2-3.unit-1-on-mobile</div>
+</div>
+<pre><code class="language-html">&lt;div class=&quot;flex-left flex-wrap&quot;&gt;
+  &lt;div class=&quot;unit-1-3 unit-1-on-mobile&quot;&gt;.flex-wrap &gt; .unit-1-3.unit-1-on-mobile&lt;/div&gt;
+  &lt;div class=&quot;unit-2-3 unit-1-on-mobile&quot;&gt;.flex-wrap &gt; .unit-2-3.unit-1-on-mobile&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="units-gap">Units Gap</h2>
+<p>In all of the above examples, the <code>.unit*</code> has no left and right paddings, it may not convenient sometimes. We can add <code>.units-gap</code> and <code>.units-gap-big</code> to the flexbox container to add gaps between <code>.unit*</code>s:</p>
+<div class="flex-left units-gap top-gap text-center">
+  <div class="unit-0 site-box">.units-gap > .unit-0</div>
+  <div class="unit site-box">.units-gap > .unit</div>
+  <div class="unit-1-4 site-box">.units-gap > .unit-1-4</div>
+</div>
+<pre><code class="language-html">&lt;div class=&quot;flex-left units-gap top-gap text-center&quot;&gt;
+  &lt;div class=&quot;unit-0 site-box&quot;&gt;.units-gap &gt; .unit-0&lt;/div&gt;
+  &lt;div class=&quot;unit site-box&quot;&gt;.units-gap &gt; .unit&lt;/div&gt;
+  &lt;div class=&quot;unit-1-4 site-box&quot;&gt;.units-gap &gt; .unit-1-4&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<div class="flex-left units-gap-big top-gap text-center">
+  <div class="unit-0 site-box">.units-gap-big > .unit-0</div>
+  <div class="unit site-box">.units-gap-big > .unit</div>
+  <div class="unit-1-4 site-box">.units-gap-big > .unit-1-4</div>
+</div>
+<pre><code class="language-html">&lt;div class=&quot;flex-left units-gap-big top-gap text-center&quot;&gt;
+  &lt;div class=&quot;unit-0 site-box&quot;&gt;.units-gap-big &gt; .unit-0&lt;/div&gt;
+  &lt;div class=&quot;unit site-box&quot;&gt;.units-gap-big &gt; .unit&lt;/div&gt;
+  &lt;div class=&quot;unit-1-4 site-box&quot;&gt;.units-gap-big &gt; .unit-1-4&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 
       </article>
-    
-        </div>
-      </div>
+    </div>
+  
     </body>
   </html>

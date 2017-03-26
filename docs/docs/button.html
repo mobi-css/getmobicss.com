@@ -1,6 +1,6 @@
 
   <!doctype html>
-  <html lang="en" class="site-height-100">
+  <html lang="en">
     
   <head>
     <meta charset="utf-8">
@@ -14,49 +14,43 @@
     <link rel="stylesheet" href="../css/site.css" />
   </head>
 
-    <body class="site-height-100">
-      <div class="site-height-100 flex-vertical">
-        <div class="unit-0">
-          
-  <header>
-    <div class="flex-left top-gap">
-      <div class="site-side unit-0 container flex-left hide-on-mobile">
-        <a href="/" class="site-text-plain  flex-middle">
-          <img src="../img/mobi-logo.png" height="24" />
-          <div>&nbsp;&nbsp;Mobi.css</div>
-        </a>
-      </div>
-      <div class="unit flex-center">
-        <nav class="container">
-          <div class="flex-middle units-gap-big">
-            <label for="menu-toggle" class="site-mobile-menu-button show-on-mobile unit-0"><img src="../img/menu.png" height="24" /></label>
-            <a href="/docs" class="site-text-plain active unit-0 hide-on-mobile">Docs</a>
-            <a href="/plugins" class="site-text-plain  unit-0 hide-on-mobile">Plugins</a>
-            <a href="/themes" class="site-text-plain  unit-0 hide-on-mobile">Themes</a>
-            
+    <body>
+      
+  <header class="site-header flex-center">
+    <div class="site-aside container hide-on-mobile">
+      <a href="/" class="site-text-plain title flex-middle">
+        <img src="../img/mobi-logo.png" height="24" />
+        <div>&nbsp;&nbsp;Mobi.css</div>
+      </a>
+    </div>
+    <div class="container">
+      <div class="flex-middle units-gap-big">
+        <a href="/docs" class="site-text-plain active unit-0 hide-on-mobile">Docs</a>
+        <a href="/plugins" class="site-text-plain  unit-0 hide-on-mobile">Plugins</a>
+        <a href="/themes" class="site-text-plain  unit-0 hide-on-mobile">Themes</a>
+        
     <div class="unit"></div>
     <a class="site-text-plain flex-middle unit-0" href="/docs/form.html">
       <div>Form&nbsp;&nbsp;</div>
       <img src="../img/next.png" height="14" />
     </a>
   
-          </div>
-        </nav>
       </div>
     </div>
   </header>
 
-        </div>
-        <div class="unit flex-left">
-          
+      
   <aside class="show-on-mobile">
-    <input type="checkbox" id="menu-toggle" class="site-mobile-menu-toggle" />
-    <div class="site-mobile-menu-container flex-vertical">
+    <input type="checkbox" id="site-aside-toggle-checkbox" class="hide-on-mobile" />
+    <label class="site-aside-toggle-button" for="site-aside-toggle-checkbox">
+      <img src="../img/menu.png" height="24" />
+    </label>
+    <div class="site-aside-mobile-wrapper flex-vertical">
       <div class="unit-1 scroll-view">
-        <div class="site-side top-gap container">
+        <div class="site-aside top-gap container">
           <ul>
             <li>
-              <a href="/" class="site-text-plain active">Mobi.css</a>
+              <a href="/" class="site-text-plain title">Mobi.css</a>
               <ul>
                 <li><a class="site-text-plain text-small active" href="/docs">Docs</a></li>
                 <li><a class="site-text-plain text-small " href="/plugins">Plugins</a></li>
@@ -66,7 +60,7 @@
             <li class="top-gap"></li>
             
     <li>
-      <a href="/docs" class="site-text-plain active">Getting Started</a>
+      <a href="/docs" class="site-text-plain title">Getting Started</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs">Overview</a></li>
         <li><a class="site-text-plain text-small " href="../docs/get-mobi-css.html">Get Mobi.css</a></li>
@@ -75,7 +69,7 @@
       </ul>
     </li>
     <li class="top-gap">
-      <a href="/docs/reset.html" class="site-text-plain active">Built-in Plugins</a>
+      <a href="/docs/reset.html" class="site-text-plain title">Built-in Plugins</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs/reset.html">Reset</a></li>
         <li><a class="site-text-plain text-small " href="../docs/top-gap.html">Top Gap</a></li>
@@ -96,12 +90,12 @@
     </div>
   </aside>
   
-    <aside class="site-side hide-on-mobile scroll-view">
-      <div class="top-gap container">
+    <div class="site-aside-desktop-wrapper flex-center hide-on-mobile">
+      <aside class="site-aside container top-gap scroll-view">
         <ul>
           
     <li>
-      <a href="/docs" class="site-text-plain active">Getting Started</a>
+      <a href="/docs" class="site-text-plain title">Getting Started</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs">Overview</a></li>
         <li><a class="site-text-plain text-small " href="../docs/get-mobi-css.html">Get Mobi.css</a></li>
@@ -110,7 +104,7 @@
       </ul>
     </li>
     <li class="top-gap">
-      <a href="/docs/reset.html" class="site-text-plain active">Built-in Plugins</a>
+      <a href="/docs/reset.html" class="site-text-plain title">Built-in Plugins</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs/reset.html">Reset</a></li>
         <li><a class="site-text-plain text-small " href="../docs/top-gap.html">Top Gap</a></li>
@@ -126,16 +120,91 @@
     </li>
   
         </ul>
-      </div>
-    </aside>
+      </aside>
+      <div class="container"></div>
+    </div>
   
 
-          
-      <article class="unit flex-vertical">
-        <iframe src="https://mobi-css.github.io/mobi-plugin-button/" class="site-iframe unit"></iframe>
+      
+    <div class="site-article flex-center">
+      <div class="site-aside container hide-on-mobile"></div>
+      <article class="container">
+        <h1 id="button">Button</h1>
+<h2 id="input">Input</h2>
+<input type="button" class="btn" value=".btn"/>
+<input type="button" class="btn btn-primary" value=".btn.btn-primary"/>
+<input type="button" class="btn btn-danger" value=".btn.btn-danger"/>
+<pre><code class="language-html">&lt;input type=&quot;button&quot; class=&quot;btn&quot; value=&quot;.btn&quot;/&gt;
+&lt;input type=&quot;button&quot; class=&quot;btn btn-primary&quot; value=&quot;.btn.btn-primary&quot;/&gt;
+&lt;input type=&quot;button&quot; class=&quot;btn btn-danger&quot; value=&quot;.btn.btn-danger&quot;/&gt;
+</code></pre>
+<input type="reset" class="btn" value=".btn"/>
+<input type="reset" class="btn btn-primary" value=".btn.btn-primary"/>
+<input type="reset" class="btn btn-danger" value=".btn.btn-danger"/>
+<pre><code class="language-html">&lt;input type=&quot;reset&quot; class=&quot;btn&quot; value=&quot;.btn&quot;/&gt;
+&lt;input type=&quot;reset&quot; class=&quot;btn btn-primary&quot; value=&quot;.btn.btn-primary&quot;/&gt;
+&lt;input type=&quot;reset&quot; class=&quot;btn btn-danger&quot; value=&quot;.btn.btn-danger&quot;/&gt;
+</code></pre>
+<input type="submit" class="btn" value=".btn"/>
+<input type="submit" class="btn btn-primary" value=".btn.btn-primary"/>
+<input type="submit" class="btn btn-danger" value=".btn.btn-danger"/>
+<pre><code class="language-html">&lt;input type=&quot;submit&quot; class=&quot;btn&quot; value=&quot;.btn&quot;/&gt;
+&lt;input type=&quot;submit&quot; class=&quot;btn btn-primary&quot; value=&quot;.btn.btn-primary&quot;/&gt;
+&lt;input type=&quot;submit&quot; class=&quot;btn btn-danger&quot; value=&quot;.btn.btn-danger&quot;/&gt;
+</code></pre>
+<h2 id="button-2">Button</h2>
+<p><button type="button" class="btn">.btn</button>
+<button type="button" class="btn btn-primary">.btn.btn-primary</button>
+<button type="button" class="btn btn-danger">.btn.btn-danger</button></p>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;.btn&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;.btn.btn-primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;.btn.btn-danger&lt;/button&gt;
+</code></pre>
+<p><button type="reset" class="btn">.btn</button>
+<button type="reset" class="btn btn-primary">.btn.btn-primary</button>
+<button type="reset" class="btn btn-danger">.btn.btn-danger</button></p>
+<pre><code class="language-html">&lt;button type=&quot;reset&quot; class=&quot;btn&quot;&gt;.btn&lt;/button&gt;
+&lt;button type=&quot;reset&quot; class=&quot;btn btn-primary&quot;&gt;.btn.btn-primary&lt;/button&gt;
+&lt;button type=&quot;reset&quot; class=&quot;btn btn-danger&quot;&gt;.btn.btn-danger&lt;/button&gt;
+</code></pre>
+<p><button type="submit" class="btn">.btn</button>
+<button type="submit" class="btn btn-primary">.btn.btn-primary</button>
+<button type="submit" class="btn btn-danger">.btn.btn-danger&gt;</button></p>
+<pre><code class="language-html">&lt;button type=&quot;submit&quot; class=&quot;btn&quot;&gt;.btn&lt;/button&gt;
+&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;.btn.btn-primary&lt;/button&gt;
+&lt;button type=&quot;submit&quot; class=&quot;btn btn-danger&quot;&gt;.btn.btn-danger&gt;&lt;/button&gt;
+</code></pre>
+<h2 id="link-button">Link Button</h2>
+<p><a href="javascript:void(0);" class="btn">.btn</a>
+<a href="javascript:void(0);" class="btn btn-primary">.btn.btn-primary</a>
+<a href="javascript:void(0);" class="btn btn-danger">.btn.btn-danger</a></p>
+<pre><code class="language-html">&lt;a href=&quot;javascript:void(0);&quot; class=&quot;btn&quot;&gt;.btn&lt;/a&gt;
+&lt;a href=&quot;javascript:void(0);&quot; class=&quot;btn btn-primary&quot;&gt;.btn.btn-primary&lt;/a&gt;
+&lt;a href=&quot;javascript:void(0);&quot; class=&quot;btn btn-danger&quot;&gt;.btn.btn-danger&lt;/a&gt;
+</code></pre>
+<h2 id="disabled-button">Disabled Button</h2>
+<input type="button" class="btn" value=".btn" disabled/>
+<input type="button" class="btn btn-primary" value=".btn.btn-primary" disabled/>
+<input type="button" class="btn btn-danger" value=".btn.btn-danger" disabled/>
+<pre><code class="language-html">&lt;input type=&quot;button&quot; class=&quot;btn&quot; value=&quot;.btn&quot; disabled/&gt;
+&lt;input type=&quot;button&quot; class=&quot;btn btn-primary&quot; value=&quot;.btn.btn-primary&quot; disabled/&gt;
+&lt;input type=&quot;button&quot; class=&quot;btn btn-danger&quot; value=&quot;.btn.btn-danger&quot; disabled/&gt;
+</code></pre>
+<p><a href="javascript:void(0);" class="btn" disabled>.btn</a>
+<a href="javascript:void(0);" class="btn btn-primary" disabled>.btn.btn-primary</a>
+<a href="javascript:void(0);" class="btn btn-danger" disabled>.btn.btn-danger</a></p>
+<pre><code class="language-html">&lt;a href=&quot;javascript:void(0);&quot; class=&quot;btn&quot; disabled&gt;.btn&lt;/a&gt;
+&lt;a href=&quot;javascript:void(0);&quot; class=&quot;btn btn-primary&quot; disabled&gt;.btn.btn-primary&lt;/a&gt;
+&lt;a href=&quot;javascript:void(0);&quot; class=&quot;btn btn-danger&quot; disabled&gt;.btn.btn-danger&lt;/a&gt;
+</code></pre>
+<h2 id="block-button">Block Button</h2>
+<p>By default the <code>.btn</code> is a inline-block button, we can add <code>.btn-block</code> to get the block button:</p>
+<input type="button" class="btn btn-block" value=".btn.btn-block"/>
+<pre><code class="language-html">&lt;input type=&quot;button&quot; class=&quot;btn btn-block&quot; value=&quot;.btn.btn-block&quot;/&gt;
+</code></pre>
+
       </article>
-    
-        </div>
-      </div>
+    </div>
+  
     </body>
   </html>

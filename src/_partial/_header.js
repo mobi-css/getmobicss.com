@@ -1,24 +1,19 @@
 const getActiveClass = require('./_get-active-class');
 
 module.exports = ({ relativeToRoot, frontMatter, path }) => `
-  <header>
-    <div class="flex-left top-gap">
-      <div class="site-side unit-0 container flex-left hide-on-mobile">
-        <a href="/" class="site-text-plain ${getActiveClass({ path, start: 'index' })} flex-middle">
-          <img src="${relativeToRoot}/img/mobi-logo.png" height="24" />
-          <div>&nbsp;&nbsp;Mobi.css</div>
-        </a>
-      </div>
-      <div class="unit flex-center">
-        <nav class="container">
-          <div class="flex-middle units-gap-big">
-            <label for="menu-toggle" class="site-mobile-menu-button show-on-mobile unit-0"><img src="${relativeToRoot}/img/menu.png" height="24" /></label>
-            <a href="/docs" class="site-text-plain ${getActiveClass({ path, start: 'docs' })} unit-0 hide-on-mobile">Docs</a>
-            <a href="/plugins" class="site-text-plain ${getActiveClass({ path, start: 'plugins' })} unit-0 hide-on-mobile">Plugins</a>
-            <a href="/themes" class="site-text-plain ${getActiveClass({ path, start: 'themes' })} unit-0 hide-on-mobile">Themes</a>
-            ${next({ relativeToRoot, frontMatter })}
-          </div>
-        </nav>
+  <header class="site-header flex-center">
+    <div class="site-aside container hide-on-mobile">
+      <a href="/" class="site-text-plain title flex-middle">
+        <img src="${relativeToRoot}/img/mobi-logo.png" height="24" />
+        <div>&nbsp;&nbsp;Mobi.css</div>
+      </a>
+    </div>
+    <div class="container">
+      <div class="flex-middle units-gap-big">
+        <a href="/docs" class="site-text-plain ${getActiveClass({ path, start: 'docs' })} unit-0 hide-on-mobile">Docs</a>
+        <a href="/plugins" class="site-text-plain ${getActiveClass({ path, start: 'plugins' })} unit-0 hide-on-mobile">Plugins</a>
+        <a href="/themes" class="site-text-plain ${getActiveClass({ path, start: 'themes' })} unit-0 hide-on-mobile">Themes</a>
+        ${next({ relativeToRoot, frontMatter })}
       </div>
     </div>
   </header>

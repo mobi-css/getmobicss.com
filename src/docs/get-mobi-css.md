@@ -27,7 +27,7 @@ unpkg is a good choice:
 <link rel="stylesheet" href="https://unpkg.com/mobi.css/dist/mobi.min.css" />
 ```
 
-> Warning: this will fetch the latest version of mobi.css, please carefully include it.
+> Warning: this will fetch the latest version of Mobi.css, please carefully include it.
 
 ## Download
 

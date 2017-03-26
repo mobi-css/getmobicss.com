@@ -1,6 +1,6 @@
 
   <!doctype html>
-  <html lang="en" class="site-height-100">
+  <html lang="en">
     
   <head>
     <meta charset="utf-8">
@@ -14,49 +14,43 @@
     <link rel="stylesheet" href="../css/site.css" />
   </head>
 
-    <body class="site-height-100">
-      <div class="site-height-100 flex-vertical">
-        <div class="unit-0">
-          
-  <header>
-    <div class="flex-left top-gap">
-      <div class="site-side unit-0 container flex-left hide-on-mobile">
-        <a href="/" class="site-text-plain  flex-middle">
-          <img src="../img/mobi-logo.png" height="24" />
-          <div>&nbsp;&nbsp;Mobi.css</div>
-        </a>
-      </div>
-      <div class="unit flex-center">
-        <nav class="container">
-          <div class="flex-middle units-gap-big">
-            <label for="menu-toggle" class="site-mobile-menu-button show-on-mobile unit-0"><img src="../img/menu.png" height="24" /></label>
-            <a href="/docs" class="site-text-plain active unit-0 hide-on-mobile">Docs</a>
-            <a href="/plugins" class="site-text-plain  unit-0 hide-on-mobile">Plugins</a>
-            <a href="/themes" class="site-text-plain  unit-0 hide-on-mobile">Themes</a>
-            
+    <body>
+      
+  <header class="site-header flex-center">
+    <div class="site-aside container hide-on-mobile">
+      <a href="/" class="site-text-plain title flex-middle">
+        <img src="../img/mobi-logo.png" height="24" />
+        <div>&nbsp;&nbsp;Mobi.css</div>
+      </a>
+    </div>
+    <div class="container">
+      <div class="flex-middle units-gap-big">
+        <a href="/docs" class="site-text-plain active unit-0 hide-on-mobile">Docs</a>
+        <a href="/plugins" class="site-text-plain  unit-0 hide-on-mobile">Plugins</a>
+        <a href="/themes" class="site-text-plain  unit-0 hide-on-mobile">Themes</a>
+        
     <div class="unit"></div>
     <a class="site-text-plain flex-middle unit-0" href="/docs/boilerplate.html">
       <div>Boilerplate&nbsp;&nbsp;</div>
       <img src="../img/next.png" height="14" />
     </a>
   
-          </div>
-        </nav>
       </div>
     </div>
   </header>
 
-        </div>
-        <div class="unit flex-left">
-          
+      
   <aside class="show-on-mobile">
-    <input type="checkbox" id="menu-toggle" class="site-mobile-menu-toggle" />
-    <div class="site-mobile-menu-container flex-vertical">
+    <input type="checkbox" id="site-aside-toggle-checkbox" class="hide-on-mobile" />
+    <label class="site-aside-toggle-button" for="site-aside-toggle-checkbox">
+      <img src="../img/menu.png" height="24" />
+    </label>
+    <div class="site-aside-mobile-wrapper flex-vertical">
       <div class="unit-1 scroll-view">
-        <div class="site-side top-gap container">
+        <div class="site-aside top-gap container">
           <ul>
             <li>
-              <a href="/" class="site-text-plain active">Mobi.css</a>
+              <a href="/" class="site-text-plain title">Mobi.css</a>
               <ul>
                 <li><a class="site-text-plain text-small active" href="/docs">Docs</a></li>
                 <li><a class="site-text-plain text-small " href="/plugins">Plugins</a></li>
@@ -66,7 +60,7 @@
             <li class="top-gap"></li>
             
     <li>
-      <a href="/docs" class="site-text-plain active">Getting Started</a>
+      <a href="/docs" class="site-text-plain title">Getting Started</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs">Overview</a></li>
         <li><a class="site-text-plain text-small active" href="../docs/get-mobi-css.html">Get Mobi.css</a></li>
@@ -75,7 +69,7 @@
       </ul>
     </li>
     <li class="top-gap">
-      <a href="/docs/reset.html" class="site-text-plain active">Built-in Plugins</a>
+      <a href="/docs/reset.html" class="site-text-plain title">Built-in Plugins</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs/reset.html">Reset</a></li>
         <li><a class="site-text-plain text-small " href="../docs/top-gap.html">Top Gap</a></li>
@@ -96,12 +90,12 @@
     </div>
   </aside>
   
-    <aside class="site-side hide-on-mobile scroll-view">
-      <div class="top-gap container">
+    <div class="site-aside-desktop-wrapper flex-center hide-on-mobile">
+      <aside class="site-aside container top-gap scroll-view">
         <ul>
           
     <li>
-      <a href="/docs" class="site-text-plain active">Getting Started</a>
+      <a href="/docs" class="site-text-plain title">Getting Started</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs">Overview</a></li>
         <li><a class="site-text-plain text-small active" href="../docs/get-mobi-css.html">Get Mobi.css</a></li>
@@ -110,7 +104,7 @@
       </ul>
     </li>
     <li class="top-gap">
-      <a href="/docs/reset.html" class="site-text-plain active">Built-in Plugins</a>
+      <a href="/docs/reset.html" class="site-text-plain title">Built-in Plugins</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs/reset.html">Reset</a></li>
         <li><a class="site-text-plain text-small " href="../docs/top-gap.html">Top Gap</a></li>
@@ -126,16 +120,16 @@
     </li>
   
         </ul>
-      </div>
-    </aside>
+      </aside>
+      <div class="container"></div>
+    </div>
   
 
-          
-    <div class="site-content unit flex-vertical">
-      <div class="scroll-view">
-        <div class="flex-center">
-          <article class="container">
-            <h1 id="get-mobicss">Get Mobi.css</h1>
+      
+    <div class="site-article flex-center">
+      <div class="site-aside container hide-on-mobile"></div>
+      <article class="container">
+        <h1 id="get-mobicss">Get Mobi.css</h1>
 <p>There are a few easy ways to quickly get Mobi.css.</p>
 <h2 id="cdnjs">cdnjs</h2>
 <p>The easiest way to include Mobi.css is using <a href="https://cdnjs.com/libraries/mobi.css">cdnjs</a>:</p>
@@ -147,7 +141,7 @@
 <pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/mobi.css/dist/mobi.min.css&quot; /&gt;
 </code></pre>
 <blockquote>
-<p>Warning: this will fetch the latest version of mobi.css, please carefully include it.</p>
+<p>Warning: this will fetch the latest version of Mobi.css, please carefully include it.</p>
 </blockquote>
 <h2 id="download">Download</h2>
 <p>You can download Mobi.css in the <a href="https://github.com/mobi-css/mobi.css/releases">release page</a>.</p>
@@ -168,12 +162,8 @@
 </code></pre>
 <p>Be sure you have added node_modules to your Sass's <a href="http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory">load_paths</a>.</p>
 
-          </article>
-        </div>
-      </div>
+      </article>
     </div>
   
-        </div>
-      </div>
     </body>
   </html>

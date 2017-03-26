@@ -1,6 +1,6 @@
 
   <!doctype html>
-  <html lang="en" class="site-height-100">
+  <html lang="en">
     
   <head>
     <meta charset="utf-8">
@@ -14,49 +14,43 @@
     <link rel="stylesheet" href="../css/site.css" />
   </head>
 
-    <body class="site-height-100">
-      <div class="site-height-100 flex-vertical">
-        <div class="unit-0">
-          
-  <header>
-    <div class="flex-left top-gap">
-      <div class="site-side unit-0 container flex-left hide-on-mobile">
-        <a href="/" class="site-text-plain  flex-middle">
-          <img src="../img/mobi-logo.png" height="24" />
-          <div>&nbsp;&nbsp;Mobi.css</div>
-        </a>
-      </div>
-      <div class="unit flex-center">
-        <nav class="container">
-          <div class="flex-middle units-gap-big">
-            <label for="menu-toggle" class="site-mobile-menu-button show-on-mobile unit-0"><img src="../img/menu.png" height="24" /></label>
-            <a href="/docs" class="site-text-plain active unit-0 hide-on-mobile">Docs</a>
-            <a href="/plugins" class="site-text-plain  unit-0 hide-on-mobile">Plugins</a>
-            <a href="/themes" class="site-text-plain  unit-0 hide-on-mobile">Themes</a>
-            
+    <body>
+      
+  <header class="site-header flex-center">
+    <div class="site-aside container hide-on-mobile">
+      <a href="/" class="site-text-plain title flex-middle">
+        <img src="../img/mobi-logo.png" height="24" />
+        <div>&nbsp;&nbsp;Mobi.css</div>
+      </a>
+    </div>
+    <div class="container">
+      <div class="flex-middle units-gap-big">
+        <a href="/docs" class="site-text-plain active unit-0 hide-on-mobile">Docs</a>
+        <a href="/plugins" class="site-text-plain  unit-0 hide-on-mobile">Plugins</a>
+        <a href="/themes" class="site-text-plain  unit-0 hide-on-mobile">Themes</a>
+        
     <div class="unit"></div>
     <a class="site-text-plain flex-middle unit-0" href="/docs/text.html">
       <div>Text&nbsp;&nbsp;</div>
       <img src="../img/next.png" height="14" />
     </a>
   
-          </div>
-        </nav>
       </div>
     </div>
   </header>
 
-        </div>
-        <div class="unit flex-left">
-          
+      
   <aside class="show-on-mobile">
-    <input type="checkbox" id="menu-toggle" class="site-mobile-menu-toggle" />
-    <div class="site-mobile-menu-container flex-vertical">
+    <input type="checkbox" id="site-aside-toggle-checkbox" class="hide-on-mobile" />
+    <label class="site-aside-toggle-button" for="site-aside-toggle-checkbox">
+      <img src="../img/menu.png" height="24" />
+    </label>
+    <div class="site-aside-mobile-wrapper flex-vertical">
       <div class="unit-1 scroll-view">
-        <div class="site-side top-gap container">
+        <div class="site-aside top-gap container">
           <ul>
             <li>
-              <a href="/" class="site-text-plain active">Mobi.css</a>
+              <a href="/" class="site-text-plain title">Mobi.css</a>
               <ul>
                 <li><a class="site-text-plain text-small active" href="/docs">Docs</a></li>
                 <li><a class="site-text-plain text-small " href="/plugins">Plugins</a></li>
@@ -66,7 +60,7 @@
             <li class="top-gap"></li>
             
     <li>
-      <a href="/docs" class="site-text-plain active">Getting Started</a>
+      <a href="/docs" class="site-text-plain title">Getting Started</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs">Overview</a></li>
         <li><a class="site-text-plain text-small " href="../docs/get-mobi-css.html">Get Mobi.css</a></li>
@@ -75,7 +69,7 @@
       </ul>
     </li>
     <li class="top-gap">
-      <a href="/docs/reset.html" class="site-text-plain active">Built-in Plugins</a>
+      <a href="/docs/reset.html" class="site-text-plain title">Built-in Plugins</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs/reset.html">Reset</a></li>
         <li><a class="site-text-plain text-small " href="../docs/top-gap.html">Top Gap</a></li>
@@ -96,12 +90,12 @@
     </div>
   </aside>
   
-    <aside class="site-side hide-on-mobile scroll-view">
-      <div class="top-gap container">
+    <div class="site-aside-desktop-wrapper flex-center hide-on-mobile">
+      <aside class="site-aside container top-gap scroll-view">
         <ul>
           
     <li>
-      <a href="/docs" class="site-text-plain active">Getting Started</a>
+      <a href="/docs" class="site-text-plain title">Getting Started</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs">Overview</a></li>
         <li><a class="site-text-plain text-small " href="../docs/get-mobi-css.html">Get Mobi.css</a></li>
@@ -110,7 +104,7 @@
       </ul>
     </li>
     <li class="top-gap">
-      <a href="/docs/reset.html" class="site-text-plain active">Built-in Plugins</a>
+      <a href="/docs/reset.html" class="site-text-plain title">Built-in Plugins</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs/reset.html">Reset</a></li>
         <li><a class="site-text-plain text-small " href="../docs/top-gap.html">Top Gap</a></li>
@@ -126,16 +120,163 @@
     </li>
   
         </ul>
-      </div>
-    </aside>
+      </aside>
+      <div class="container"></div>
+    </div>
   
 
-          
-      <article class="unit flex-vertical">
-        <iframe src="https://mobi-css.github.io/mobi-plugin-table/" class="site-iframe unit"></iframe>
+      
+    <div class="site-article flex-center">
+      <div class="site-aside container hide-on-mobile"></div>
+      <article class="container">
+        <h1 id="table">Table</h1>
+<p>Add a <code>.table</code> class to <code>&lt;table&gt;</code> element:</p>
+<table class="table">
+  <thead>
+    <tr><th>Name</th><th>Author</th><th>Language</th><th>Size</th><th>Features</th><th>GitHub</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="http://getmobicss.com/">Mobi.css</a></td>
+      <td><a href="https://github.com/xcatliu">xcatliu</a></td>
+      <td>Sass</td>
+      <td>3.6kb</td>
+      <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+      <td><a href="https://github.com/xcatliu/mobi.css">Mobi.css GitHub</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://getskeleton.com/">Skeleton</a></td>
+      <td><a href="https://github.com/dhg">Dave Gamache</a></td>
+      <td>Css</td>
+      <td>3.2kb</td>
+      <td><i class="fa fa-star"></i></td>
+      <td><a href="https://github.com/dhg/Skeleton/">Skeleton GitHub</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://purecss.io/">Pure.css</a></td>
+      <td><a href="https://github.com/yahoo">Yahoo Inc.</a></td>
+      <td>Css</td>
+      <td>4.6kb</td>
+      <td><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+      <td><a href="https://github.com/yahoo/pure/">Pure.css GitHub</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://v4-alpha.getbootstrap.com/">Bootstrap v4</a></td>
+      <td><a href="https://github.com/twbs">Twitter</a></td>
+      <td>Sass, JavaScript</td>
+      <td>20.1kb</td>
+      <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+      <td><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap v4 GitHub</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://goratchet.com/"><s>Ratchet</s></a></td>
+      <td colspan="5"><a href="https://github.com/twbs/ratchet/issues/792"><s>This project is dying.</s></a></td>
+    </tr>
+  </tbody>
+</table>
+<pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Author&lt;/th&gt;&lt;th&gt;Language&lt;/th&gt;&lt;th&gt;Size&lt;/th&gt;&lt;th&gt;Features&lt;/th&gt;&lt;th&gt;GitHub&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;...&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;...&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;...&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<p>If you are viewing the above case in mobile device, then you'll find that the table renders out of the viewable area. We usually use the <code>.scroll-view</code> wrapper to make your table scrollable.</p>
+<div class="scroll-view">
+  <table class="table">
+    <thead>
+      <tr><th>Name</th><th>Author</th><th>Language</th><th>Size</th><th>Features</th><th>GitHub</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="http://getmobicss.com/">Mobi.css</a></td>
+        <td><a href="https://github.com/xcatliu">xcatliu</a></td>
+        <td>Sass</td>
+        <td>3.6kb</td>
+        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+        <td><a href="https://github.com/xcatliu/mobi.css">Mobi.css GitHub</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://getskeleton.com/">Skeleton</a></td>
+        <td><a href="https://github.com/dhg">Dave Gamache</a></td>
+        <td>Css</td>
+        <td>3.2kb</td>
+        <td><i class="fa fa-star"></i></td>
+        <td><a href="https://github.com/dhg/Skeleton/">Skeleton GitHub</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://purecss.io/">Pure.css</a></td>
+        <td><a href="https://github.com/yahoo">Yahoo Inc.</a></td>
+        <td>Css</td>
+        <td>4.6kb</td>
+        <td><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+        <td><a href="https://github.com/yahoo/pure/">Pure.css GitHub</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://v4-alpha.getbootstrap.com/">Bootstrap v4</a></td>
+        <td><a href="https://github.com/twbs">Twitter</a></td>
+        <td>Sass, JavaScript</td>
+        <td>20.1kb</td>
+        <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+        <td><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap v4 GitHub</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://goratchet.com/"><s>Ratchet</s></a></td>
+        <td colspan="5"><a href="https://github.com/twbs/ratchet/issues/792"><s>This project is dying.</s></a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<pre><code class="language-html">&lt;div class=&quot;scroll-view&quot;&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Author&lt;/th&gt;&lt;th&gt;Language&lt;/th&gt;&lt;th&gt;Size&lt;/th&gt;&lt;th&gt;Features&lt;/th&gt;&lt;th&gt;GitHub&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;...&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;...&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;...&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Caption in table:</p>
+<table class="table">
+  <caption>Table Caption</caption>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.1</td>
+      <td>1.2</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td>2.2</td>
+      <td>2.3</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Footer 1</td>
+      <td>Footer 2</td>
+      <td>Footer 3</td>
+    </tr>
+  </tfoot>
+</table>
+
       </article>
-    
-        </div>
-      </div>
+    </div>
+  
     </body>
   </html>

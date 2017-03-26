@@ -1,22 +1,16 @@
 const head = require('./_partial/_head');
 const header = require('./_partial/_header');
 const sidebar = require('./_partial/_sidebar');
-const mainContent = require('./_partial/_content');
+const article = require('./_partial/_article');
 
 module.exports = ({ content, relativeToRoot, frontMatter, path }) => `
   <!doctype html>
-  <html lang="en" class="site-height-100">
+  <html lang="en">
     ${head({ relativeToRoot, frontMatter })}
-    <body class="site-height-100">
-      <div class="site-height-100 flex-vertical">
-        <div class="unit-0">
-          ${header({ relativeToRoot, frontMatter, path })}
-        </div>
-        <div class="unit flex-left">
-          ${sidebar({ relativeToRoot, path })}
-          ${mainContent({ relativeToRoot, content, frontMatter })}
-        </div>
-      </div>
+    <body>
+      ${header({ relativeToRoot, frontMatter, path })}
+      ${sidebar({ relativeToRoot, path })}
+      ${article({ relativeToRoot, content, frontMatter })}
     </body>
   </html>
 `;

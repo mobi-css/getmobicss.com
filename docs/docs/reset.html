@@ -1,6 +1,6 @@
 
   <!doctype html>
-  <html lang="en" class="site-height-100">
+  <html lang="en">
     
   <head>
     <meta charset="utf-8">
@@ -14,49 +14,43 @@
     <link rel="stylesheet" href="../css/site.css" />
   </head>
 
-    <body class="site-height-100">
-      <div class="site-height-100 flex-vertical">
-        <div class="unit-0">
-          
-  <header>
-    <div class="flex-left top-gap">
-      <div class="site-side unit-0 container flex-left hide-on-mobile">
-        <a href="/" class="site-text-plain  flex-middle">
-          <img src="../img/mobi-logo.png" height="24" />
-          <div>&nbsp;&nbsp;Mobi.css</div>
-        </a>
-      </div>
-      <div class="unit flex-center">
-        <nav class="container">
-          <div class="flex-middle units-gap-big">
-            <label for="menu-toggle" class="site-mobile-menu-button show-on-mobile unit-0"><img src="../img/menu.png" height="24" /></label>
-            <a href="/docs" class="site-text-plain active unit-0 hide-on-mobile">Docs</a>
-            <a href="/plugins" class="site-text-plain  unit-0 hide-on-mobile">Plugins</a>
-            <a href="/themes" class="site-text-plain  unit-0 hide-on-mobile">Themes</a>
-            
+    <body>
+      
+  <header class="site-header flex-center">
+    <div class="site-aside container hide-on-mobile">
+      <a href="/" class="site-text-plain title flex-middle">
+        <img src="../img/mobi-logo.png" height="24" />
+        <div>&nbsp;&nbsp;Mobi.css</div>
+      </a>
+    </div>
+    <div class="container">
+      <div class="flex-middle units-gap-big">
+        <a href="/docs" class="site-text-plain active unit-0 hide-on-mobile">Docs</a>
+        <a href="/plugins" class="site-text-plain  unit-0 hide-on-mobile">Plugins</a>
+        <a href="/themes" class="site-text-plain  unit-0 hide-on-mobile">Themes</a>
+        
     <div class="unit"></div>
     <a class="site-text-plain flex-middle unit-0" href="/docs/top-gap.html">
       <div>Top Gap&nbsp;&nbsp;</div>
       <img src="../img/next.png" height="14" />
     </a>
   
-          </div>
-        </nav>
       </div>
     </div>
   </header>
 
-        </div>
-        <div class="unit flex-left">
-          
+      
   <aside class="show-on-mobile">
-    <input type="checkbox" id="menu-toggle" class="site-mobile-menu-toggle" />
-    <div class="site-mobile-menu-container flex-vertical">
+    <input type="checkbox" id="site-aside-toggle-checkbox" class="hide-on-mobile" />
+    <label class="site-aside-toggle-button" for="site-aside-toggle-checkbox">
+      <img src="../img/menu.png" height="24" />
+    </label>
+    <div class="site-aside-mobile-wrapper flex-vertical">
       <div class="unit-1 scroll-view">
-        <div class="site-side top-gap container">
+        <div class="site-aside top-gap container">
           <ul>
             <li>
-              <a href="/" class="site-text-plain active">Mobi.css</a>
+              <a href="/" class="site-text-plain title">Mobi.css</a>
               <ul>
                 <li><a class="site-text-plain text-small active" href="/docs">Docs</a></li>
                 <li><a class="site-text-plain text-small " href="/plugins">Plugins</a></li>
@@ -66,7 +60,7 @@
             <li class="top-gap"></li>
             
     <li>
-      <a href="/docs" class="site-text-plain active">Getting Started</a>
+      <a href="/docs" class="site-text-plain title">Getting Started</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs">Overview</a></li>
         <li><a class="site-text-plain text-small " href="../docs/get-mobi-css.html">Get Mobi.css</a></li>
@@ -75,7 +69,7 @@
       </ul>
     </li>
     <li class="top-gap">
-      <a href="/docs/reset.html" class="site-text-plain active">Built-in Plugins</a>
+      <a href="/docs/reset.html" class="site-text-plain title">Built-in Plugins</a>
       <ul>
         <li><a class="site-text-plain text-small active" href="../docs/reset.html">Reset</a></li>
         <li><a class="site-text-plain text-small " href="../docs/top-gap.html">Top Gap</a></li>
@@ -96,12 +90,12 @@
     </div>
   </aside>
   
-    <aside class="site-side hide-on-mobile scroll-view">
-      <div class="top-gap container">
+    <div class="site-aside-desktop-wrapper flex-center hide-on-mobile">
+      <aside class="site-aside container top-gap scroll-view">
         <ul>
           
     <li>
-      <a href="/docs" class="site-text-plain active">Getting Started</a>
+      <a href="/docs" class="site-text-plain title">Getting Started</a>
       <ul>
         <li><a class="site-text-plain text-small " href="../docs">Overview</a></li>
         <li><a class="site-text-plain text-small " href="../docs/get-mobi-css.html">Get Mobi.css</a></li>
@@ -110,7 +104,7 @@
       </ul>
     </li>
     <li class="top-gap">
-      <a href="/docs/reset.html" class="site-text-plain active">Built-in Plugins</a>
+      <a href="/docs/reset.html" class="site-text-plain title">Built-in Plugins</a>
       <ul>
         <li><a class="site-text-plain text-small active" href="../docs/reset.html">Reset</a></li>
         <li><a class="site-text-plain text-small " href="../docs/top-gap.html">Top Gap</a></li>
@@ -126,16 +120,151 @@
     </li>
   
         </ul>
-      </div>
-    </aside>
+      </aside>
+      <div class="container"></div>
+    </div>
   
 
-          
-      <article class="unit flex-vertical">
-        <iframe src="https://mobi-css.github.io/mobi-plugin-reset/" class="site-iframe unit"></iframe>
+      
+    <div class="site-article flex-center">
+      <div class="site-aside container hide-on-mobile"></div>
+      <article class="container">
+        <h1 id="reset">Reset</h1>
+<p>Here are the example of common elements.</p>
+<h2 id="headings">Headings</h2>
+<h1 id="h1-mobicss">h1. Mobi.css</h1>
+<h2 id="h2-mobicss">h2. Mobi.css</h2>
+<h3 id="h3-mobicss">h3. Mobi.css</h3>
+<h4 id="h4-mobicss">h4. Mobi.css</h4>
+<h5 id="h5-mobicss">h5. Mobi.css</h5>
+<h6 id="h6-mobicss">h6. Mobi.css</h6>
+<h2 id="text-content">Text content</h2>
+<ul>
+<li>Unordered List</li>
+<li>Unordered List</li>
+<li>Nesting
+<ul>
+<li>Sub Unordered List</li>
+<li>Sub Unordered List</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>Ordered List</li>
+<li>Ordered List</li>
+<li>Nesting
+<ol>
+<li>Sub Ordered List</li>
+<li>Sub Ordered List</li>
+</ol>
+</li>
+</ol>
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+<pre><code class="language-html">&lt;dl&gt;
+  &lt;dt&gt;Coffee&lt;/dt&gt;
+  &lt;dd&gt;Black hot drink&lt;/dd&gt;
+  &lt;dt&gt;Milk&lt;/dt&gt;
+  &lt;dd&gt;White cold drink&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+<pre><code>// Use &lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt; to create code blocks.
+document.write('Hello World');</code></pre>
+<blockquote>
+  <p>Use &lt;blockquote&gt; to create block quotation.</p>
+</blockquote>
+<pre><code class="language-html">&lt;blockquote&gt;
+  &lt;p&gt;Use &amp;lt;blockquote&amp;gt; to create block quotation.&lt;/p&gt;
+&lt;/blockquote&gt;
+</code></pre>
+<p>Use <code>&lt;hr&gt;</code> to create horizontal rules:</p>
+<hr/>
+<p>Use <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> to create self-contained content:</p>
+<figure>
+  <img src="http://lorempixel.com/600/300/" alt="Random Image"/>
+  <figcaption>Figure caption: Random Image</figcaption>
+</figure>
+<pre><code class="language-html">&lt;figure&gt;
+  &lt;img src=&quot;/assets/img/mobi-logo-512.png&quot; alt=&quot;Mobi.css Logo&quot;/&gt;
+  &lt;figcaption&gt;Figure caption: Mobi.css Logo&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+<h2 id="inline-text-semantics">Inline text semantics</h2>
+<p>Use <code>&lt;a&gt;</code> to create <a href="#">links</a>.</p>
+<p>Use <code>&lt;strong&gt;</code> to create <strong>strong importance text</strong>.<br>
+Use <code>&lt;b&gt;</code> to create <b>bold text</b>.</p>
+<p>Use <code>&lt;em&gt;</code> to create <em>emphasized text</em>.<br>
+Use <code>&lt;i&gt;</code> to create <i>italic text</i>.</p>
+<p>Use <code>&lt;del&gt;</code> to create <del>text that has been deleted from a document</del>.<br>
+Use <code>&lt;s&gt;</code> to create <s>text with a strikethrough</s>.</p>
+<p>Use <code>&lt;ins&gt;</code> to create <ins>text that has been added to a document</ins>.<br>
+Use <code>&lt;u&gt;</code> to create <u>text with an underline</u>.</p>
+<p>Use <code>&lt;small&gt;</code> to create <small>small text</small>.<br>
+Use <code>&lt;sub&gt;</code> to create text that <sub>lower</sub> and <sub>smaller</sub> than the main text.<br>
+Use <code>&lt;sup&gt;</code> to create text that <sup>higher</sup> and <sup>smaller</sup> than the main text.</p>
+<p>Use <code>&lt;code&gt;</code> to create fragments of computer code: <code>alert('Hello World');</code>.<br>
+Use <code>&lt;kbd&gt;</code> to create the defining instance of a term: <kbd>Ctrl</kbd> + <kbd>D</kbd>.<br>
+Use <code>&lt;samp&gt;</code> to create sample output from a computer: <samp>Build passed!</samp>.</p>
+<p>Use <code>&lt;br/&gt;</code> to create line<br/>breaks.</p>
+<p>Use <code>&lt;span&gt;</code> to create inline container: I <span style="color:red;">love</span> Mobi.css.</p>
+<p>Use <code>&lt;abbr&gt;</code> to create <abbr title="The HTML <abbr> element (or HTML Abbreviation Element) represents an abbreviation and optionally provides a full description for it.">abbreviation elements</abbr>.</p>
+<pre><code class="language-html">&lt;abbr title=&quot;The HTML &lt;abbr&gt; element (or HTML Abbreviation Element) represents an abbreviation and optionally provides a full description for it.&quot;&gt;abbreviation elements&lt;/abbr&gt;
+</code></pre>
+<p>Use <code>&lt;cite&gt;</code> to create citation elements: <cite><a href="http://getmobicss.com">Mobi.css</a></cite>.</p>
+<pre><code class="language-html">&lt;cite&gt;&lt;a href=&quot;http://getmobicss.com&quot;&gt;Mobi.css&lt;/a&gt;&lt;/cite&gt;
+</code></pre>
+<p>Use <code>&lt;data&gt;</code> to link a given content with a machine-readable translation: <data value="100000">Beijing</data>.</p>
+<pre><code class="language-html">&lt;data value=&quot;100000&quot;&gt;Beijing&lt;/data&gt;
+</code></pre>
+<p>Use <code>&lt;time&gt;</code> to create time: <time datetime="2016-09-30T00:00">Sep 30</time>.</p>
+<pre><code class="language-html">&lt;time datetime=&quot;2016-09-30T00:00&quot;&gt;Sep 30&lt;/time&gt;
+</code></pre>
+<p>Use <code>&lt;q&gt;</code> to create inline quotations: <q>I love Mobi.css</q>, xcatliu said.</p>
+<pre><code class="language-html">&lt;q&gt;I love Mobi.css&lt;/q&gt;, xcatliu said.
+</code></pre>
+<p>Use <code>&lt;ruby&gt;</code>, <code>&lt;rp&gt;</code>, <code>&lt;rt&gt;</code> to create ruby annotations:</p>
+<ruby>
+  我 <rp>(</rp><rt>lǎn</rt><rp>)</rp>
+  去 <rp>(</rp><rt>de</rt><rp>)</rp>
+  洗 <rp>(</rp><rt>lǐ</rt><rp>)</rp>
+  澡 <rp>(</rp><rt>nǐ</rt><rp>)</rp>
+  了 <rp>(</rp><rt>le</rt><rp>)</rp>
+</ruby>
+<pre><code class="language-html">&lt;ruby&gt;
+  我 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;lǎn&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+  去 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;de&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+  洗 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;lǐ&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+  澡 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;nǐ&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+  了 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;le&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+&lt;/ruby&gt;
+</code></pre>
+<p>Use <code>&lt;bdi&gt;</code> to create text that be formatted in a <bdi>DIFFERENT DIRECTION</bdi> from other text outside it.<br>
+Use <code>&lt;bdo&gt;</code> to <bdo dir="rtl">OVERRIDE</bdo> the current directionality of text.</p>
+<pre><code class="language-html">text that be formatted in a &lt;bdi&gt;DIFFERENT DIRECTION&lt;/bdi&gt; from other text outside it.
+&lt;bdo dir=&quot;rtl&quot;&gt;OVERRIDE&lt;/bdo&gt; the current directionality of text.
+</code></pre>
+<p><code>&lt;bdi&gt;</code> is not working in iOS and Chrome. Don't use it in your project, use <code>&lt;bdo&gt;</code> instead.</p>
+<p>Use <code>&lt;dfn&gt;</code> to create a defining instance of a term:<br>
+<dfn id="dfn-mobicss">Mobi.css</dfn> is a lightweight, flexible css framework that focus on mobile.<br>
+What is Mobi.css? You can find the definition <a href="#dfn-mobicss">here</a>.</p>
+<pre><code class="language-html">&lt;dfn id=&quot;dfn-mobicss&quot;&gt;Mobi.css&lt;/dfn&gt; is a lightweight, flexible css framework with focus on mobile.
+What is Mobi.css? You can find the definition &lt;a href=&quot;#dfn-mobicss&quot;&gt;here&lt;/a&gt;.
+</code></pre>
+<p>Use <code>&lt;var&gt;</code> to create a variable in a mathematical expression or a programming context:</p>
+<p>A simple equation: <var>x</var> = <var>y</var> + 2</p>
+<pre><code class="language-html">A simple equation: &lt;var&gt;x&lt;/var&gt; = &lt;var&gt;y&lt;/var&gt; + 2
+</code></pre>
+<p>Use <code>&lt;wbr/&gt;</code> to create a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location:</p>
+<p>http://this<wbr/>.is<wbr/>.a<wbr/>.really<wbr/>.long<wbr/>.example<wbr/>.com/With<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages</p>
+<pre><code class="language-html">http://this&lt;wbr/&gt;.is&lt;wbr/&gt;.a&lt;wbr/&gt;.really&lt;wbr/&gt;.long&lt;wbr/&gt;.example&lt;wbr/&gt;.com/With&lt;wbr/&gt;/deeper&lt;wbr/&gt;/level&lt;wbr/&gt;/pages&lt;wbr/&gt;/deeper&lt;wbr/&gt;/level&lt;wbr/&gt;/pages&lt;wbr/&gt;/deeper&lt;wbr/&gt;/level&lt;wbr/&gt;/pages&lt;wbr/&gt;/deeper&lt;wbr/&gt;/level&lt;wbr/&gt;/pages&lt;wbr/&gt;/deeper&lt;wbr/&gt;/level&lt;wbr/&gt;/pages
+</code></pre>
+
       </article>
-    
-        </div>
-      </div>
+    </div>
+  
     </body>
   </html>

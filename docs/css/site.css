@@ -1,73 +1,53 @@
-/* layout */
-.site-height-100 {
-  height: 100%;
+/* header */
+.site-header {
+  position: fixed;
+  width: 100%;
+  background: white;
+  padding-top: 1.5rem;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
-.site-side {
+
+/* desktop aside */
+.site-aside-desktop-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding-top: 5.4rem;
+  top: 0;
+  left: 0;
+}
+
+.site-aside {
   width: 20rem;
   max-width: 20rem;
   min-width: 20rem;
 }
-
-.site-side ul {
+.site-aside ul {
   list-style: none;
   padding-left: 1.5rem;
 }
 
-.site-content {
-  width: calc(100vw - 20rem);
-}
-
-.site-warning {
-  background-color: #db5757;
-  color: white;
-  margin-top: 0;
-  padding: 1rem 1.5rem;
-}
-
-.site-warning a {
-  color: white;
-  text-decoration: underline;
+.site-article {
+  margin-top: 5.4rem;
 }
 
 
-/* utils */
-.site-text-plain {
-  font-weight: normal;
-}
-
-a.site-text-plain {
-  color: #777;
-  text-decoration: none;
-}
-
-a.site-text-plain:hover,
-a.site-text-plain.active {
-  color: #333;
-}
-
-.site-clear-bottom-padding {
-  padding-bottom: 0;
-}
-
-.site-scroll-view-y {
-  overflow-y: auto;
-  overflow-x: inherit;
-}
-
-
-/* mobilde menu */
-.site-mobile-menu-toggle {
-  display: none;
-}
-
-.site-mobile-menu-button {
-  z-index: 2;
+/* mobilde aside */
+.site-aside-toggle-button {
+  display: inline-block;
+  position: fixed;
   cursor: pointer;
+  top: 0;
+  left: 0;
+  margin: 1.5rem;
   line-height: 1px;
+  z-index: 3;
 }
 
-.site-mobile-menu-container {
+.site-aside-mobile-wrapper {
   display: block;
   background-color: #f2f2f2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -78,25 +58,48 @@ a.site-text-plain.active {
   padding-top: 5.4rem;
   margin-left: -100%;
   transition: margin-left 500ms;
-  z-index: 1;
+  z-index: 2;
 }
-
-.site-mobile-menu-toggle:checked ~ .site-mobile-menu-container {
+#site-aside-toggle-checkbox:checked ~ .site-aside-mobile-wrapper {
   margin-left: 0;
 }
 
 
-/* iframe */
-.site-iframe {
-  border: 0;
-  width: 100%;
+/* text-plain */
+.site-text-plain {
+  font-weight: normal;
+}
+a.site-text-plain {
+  color: #777;
+  text-decoration: none;
+}
+a.site-text-plain:hover,
+a.site-text-plain.title,
+a.site-text-plain.active {
+  color: #333;
+}
+a.site-text-plain.active {
+  font-weight: 600;
 }
 
 
-.site-sponsored-link {
+/* sponsor */
+.site-sponsor-link {
   opacity: 0.7;
 }
-
-.site-sponsored-link:hover {
+.site-sponsor-link:hover {
   opacity: 1;
+}
+
+
+/* warning */
+.site-warning {
+  background-color: #db5757;
+  color: white;
+  margin-top: 0;
+  padding: 1.5rem;
+}
+.site-warning a {
+  color: white;
+  text-decoration: underline;
 }

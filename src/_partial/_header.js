@@ -1,4 +1,4 @@
-const getActiveClass = require('./_get-active-class');
+const getActiveClass = require('./_utils/_get-active-class');
 
 module.exports = ({ relativeToRoot, frontMatter, path }) => `
   <header class="site-header flex-center">

@@ -53,12 +53,16 @@ next:
   </div>
 </div>
 
-<div class="flex-center text-center">
-  <div class="container-wider">
-    <h2 class="site-text-plain text-small"><span class="text-muted">Proudly Sponsored By</span></h2>
-    <a href="http://chuangzaoshi.com/" class="site-sponsor-link" target="_blank">
-      <img src="img/chuangzaoshi.svg" class="top-gap" height="60" />
-    </a>
-    <p class="text-muted text-small top-gap-big">Copyright &copy; 2017 <a href="https://github.com/xcatliu" class="text-muted">xcatliu</a><br/>Released under the <a href="https://opensource.org/licenses/MIT" class="text-muted">MIT License</a></p>
-  </div>
+<div class="container-fluid text-center">
+  <h2 class="site-text-plain text-small"><span class="text-muted">Proudly Sponsored By</span></h2>
+  <a href="http://chuangzaoshi.com/" class="site-sponsor-link" target="_blank">
+    <img src="img/chuangzaoshi.svg" class="top-gap" height="60" />
+  </a>
 </div>
+
+<footer class="container-fluid text-center">
+  <p class="text-muted text-small">
+    Copyright &copy; 2017 <a href="https://github.com/xcatliu" class="text-muted">xcatliu</a><br/>
+    Released under the <a href="https://opensource.org/licenses/MIT" class="text-muted">MIT License</a>
+  </p>
+</footer>

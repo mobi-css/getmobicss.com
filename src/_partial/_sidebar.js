@@ -1,4 +1,4 @@
-const getActiveClass = require('./_get-active-class');
+const getActiveClass = require('./_utils/_get-active-class');
 
 module.exports = ({ relativeToRoot, path }) => `
   <aside class="show-on-mobile">

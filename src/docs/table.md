@@ -1,9 +1,3 @@
----
-next:
-  text: Text
-  url: /docs/text.html
----
-
 # Table
 
 Add a `.table` class to `<table>` element:

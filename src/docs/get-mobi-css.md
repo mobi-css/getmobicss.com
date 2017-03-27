@@ -1,9 +1,3 @@
----
-next:
-  text: Boilerplate
-  url: /docs/boilerplate.html
----
-
 # Get Mobi.css
 
 There are a few easy ways to quickly get Mobi.css.

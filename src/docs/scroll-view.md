@@ -1,9 +1,3 @@
----
-next:
-  text: Table
-  url: /docs/table.html
----
-
 # Scroll View
 
 Use `.scroll-view` to make a block element scrollable:

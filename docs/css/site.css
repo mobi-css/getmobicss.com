@@ -19,20 +19,6 @@
   left: 0;
 }
 
-.site-aside {
-  width: 20rem;
-  max-width: 20rem;
-  min-width: 20rem;
-}
-.site-aside ul {
-  list-style: none;
-  padding-left: 1.5rem;
-}
-
-.site-article-wrapper {
-  margin-top: 5.4rem;
-}
-
 
 /* mobilde aside */
 .site-aside-toggle-button {
@@ -62,6 +48,12 @@
 }
 
 
+/* article */
+.site-article-wrapper {
+  margin-top: 5.4rem;
+}
+
+
 /* text-plain */
 .site-text-plain {
   font-weight: normal;
@@ -71,11 +63,11 @@ a.site-text-plain {
   text-decoration: none;
 }
 a.site-text-plain:hover,
-a.site-text-plain.title,
-a.site-text-plain.active {
+a.site-text-plain.site-side-title,
+a.site-text-plain.current {
   color: #333;
 }
-a.site-text-plain.active {
+a.site-text-plain.current {
   font-weight: 600;
 }
 
@@ -119,11 +111,39 @@ a.site-text-plain.active {
   z-index: 30;
 }
 
+
+/* card */
+.site-card {
+}
+
+
+/* utils */
 .site-height-0 {
   height: 0;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
+}
+.site-height-100 {
+  height: 100%;
+}
+
+.site-padding-bottom-0 {
+  padding-bottom: 0;
+}
+
+.site-menu-list {
+  padding-bottom: 1.5rem;
+}
+.site-menu-list,
+.site-menu-list ul {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+.site-aside-mobile-wrapper .site-menu-list {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding-right: 1.5rem;
 }
 

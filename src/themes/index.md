@@ -1,9 +1,9 @@
 ---
-next:
-  text: GitHub
-  url: https://github.com/mobi-css/mobi.css
+hide_sidebar: true
 ---
 
 # Themes
 
-Themes will coming soon...
+This page lists all the possible themes, including official themes and community-written themes.
+
+Coming soon...

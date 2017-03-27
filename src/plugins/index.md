@@ -1,9 +1,7 @@
 ---
-next:
-  text: Themes
-  url: /themes
+hide_sidebar: true
 ---
 
 # Plugins
 
-Plugins will coming soon...
+This page lists all the possible plugins, including official plugins and community-written plugins.

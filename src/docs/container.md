@@ -1,9 +1,3 @@
----
-next:
-  text: Button
-  url: /docs/button.html
----
-
 # Container
 
 There are 3 kinds of containers, `.container`, `.container-wider` and `.container-fluid`. We can use them to build whether a simple layout or a complex layout. Before we start, there are several points need to explain:

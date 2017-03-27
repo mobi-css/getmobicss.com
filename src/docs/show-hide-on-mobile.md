@@ -1,9 +1,3 @@
----
-next:
-  text: Flexbox
-  url: /docs/flexbox.html
----
-
 # Show Hide on Mobile
 
 Element with `.show-on-mobile` will only show on mobile:

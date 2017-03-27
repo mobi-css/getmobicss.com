@@ -1,9 +1,3 @@
----
-next:
-  text: Form
-  url: /docs/form.html
----
-
 # Button
 
 ## Input

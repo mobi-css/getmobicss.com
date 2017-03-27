@@ -1,9 +1,3 @@
----
-next:
-  text: Show Hide on Mobile
-  url: /docs/show-hide-on-mobile.html
----
-
 # Top Gap
 
 Mobi.css also provides three classes, `.top-gap-big`, `.top-gap` and `.top-gap-0` to easily override the top margin.

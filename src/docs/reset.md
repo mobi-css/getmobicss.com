@@ -1,9 +1,3 @@
----
-next:
-  text: Top Gap
-  url: /docs/top-gap.html
----
-
 # Reset
 
 Here are the example of common elements.

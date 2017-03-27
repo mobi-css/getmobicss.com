@@ -1,9 +1,3 @@
----
-next:
-  text: Container
-  url: /docs/container.html
----
-
 # Flexbox
 
 ## Container and Units

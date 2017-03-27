@@ -1,9 +1,3 @@
----
-next:
-  text: Plugins
-  url: /plugins
----
-
 # Text
 
 <p class="text-left">.text-left</p>

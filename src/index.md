@@ -1,7 +1,5 @@
 ---
-next:
-  text: Overview
-  url: /docs
+hide_sidebar: true
 ---
 
 <p class="site-warning text-center">
@@ -29,24 +27,24 @@ next:
       <h3 class="site-text-plain">Mobile-First</h3>
       <p>
         Less than 3kb after gzipped<br/>
-        Designed for mobile<br/>
         Use flexbox for layout<br/>
+        Designed for mobile
       </p>
     </div>
     <div class="unit unit-1-on-mobile">
       <h3 class="site-text-plain">Pluginable</h3>
       <p>
-        Provide standalone compressed version<br/>
-        A plugin is compatible with any themes<br/>
-        Combine plugins as you like
+        Provide standalone version<br/>
+        Combine plugins as you like<br/>
+        Community-written plugins
       </p>
     </div>
     <div class="unit unit-1-on-mobile">
       <h3 class="site-text-plain">Themeable</h3>
       <p>
         Easy to create a theme<br/>
-        Only a few basic variables<br/>
-        Online customize tools
+        A theme is compatible with any plugins<br/>
+        Community-written themes
       </p>
     </div>
   </div>

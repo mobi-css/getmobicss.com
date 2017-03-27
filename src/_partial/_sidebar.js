@@ -1,6 +1,6 @@
-const getActiveClass = require('./_utils/_get-active-class');
+const isCurrent = require('./_utils/_is-current');
 
-module.exports = ({ relativeToRoot, path }) => `
+module.exports = ({ relativeToRoot, frontMatter, path, config }) => `
   <aside class="show-on-mobile">
     <input type="checkbox" id="site-aside-toggle-checkbox" class="hide-on-mobile" />
     <label class="site-aside-toggle-button" for="site-aside-toggle-checkbox">
@@ -8,64 +8,61 @@ module.exports = ({ relativeToRoot, path }) => `
     </label>
     <div class="site-aside-mobile-wrapper flex-vertical">
       <div class="unit-1 scroll-view">
-        <div class="site-aside top-gap container">
-          <ul>
-            <li>
-              <a href="/" class="site-text-plain title">Mobi.css</a>
-              <ul>
-                <li><a class="site-text-plain text-small ${getActiveClass({ path, start: 'docs' })}" href="/docs">Docs</a></li>
-                <li><a class="site-text-plain text-small ${getActiveClass({ path, start: 'plugins' })}" href="/plugins">Plugins</a></li>
-                <li><a class="site-text-plain text-small ${getActiveClass({ path, start: 'themes' })}" href="/themes">Themes</a></li>
-              </ul>
-            </li>
-            <li class="top-gap"></li>
-            ${getDocsMenuItems({ relativeToRoot, path })}
-          </ul>
-        </div>
+        <ul class="site-menu-list">
+          <li>
+            <a href="/" class="site-text-plain site-side-title">Mobi.css</a>
+            <ul>
+              ${renderListItems({ path, items: config.nav })}
+            </ul>
+          </li>
+          ${renderDocsMenuItems({ relativeToRoot, path, docsMenu: config.docs_menu })}
+        </ul>
       </div>
     </div>
   </aside>
-  ${relativeToRoot === '.' ? '' : desktopAside({ relativeToRoot, path })}
+  ${frontMatter.hide_sidebar ? '' : desktopAside({ relativeToRoot, path, config })}
 `;
 
-function desktopAside({ relativeToRoot, path }) {
+function desktopAside({ relativeToRoot, path, config }) {
   return `
     <div class="site-aside-desktop-wrapper flex-center hide-on-mobile">
-      <aside class="site-aside container top-gap scroll-view">
-        <ul>
-          ${getDocsMenuItems({ relativeToRoot, path })}
-        </ul>
-      </aside>
-      <div class="site-height-0 container"></div>
+      <div class="container-wider site-padding-bottom-0">
+        <div class="site-height-100 flex-left units-gap-big">
+          <aside class="top-gap unit-1-4 flex-vertical scroll-view">
+            <ul class="site-menu-list top-gap-0">
+              ${renderDocsMenuItems({ relativeToRoot, path, docsMenu: config.docs_menu })}
+            </ul>
+          </aside>
+        </div>
+      </div>
     </div>
   `;
 }
 
-function getDocsMenuItems({ relativeToRoot, path }) {
-  return `
-    <li>
-      <a href="/docs" class="site-text-plain title">Getting Started</a>
-      <ul>
-        <li><a class="site-text-plain text-small ${getActiveClass({ path, start: 'docs/index' })}" href="${relativeToRoot}/docs">Overview</a></li>
-        <li><a class="site-text-plain text-small ${getActiveClass({ path, start: 'docs/get-mobi-css' })}" href="${relativeToRoot}/docs/get-mobi-css.html">Get Mobi.css</a></li>
-        <li><a class="site-text-plain text-small ${getActiveClass({ path, start: 'docs/boilerplate' })}" href="${relativeToRoot}/docs/boilerplate.html">Boilerplate</a></li>
-        <li><a class="site-text-plain text-small ${getActiveClass({ path, start: 'docs/browser-support' })}" href="${relativeToRoot}/docs/browser-support.html">Browser Support</a></li>
-      </ul>
-    </li>
-    <li class="top-gap">
-      <a href="/docs/reset.html" class="site-text-plain title">Built-in Plugins</a>
-      <ul>
-        <li><a class="site-text-plain text-small ${getActiveClass({ path, start: 'docs/reset' })}" href="${relativeToRoot}/docs/reset.html">Reset</a></li>
-        <li><a class="site-text-plain text-small ${getActiveClass({ path, start: 'docs/top-gap' })}" href="${relativeToRoot}/docs/top-gap.html">Top Gap</a></li>
-        <li><a class="site-text-plain text-small ${getActiveClass({ path, start: 'docs/show-hide-on-mobile' })}" href="${relativeToRoot}/docs/show-hide-on-mobile.html">Show Hide on Mobile</a></li>
-        <li><a class="site-text-plain text-small ${getActiveClass({ path, start: 'docs/flexbox' })}" href="${relativeToRoot}/docs/flexbox.html">Flexbox</a></li>
-        <li><a class="site-text-plain text-small ${getActiveClass({ path, start: 'docs/container' })}" href="${relativeToRoot}/docs/container.html">Container</a></li>
-        <li><a class="site-text-plain text-small ${getActiveClass({ path, start: 'docs/button' })}" href="${relativeToRoot}/docs/button.html">Button</a></li>
-        <li><a class="site-text-plain text-small ${getActiveClass({ path, start: 'docs/form' })}" href="${relativeToRoot}/docs/form.html">Form</a></li>
-        <li><a class="site-text-plain text-small ${getActiveClass({ path, start: 'docs/scroll-view' })}" href="${relativeToRoot}/docs/scroll-view.html">Scroll View</a></li>
-        <li><a class="site-text-plain text-small ${getActiveClass({ path, start: 'docs/table' })}" href="${relativeToRoot}/docs/table.html">Table</a></li>
-        <li><a class="site-text-plain text-small ${getActiveClass({ path, start: 'docs/text' })}" href="${relativeToRoot}/docs/text.html">Text</a></li>
-      </ul>
-    </li>
-  `;
+function renderDocsMenuItems({ relativeToRoot, path, docsMenu }) {
+  return docsMenu.reduce((previous, { text, link, sub_menu }) => {
+    return previous + `
+      <li class="top-gap">
+        <a href="${link}" class="site-text-plain site-side-title">${text}</a>
+        <ul>
+          ${renderListItems({ path, items: sub_menu })}
+        </ul>
+      </li>
+    `;
+  }, '');
+}
+
+function renderListItems({ path, items }) {
+  return items.reduce((previous, { text, link, current_check_prefix }) => {
+    return previous + `
+      <li>
+        <a
+          class="site-text-plain text-small ${isCurrent({ path, current_check_prefix }) && 'current'}"
+          href="${link}"
+        >
+          ${text}
+        </a>
+      </li>
+    `;
+  }, '');
 }

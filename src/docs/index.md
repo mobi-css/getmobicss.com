@@ -1,49 +1,66 @@
----
-next:
-  text: Get Mobi.css
-  url: /docs/get-mobi-css.html
----
-
-# Overview
+# Introduction
 
 Mobi.css is a mobile-first, pluginable & themeable css framework.
 
-## Mobile-first
+It's designed for mobile, but also works awesome on desktop.
 
-The web is being accessed more and more on mobile devices. It's important to design your websites mobile friendly.
+Here is how to quickly get started with Mobi.css and a template starter page.
 
-Mobi.css is a css framework designed for mobile, and also works awesome on desktop.
+## Quick Start
 
-It's less than 3kb after gzipped, however, it's much more powerful than you think.
+Copy and paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load Mobi.css:
 
-First it provides a simple and flexble layout system based on flexbox. It gives Mobi.css the **most magic ability** to achieve any layout mode.
+```html
+<link rel="stylesheet" href="https://unpkg.com/mobi.css/dist/mobi.min.css" />
+```
 
-Secondly Mobi.css focus on the details and provides the best user experience, especially for content-rich website.
+This will include the basic classes, actually it's a collections of Mobi.css plugins, you can find the usage in each page:
 
-What makes Mobi.css great is the plugin and theme system.
+- Reset
+- Top Gap
+- Show Hide on Mobile
+- Flexbox
+- Container
+- Button
+- Form
+- Scroll View
+- Table
+- Text
 
-## Pluginable
+To load other plugins, you can simply insert the standalone version of the plugin, take [mobi-plugin-color](https://github.com/mobi-css/mobi-plugin-color) as an example:
 
-Plugin system makes css scalable.
+```html
+<link rel="stylesheet" href="https://unpkg.com/mobi-plugin-color/dist/mobi-plugin-color.min.css" />
+```
 
-The default bundled Mobi.css only contains basic plugin (aka reset, container, flexbox, e.g.). With SASS, you can `@import` any plugins as you like.
+You can find the usage in the [mobi-plugin-color's docs](https://mobi-css.github.io/mobi-plugin-color/).
 
-Don't want to use SASS? No problem!
+The list of all the available plugins can be found in the [plugins page](../plugins).
 
-Actually each plugin provides a standalone version, which means you can simply add `<link rel="stylesheet" href="path/to/plugin-a.css"/>` to include the plugin.
+## Starter Template
 
-That's say, a plugin is a standalone css library. **You can even use it without Mobi.css**.
+Here is a Mobi.css template page that conforms to the modern HTML5 specification:
 
-## Themeable
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-It's easy to create your own theme. There are only a few basic variables need to be customize -- most of variables is caculated by a few basic variables.
+    <!-- Title of the page -->
+    <title>Mobi.css</title>
 
-A theme should be compatible with any plugins.
-
-Like plugins, the themes also provide standalone versions.
-
-Unfortunately, you cannot include the standalone plugin with the standalone theme -- the reason is that the standalone plugin is built with mobi-theme-base.
-
-In this case, you need to build the plugin yourself.
-
-> In Mobi.css v3.0.0, we will use css-variables instead of SASS variables. Then it's possible to include standalone plugin with standalone theme.
+    <!-- Mobi.css -->
+    <link rel="stylesheet" href="https://unpkg.com/mobi.css/dist/mobi.min.css">
+    <!-- Add plugins as you like -->
+    <link rel="stylesheet" href="https://unpkg.com/mobi-plugin-color/dist/mobi-plugin-color.min.css">
+  </head>
+  <body>
+    <!-- Your content here -->
+    <h1>Hello World</h1>
+  </body>
+</html>
+```

@@ -1,9 +1,3 @@
----
-next:
-  text: Scroll View
-  url: /docs/scroll-view.html
----
-
 # Form
 
 Mobi.css believes that on mobile devices, **each row should have only one input**.

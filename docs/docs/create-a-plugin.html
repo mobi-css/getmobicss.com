@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,
       maximum-scale=1.0, user-scalable=no"/>
 
-    <title>Container | Mobi.css</title>
+    <title>Create a Plugin | Mobi.css</title>
 
     <link rel="stylesheet" href="../css/mobi.css/mobi.min.css" />
     <link rel="stylesheet" href="../css/site.css" />
@@ -58,8 +58,8 @@
     
             <div class="unit"></div>
             
-        <a class="site-text-plain flex-middle unit-0" href="/docs/button.html">
-          <div>Button&nbsp;&nbsp;</div>
+        <a class="site-text-plain flex-middle unit-0" href="/docs/create-a-theme.html">
+          <div>Create a Theme&nbsp;&nbsp;</div>
           <img src="../img/next.png" height="14" />
         </a>
       
@@ -197,7 +197,7 @@
     
       <li>
         <a
-          class="site-text-plain text-small current"
+          class="site-text-plain text-small false"
           href="/docs/container.html"
         >
           Container
@@ -276,7 +276,7 @@
     
       <li>
         <a
-          class="site-text-plain text-small false"
+          class="site-text-plain text-small current"
           href="/docs/create-a-plugin.html"
         >
           Create a Plugin
@@ -382,7 +382,7 @@
     
       <li>
         <a
-          class="site-text-plain text-small current"
+          class="site-text-plain text-small false"
           href="/docs/container.html"
         >
           Container
@@ -461,7 +461,7 @@
     
       <li>
         <a
-          class="site-text-plain text-small false"
+          class="site-text-plain text-small current"
           href="/docs/create-a-plugin.html"
         >
           Create a Plugin
@@ -493,134 +493,7 @@
         <div class="flex-left units-gap-big">
           <div class="site-height-0 site-aside hide-on-mobile unit-1-4"></div>
           <article class="site-article unit-3-4 unit-1-on-mobile">
-            <h1 id="container">Container</h1>
-<p>There are 3 kinds of containers, <code>.container</code>, <code>.container-wider</code> and <code>.container-fluid</code>. We can use them to build whether a simple layout or a complex layout. Before we start, there are several points need to explain:</p>
-<ol>
-<li>A container doesn't have a center alignment, we need to use <code>.flex-center</code> as a wrapper. Checkout <a href="https://mobi-css.github.io/mobi-plugin-flexbox">flexbox</a> for more details</li>
-<li>We should better use <a href="https://github.com/mobi-css/mobi-plugin-flexbox">flexbox</a> and <a href="https://github.com/mobi-css/mobi-plugin-show-hide-on-mobile">show-hide-on-mobile</a> together with container</li>
-</ol>
-<p>Here are the most common layout mode:</p>
-<ul>
-<li><a href="#simple-container">Simple Container</a> (<a href="container">Live demo</a>)</li>
-<li><a href="#container-wider">Container Wider</a> (<a href="container-wider">Live demo</a>)
-<ul>
-<li><a href="#container-wider-with-sidebar">Container Wider with Sidebar</a> (<a href="container-wider/sidebar">Live demo</a>)
-<ul>
-<li><a href="#container-wider-with-sidebar-hide-on-mobile">Container Wider with Sidebar Hide on Mobile</a> (<a href="container-wider/sidebar/hide-on-mobile">Live demo</a>)</li>
-<li><a href="#container-wider-with-fixed-width-sidebar">Container Wider with Fixed Width Sidebar</a> (<a href="container-wider/sidebar/fixed-width">Live demo</a>)</li>
-<li><a href="#container-wider-with-left-and-right-sidebar">Container Wider with Left and Right Sidebar</a> (<a href="container-wider/sidebar/left-and-right">Live demo</a>)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#container-fluid">Container Fluid</a> (<a href="container-fluid">Live demo</a>)
-<ul>
-<li><a href="#container-fluid-with-sidebar">Container Fluid with Sidebar</a> (<a href="container-fluid/sidebar">Live demo</a>)</li>
-</ul>
-</li>
-</ul>
-<h2 id="simple-container">Simple Container</h2>
-<p>Let's start from a simple <code>container</code>:</p>
-<p><a href="container">Live demo</a></p>
-<pre><code class="language-html">&lt;div class=&quot;flex-center&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    Content
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-<h2 id="container-wider">Container Wider</h2>
-<p><code>container-wider</code> has a wider width:</p>
-<p><a href="container-wider">Live demo</a></p>
-<pre><code class="language-html">&lt;div class=&quot;flex-center&quot;&gt;
-  &lt;div class=&quot;container-wider&quot;&gt;
-    Content
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-<h3 id="container-wider-with-sidebar">Container Wider with Sidebar</h3>
-<p>It's easy to add a sidebar for <code>container-wider</code>:</p>
-<p><a href="container-wider/sidebar">Live demo</a></p>
-<pre><code class="language-html">&lt;div class=&quot;flex-center&quot;&gt;
-  &lt;div class=&quot;container-wider flex-left flex-wrap units-gap-big&quot;&gt;
-    &lt;div class=&quot;unit-1-4 unit-1-on-mobile&quot;&gt;
-      Sidebar
-    &lt;/div&gt;
-    &lt;div class=&quot;unit-3-4 unit-1-on-mobile&quot;&gt;
-      Content
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-<p>In the above case, sidebar will have 1/4 width on desktop and will fill the whole width on mobile.</p>
-<h4 id="container-wider-with-sidebar-hide-on-mobile">Container Wider with Sidebar Hide on Mobile</h4>
-<p>Sometimes we need to hide the sidebar on mobile.</p>
-<p>We can add <code>hide-on-mobile</code> to sidebar to achieve this:</p>
-<p><a href="container-wider/sidebar/hide-on-mobile">Live demo</a></p>
-<pre><code class="language-html">&lt;div class=&quot;flex-center&quot;&gt;
-  &lt;div class=&quot;container-wider flex-left units-gap-big&quot;&gt;
-    &lt;div class=&quot;unit-1-4 hide-on-mobile&quot;&gt;
-      Sidebar
-    &lt;/div&gt;
-    &lt;div class=&quot;unit-3-4 unit-1-on-mobile&quot;&gt;
-      Content
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-<h4 id="container-wider-with-fixed-width-sidebar">Container Wider with Fixed Width Sidebar</h4>
-<p>Sidebar can also has fixed width:</p>
-<p><a href="container-wider/sidebar/fixed-width">Live demo</a></p>
-<pre><code class="language-html">&lt;div class=&quot;flex-center&quot;&gt;
-  &lt;div class=&quot;container-wider flex-left flex-wrap units-gap-big&quot;&gt;
-    &lt;div class=&quot;unit-0 unit-1-on-mobile&quot; style=&quot;width:300px&quot;&gt;
-      Sidebar
-    &lt;/div&gt;
-    &lt;div class=&quot;unit&quot;&gt;
-      Content
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-<h4 id="container-wider-with-left-and-right-sidebar">Container Wider with Left and Right Sidebar</h4>
-<p>We can add two sidebars:</p>
-<p><a href="container-wider/sidebar/left-and-right">Live demo</a></p>
-<pre><code class="language-html">&lt;div class=&quot;flex-center&quot;&gt;
-  &lt;div class=&quot;container-wider flex-left units-gap-big&quot;&gt;
-    &lt;div class=&quot;unit-0 hide-on-mobile&quot; style=&quot;width:200px&quot;&gt;
-      Sidebar
-    &lt;/div&gt;
-    &lt;div class=&quot;unit&quot;&gt;
-      Content
-    &lt;/div&gt;
-    &lt;div class=&quot;unit-0 hide-on-mobile&quot; style=&quot;width:200px&quot;&gt;
-      Sidebar
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-<h2 id="container-fluid">Container Fluid</h2>
-<p><code>container-fluid</code> will fill the whole width of the browser:</p>
-<p><a href="container-fluid">Live demo</a></p>
-<pre><code class="language-html">&lt;div class=&quot;flex-center&quot;&gt;
-  &lt;div class=&quot;container-fluid&quot;&gt;
-    Content
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-<h3 id="container-fluid-with-sidebar">Container Fluid with Sidebar</h3>
-<p>Usually there is a fixed width sidebar in <code>container-fluid</code>:</p>
-<p><a href="container-fluid/sidebar">Live demo</a></p>
-<pre><code class="language-html">&lt;div class=&quot;flex-center&quot;&gt;
-  &lt;div class=&quot;container-wider flex-left flex-wrap units-gap-big&quot;&gt;
-    &lt;div class=&quot;unit-0 unit-1-on-mobile&quot; style=&quot;width:300px&quot;&gt;
-      Sidebar
-    &lt;/div&gt;
-    &lt;div class=&quot;unit&quot;&gt;
-      Content
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+            <h1 id="create-a-plugin">Create a Plugin</h1>
 
           </article>
         </div>

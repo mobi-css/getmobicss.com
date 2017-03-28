@@ -16,16 +16,16 @@ Copy and paste the stylesheet `<link>` into your `<head>` before all other style
 
 This will include the basic classes, actually it's a collections of Mobi.css plugins, you can find the usage in each page:
 
-- Reset
-- Top Gap
-- Show Hide on Mobile
-- Flexbox
-- Container
-- Button
-- Form
-- Scroll View
-- Table
-- Text
+- [Reset](reset.html)
+- [Top Gap](top-gap.html)
+- [Show Hide on Mobile](show-hide-on-mobile.html)
+- [Flexbox](flexbox.html)
+- [Container](container.html)
+- [Button](button.html)
+- [Form](form.html)
+- [Scroll View](scroll-view.html)
+- [Table](table.html)
+- [Text](text.html)
 
 To load other plugins, you can simply insert the standalone version of the plugin, take [mobi-plugin-color](https://github.com/mobi-css/mobi-plugin-color) as an example:
 

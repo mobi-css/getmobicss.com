@@ -1,11 +1,11 @@
-module.exports = ({ content, cards }) => {
+module.exports = ({ content, relativeToRoot, cards }) => {
   return `
     <div class="site-article-wrapper flex-center">
       <div class="container-wider">
         <article class="site-article">
           ${content}
-          <div class="flex-left flex-wrap units-gap-big">
-            ${renderCards(cards)}
+          <div class="flex-left flex-wrap units-gap top-gap">
+            ${renderCards({ relativeToRoot, cards })}
           </div>
         </article>
       </div>
@@ -13,14 +13,14 @@ module.exports = ({ content, cards }) => {
   `;
 };
 
-function renderCards(cards) {
-  return cards.reduce((previous, { title, description, docs, github, standalone }) => {
+function renderCards({ relativeToRoot, cards }) {
+  return cards.reduce((previous, { title, description, github }) => {
     return previous + `
-      <div class="unit-1-3 unit-1-on-mobile top-gap">
-        <div class="site-card">
-          <h4><a href="${docs}">${title}</a></h4>
-          <p>${description}</p>
-        </div>
+      <div class="unit-1-3 unit-1-on-mobile">
+        <h5>
+          <a href="${github}">${title}</a>
+        </h5>
+        <p class="text-small">${description}</p>
       </div>
     `;
   }, '');

@@ -51,6 +51,7 @@
 /* article */
 .site-article-wrapper {
   margin-top: 5.4rem;
+  overflow: hidden;
 }
 
 
@@ -69,15 +70,6 @@ a.site-text-plain.current {
 }
 a.site-text-plain.current {
   font-weight: 600;
-}
-
-
-/* sponsor */
-.site-sponsor-link {
-  opacity: 0.7;
-}
-.site-sponsor-link:hover {
-  opacity: 1;
 }
 
 
@@ -112,11 +104,6 @@ a.site-text-plain.current {
 }
 
 
-/* card */
-.site-card {
-}
-
-
 /* utils */
 .site-height-0 {
   height: 0;
@@ -131,6 +118,13 @@ a.site-text-plain.current {
 
 .site-padding-bottom-0 {
   padding-bottom: 0;
+}
+
+.site-link-faded {
+  opacity: 0.7;
+}
+.site-link-faded:hover {
+  opacity: 1;
 }
 
 .site-menu-list {

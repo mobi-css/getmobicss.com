@@ -52,7 +52,7 @@ hide_sidebar: true
 
 <div class="container-fluid text-center">
   <h2 class="site-text-plain text-small"><span class="text-muted">Proudly Sponsored By</span></h2>
-  <a href="http://chuangzaoshi.com/" class="site-sponsor-link" target="_blank">
+  <a href="http://chuangzaoshi.com/" class="site-link-faded" target="_blank">
     <img src="img/chuangzaoshi.svg" class="top-gap" height="60" />
   </a>
 </div>

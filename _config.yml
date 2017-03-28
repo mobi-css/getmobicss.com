@@ -145,56 +145,43 @@ next:
 plugins:
   - title: Reset
     description: The reset styles that improved from Normalize.css with more suitability for mobile devices.
-    docs: https://mobi-css.github.io/mobi-plugin-reset
     github: https://github.com/mobi-css/mobi-plugin-reset
-    standalone: https://unpkg.com/mobi-plugin-reset/dist/mobi-plugin-reset.min.css
   - title: Top Gap
     description: Set top gaps between block elements.
-    docs: https://mobi-css.github.io/mobi-plugin-top-gap
     github: https://github.com/mobi-css/mobi-plugin-top-gap
-    standalone: https://unpkg.com/mobi-plugin-top-gap/dist/mobi-plugin-top-gap.min.css
   - title: Show Hide on Mobile
     description: Only show element on mobile or hide element on mobile.
-    docs: https://mobi-css.github.io/mobi-plugin-show-hide-on-mobile
     github: https://github.com/mobi-css/mobi-plugin-show-hide-on-mobile
-    standalone: https://unpkg.com/mobi-plugin-show-hide-on-mobile/dist/mobi-plugin-show-hide-on-mobile.min.css
   - title: Flexbox
     description: Use CSS3 flexbox to layout.
-    docs: https://mobi-css.github.io/mobi-plugin-flexbox
     github: https://github.com/mobi-css/mobi-plugin-flexbox
-    standalone: https://unpkg.com/mobi-plugin-flexbox/dist/mobi-plugin-flexbox.min.css
   - title: Container
     description: Three types of containers -- normal, wider and fluid.
-    docs: https://mobi-css.github.io/mobi-plugin-container
     github: https://github.com/mobi-css/mobi-plugin-container
-    standalone: https://unpkg.com/mobi-plugin-container/dist/mobi-plugin-container.min.css
   - title: Button
     description: Use buttons for actions in forms, dialogs, and more.
-    docs: https://mobi-css.github.io/mobi-plugin-button
     github: https://github.com/mobi-css/mobi-plugin-button
-    standalone: https://unpkg.com/mobi-plugin-button/dist/mobi-plugin-button.min.css
   - title: Form
     description: The form control styles.
-    docs: https://mobi-css.github.io/mobi-plugin-form
-    github: https://github.com/mobi-css/mobi-plugin-form
-    standalone: https://unpkg.com/mobi-plugin-form/dist/mobi-plugin-form.min.css
+    download: https://github.com/mobi-css/mobi-plugin-form/releases
   - title: Scroll View
     description: Make a block element scrollable.
-    docs: https://mobi-css.github.io/mobi-plugin-scroll-view
     github: https://github.com/mobi-css/mobi-plugin-scroll-view
-    standalone: https://unpkg.com/mobi-plugin-scroll-view/dist/mobi-plugin-scroll-view.min.css
   - title: Table
     description: The basic styles for table.
-    docs: https://mobi-css.github.io/mobi-plugin-table
     github: https://github.com/mobi-css/mobi-plugin-table
-    standalone: https://unpkg.com/mobi-plugin-table/dist/mobi-plugin-table.min.css
   - title: Text
     description: Utilities to create align text or colored text.
-    docs: https://mobi-css.github.io/mobi-plugin-text
     github: https://github.com/mobi-css/mobi-plugin-text
-    standalone: https://unpkg.com/mobi-plugin-text/dist/mobi-plugin-text.min.css
   - title: Color
     description: Add more colors to your website.
-    docs: https://mobi-css.github.io/mobi-plugin-color
     github: https://github.com/mobi-css/mobi-plugin-color
-    standalone: https://unpkg.com/mobi-plugin-color/dist/mobi-plugin-color.min.css
+
+
+themes:
+  - title: Base
+    description: The base theme.
+    github: https://github.com/mobi-css/mobi-theme-base
+  - title: Dark
+    description: In the dark I see your smile.
+    github: https://github.com/mobi-css/mobi-theme-dark

@@ -11,7 +11,7 @@ module.exports = ({ content, relativeToRoot, frontMatter, title, path, config })
     <body>
       ${header({ relativeToRoot, path, config })}
       ${sidebar({ relativeToRoot, frontMatter, path, config })}
-      ${cards({ content, relativeToRoot, cards: config.plugins })}
+      ${cards({ content, relativeToRoot, cards: config.themes })}
       ${googleAnalytics()}
     </body>
   </html>

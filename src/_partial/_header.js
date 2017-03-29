@@ -22,11 +22,26 @@ module.exports = ({ relativeToRoot, path, config }) => `
   </header>
 `;
 
+function renderNavItems({ path, items }) {
+  return items.reduce((previous, { text, link, current_check_prefix }) => `
+    ${previous}
+    <a
+      class="
+        site-text-plain unit-0 hide-on-mobile
+        ${isCurrent({ path, current_check_prefix }) ? 'current' : ''}
+      "
+      href="${link}"
+    >
+      ${text}
+    </a>
+  `, '');
+}
+
 function renderNextItem({ relativeToRoot, path, nextConfig }) {
   let result = '';
   nextConfig.some(({ current_check_prefix, next_text, next_link }) => {
     if (isCurrent({ path, current_check_prefix })) {
-      result =  `
+      result = `
         <a class="site-text-plain flex-middle unit-0" href="${next_link}">
           <div>${next_text}&nbsp;&nbsp;</div>
           <img src="${relativeToRoot}/img/next.png" height="14" />
@@ -34,20 +49,7 @@ function renderNextItem({ relativeToRoot, path, nextConfig }) {
       `;
       return true;
     }
+    return false;
   });
   return result;
 }
-
-function renderNavItems({ path, items }) {
-  return items.reduce((previous, { text, link, current_check_prefix }) => {
-    return previous + `
-      <a
-        class="site-text-plain unit-0 hide-on-mobile ${isCurrent({ path, current_check_prefix }) ? 'current' : ''}"
-        href="${link}"
-      >
-        ${text}
-      </a>
-    `;
-  }, '');
-}
-

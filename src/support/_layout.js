@@ -12,9 +12,7 @@ module.exports = ({ content, relativeToRoot, frontMatter, title, path, config })
       ${header({ relativeToRoot, path, config })}
       ${sidebar({ relativeToRoot, frontMatter, path, config })}
       <div class="flex-center">
-        <div class="container-wider">
-          ${article({ content, frontMatter })}
-        </div>
+        ${article({ content, frontMatter })}
       </div>
       ${googleAnalytics()}
     </body>

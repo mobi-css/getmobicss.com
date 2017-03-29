@@ -3,12 +3,11 @@
   "version": "0.0.0",
   "description": "The official website for Mobi.css",
   "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
     "start": "pagic build -ws",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pagic build",
+    "test": "npm run lint",
+    "lint": "stylelint src/css/site.css && eslint src"
   },
   "repository": {
     "type": "git",
@@ -23,8 +22,13 @@
   "bugs": {
     "url": "https://github.com/mobi-css/getmobicss.com/issues"
   },
-  "homepage": "https://github.com/mobi-css/getmobicss.com#readme",
+  "homepage": "http://getmobicss.com",
   "devDependencies": {
-    "pagic": "^0.5.0"
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb-base": "^5.0.3",
+    "eslint-plugin-import": "^1.14.0",
+    "pagic": "^0.5.0",
+    "stylelint": "^7.9.0",
+    "stylelint-config-standard": "^16.0.0"
   }
 }

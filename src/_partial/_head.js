@@ -5,7 +5,7 @@ module.exports = ({ relativeToRoot, title }) => `
     <meta name="viewport" content="width=device-width, initial-scale=1.0,
       maximum-scale=1.0, user-scalable=no"/>
 
-    <title>${title ? title + ' | ' : ''}Mobi.css</title>
+    <title>${title ? `${title} | ` : ''}Mobi.css</title>
 
     <link rel="stylesheet" href="${relativeToRoot}/css/mobi.css/mobi.min.css" />
     <link rel="stylesheet" href="${relativeToRoot}/css/site.css" />

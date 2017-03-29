@@ -57,7 +57,7 @@ function renderListItems({ path, items }) {
     return previous + `
       <li>
         <a
-          class="site-text-plain text-small ${isCurrent({ path, current_check_prefix }) && 'current'}"
+          class="site-text-plain text-small ${isCurrent({ path, current_check_prefix }) ? 'current' : ''}"
           href="${link}"
         >
           ${text}

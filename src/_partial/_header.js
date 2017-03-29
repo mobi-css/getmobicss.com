@@ -42,7 +42,7 @@ function renderNavItems({ path, items }) {
   return items.reduce((previous, { text, link, current_check_prefix }) => {
     return previous + `
       <a
-        class="site-text-plain unit-0 hide-on-mobile ${isCurrent({ path, current_check_prefix }) && 'current'}"
+        class="site-text-plain unit-0 hide-on-mobile ${isCurrent({ path, current_check_prefix }) ? 'current' : ''}"
         href="${link}"
       >
         ${text}

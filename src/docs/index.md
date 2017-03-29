@@ -1,6 +1,6 @@
 # Introduction
 
-Mobi.css is a mobile-first, pluginable & themeable css framework.
+Mobi.css is a lightweight, scalable, mobile-first css framework.
 
 It's designed for mobile, but also works awesome on desktop.
 

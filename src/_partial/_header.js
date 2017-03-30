@@ -12,9 +12,9 @@ module.exports = ({ relativeToRoot, path, config }) => `
         </div>
         <div class="unit-3-4 unit-1-on-mobile">
           <nav class="flex-middle units-gap-big">
-            ${renderNavItems({ path, items: config.nav })}
+            ${renderNavItems({ path, config })}
             <div class="unit"></div>
-            ${renderNextItem({ relativeToRoot, path, nextConfig: config.next })}
+            ${renderNextItem({ relativeToRoot, path, config })}
           </nav>
         </div>
       </div>
@@ -22,28 +22,33 @@ module.exports = ({ relativeToRoot, path, config }) => `
   </header>
 `;
 
-function renderNavItems({ path, items }) {
-  return items.reduce((previous, { text, link, current_check_prefix }) => `
-    ${previous}
-    <a
-      class="
-        site-text-plain unit-0 hide-on-mobile
-        ${isCurrent({ path, current_check_prefix }) ? 'current' : ''}
-      "
-      href="${link}"
-    >
-      ${text}
-    </a>
-  `, '');
+function renderNavItems({ path, config }) {
+  return config.nav.reduce((previous, { id }) => {
+    const current_check_prefix = config.pages[id].current_check_prefix;
+    return `
+      ${previous}
+      <a
+        class="
+          site-text-plain unit-0 hide-on-mobile
+          ${isCurrent({ path, current_check_prefix }) ? 'current' : ''}
+        "
+        href="${config.pages[id].link}"
+      >
+        ${config.pages[id].title}
+      </a>
+    `;
+  }, '');
 }
 
-function renderNextItem({ relativeToRoot, path, nextConfig }) {
+function renderNextItem({ relativeToRoot, path, config }) {
   let result = '';
-  nextConfig.some(({ current_check_prefix, next_text, next_link }) => {
+  Object.keys(config.pages).some(key => {
+    const current_check_prefix = config.pages[key].current_check_prefix;
     if (isCurrent({ path, current_check_prefix })) {
+      const nextPage = config.pages[config.pages[key].next];
       result = `
-        <a class="site-text-plain flex-middle unit-0" href="${next_link}">
-          <div>${next_text}&nbsp;&nbsp;</div>
+        <a class="site-text-plain flex-middle unit-0" href="${nextPage.link}">
+          <div>${nextPage.title}&nbsp;&nbsp;</div>
           <img src="${relativeToRoot}/img/next.png" height="14" />
         </a>
       `;

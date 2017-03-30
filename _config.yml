@@ -1,146 +1,175 @@
 src_dir: src
 public_dir: docs
 
-nav:
-  - text: Docs
-    link: /docs
-    current_check_prefix: docs
-  - text: Plugins
-    link: /plugins
-    current_check_prefix: plugins
-  - text: Themes
-    link: /themes
-    current_check_prefix: themes
-  - text: Community
-    link: /community
-    current_check_prefix: community
-
-docs_menu:
-  - text: Getting Started
-    link: /docs
-    sub_menu:
-      - text: Introduction
-        link: /docs
-        current_check_prefix: docs/index
-      - text: Get Mobi.css
-        link: /docs/get-mobi-css.html
-        current_check_prefix: docs/get-mobi-css
-      - text: Plugins and Themes
-        link: /docs/plugins-and-themes.html
-        current_check_prefix: docs/plugins-and-themes
-  - text: Built-in Plugins
+pages:
+  index:
+    current_check_prefix: index
+    next: docs/introduction
+  docs/introduction:
+    title: Introduction
+    link: /docs/introduction.html
+    current_check_prefix: docs/introduction
+    next: docs/get-mobi-css
+  docs/get-mobi-css:
+    title: Get Mobi.css
+    link: /docs/get-mobi-css.html
+    current_check_prefix: docs/get-mobi-css
+    next: docs/plugins-and-themes
+  docs/plugins-and-themes:
+    title: Plugins and Themes
+    link: /docs/plugins-and-themes.html
+    current_check_prefix: docs/plugins-and-themes
+    next: docs/reset
+  docs/reset:
+    title: Reset
     link: /docs/reset.html
-    sub_menu:
-      - text: Reset
-        link: /docs/reset.html
-        current_check_prefix: docs/reset
-      - text: Top Gap
-        link: /docs/top-gap.html
-        current_check_prefix: docs/top-gap
-      - text: Show Hide on Mobile
-        link: /docs/show-hide-on-mobile.html
-        current_check_prefix: docs/show-hide-on-mobile
-      - text: Flexbox
-        link: /docs/flexbox.html
-        current_check_prefix: docs/flexbox
-      - text: Container
-        link: /docs/container.html
-        current_check_prefix: docs/container
-      - text: Button
-        link: /docs/button.html
-        current_check_prefix: docs/button
-      - text: Form
-        link: /docs/form.html
-        current_check_prefix: docs/form
-      - text: Scroll View
-        link: /docs/scroll-view.html
-        current_check_prefix: docs/scroll-view
-      - text: Table
-        link: /docs/table.html
-        current_check_prefix: docs/table
-      - text: Text
-        link: /docs/text.html
-        current_check_prefix: docs/text
-  - text: Customize
+    current_check_prefix: docs/reset
+    next: docs/top-gap
+  docs/top-gap:
+    title: Top Gap
+    link: /docs/top-gap.html
+    current_check_prefix: docs/top-gap
+    next: docs/show-hide-on-mobile
+  docs/show-hide-on-mobile:
+    title: Show Hide on Mobile
+    link: /docs/show-hide-on-mobile.html
+    current_check_prefix: docs/show-hide-on-mobile
+    next: docs/flexbox
+  docs/flexbox:
+    title: Flexbox
+    link: /docs/flexbox.html
+    current_check_prefix: docs/flexbox
+    next: docs/container
+  docs/container:
+    title: Container
+    link: /docs/container.html
+    current_check_prefix: docs/container
+    next: docs/button
+  docs/button:
+    title: Button
+    link: /docs/button.html
+    current_check_prefix: docs/button
+    next: docs/form
+  docs/form:
+    title: Form
+    link: /docs/form.html
+    current_check_prefix: docs/form
+    next: docs/scroll-view
+  docs/scroll-view:
+    title: Scroll View
+    link: /docs/scroll-view.html
+    current_check_prefix: docs/scroll-view
+    next: docs/table
+  docs/table:
+    title: Table
+    link: /docs/table.html
+    current_check_prefix: docs/table
+    next: docs/text
+  docs/text:
+    title: Text
+    link: /docs/text.html
+    current_check_prefix: docs/text
+    next: docs/build-tools
+  docs/build-tools:
+    title: Build Tools
     link: /docs/build-tools.html
-    sub_menu:
-      - text: Build Tools
-        link: /docs/build-tools.html
-        current_check_prefix: docs/build-tools
-      - text: Variables
-        link: /docs/variables.html
-        current_check_prefix: docs/variables
-      - text: Create a Plugin
-        link: /docs/create-a-plugin.html
-        current_check_prefix: docs/create-a-plugin
-      - text: Create a Theme
-        link: /docs/create-a-theme.html
-        current_check_prefix: docs/create-a-theme
+    current_check_prefix: docs/build-tools
+    next: docs/variables
+  docs/variables:
+    title: Variables
+    link: /docs/variables.html
+    current_check_prefix: docs/variables
+    next: docs/create-a-plugin
+  docs/create-a-plugin:
+    title: Create a Plugin
+    link: /docs/create-a-plugin.html
+    current_check_prefix: docs/create-a-plugin
+    next: docs/create-a-theme
+  docs/create-a-theme:
+    title: Create a Theme
+    link: /docs/create-a-theme.html
+    current_check_prefix: docs/create-a-theme
+    next: plugins
+  plugins:
+    title: Plugins
+    link: /plugins/index.html
+    current_check_prefix: plugins
+    next: themes
+  themes:
+    title: Themes
+    link: /themes/index.html
+    current_check_prefix: themes
+    next: about/community
+  about/community:
+    title: Community
+    link: /about/community.html
+    current_check_prefix: about/community
+    next: about/support
+  about/support:
+    title: Support
+    link: /about/support.html
+    current_check_prefix: about/support
+    next: github
+  github:
+    title: GitHub
+    link: https://github.com/mobi-css/mobi.css
+  docs/getting-started:
+    title: Getting Started
+    link: /docs/introduction.html
+  docs/built-in-plugins:
+    title: Built-in Plugins
+    link: /docs/reset.html
+  docs/customize:
+    title: Customize
+    link: /docs/build-tools.html
+  about/about:
+    title: About
+    link: /about/community.html
+  docs:
+    title: Docs
+    link: /docs/introduction.html
+    current_check_prefix: docs
+  about:
+    title: About
+    link: /about/community.html
+    current_check_prefix: about
 
-next:
-  - current_check_prefix: index
-    next_text: Introduction
-    next_link: /docs
-  - current_check_prefix: docs/index
-    next_text: Get Mobi.css
-    next_link: /docs/get-mobi-css.html
-  - current_check_prefix: docs/get-mobi-css
-    next_text: Plugins and Themes
-    next_link: /docs/plugins-and-themes.html
-  - current_check_prefix: docs/plugins-and-themes
-    next_text: Reset
-    next_link: /docs/reset.html
-  - current_check_prefix: docs/reset
-    next_text: Top Gap
-    next_link: /docs/top-gap.html
-  - current_check_prefix: docs/top-gap
-    next_text: Show Hide on Mobile
-    next_link: /docs/show-hide-on-mobile.html
-  - current_check_prefix: docs/show-hide-on-mobile
-    next_text: Flexbox
-    next_link: /docs/flexbox.html
-  - current_check_prefix: docs/flexbox
-    next_text: Container
-    next_link: /docs/container.html
-  - current_check_prefix: docs/container
-    next_text: Button
-    next_link: /docs/button.html
-  - current_check_prefix: docs/button
-    next_text: Form
-    next_link: /docs/form.html
-  - current_check_prefix: docs/form
-    next_text: Scroll View
-    next_link: /docs/scroll-view.html
-  - current_check_prefix: docs/scroll-view
-    next_text: Table
-    next_link: /docs/table.html
-  - current_check_prefix: docs/table
-    next_text: Text
-    next_link: /docs/text.html
-  - current_check_prefix: docs/text
-    next_text: Build Tools
-    next_link: /docs/build-tools.html
-  - current_check_prefix: docs/build-tools
-    next_text: Variables
-    next_link: /docs/variables.html
-  - current_check_prefix: docs/variables
-    next_text: Create a Plugin
-    next_link: /docs/create-a-plugin.html
-  - current_check_prefix: docs/create-a-plugin
-    next_text: Create a Theme
-    next_link: /docs/create-a-theme.html
-  - current_check_prefix: docs/create-a-theme
-    next_text: Plugins
-    next_link: /plugins
-  - current_check_prefix: plugins
-    next_text: Themes
-    next_link: /themes
-  - current_check_prefix: themes
-    next_text: Community
-    next_link: /community
-  - current_check_prefix: community
-    next_text: GitHub
-    next_link: https://github.com/mobi-css/mobi.css
+
+nav:
+  - id: docs
+    menu:
+      - id: docs/getting-started
+        sub_menu:
+          - id: docs/introduction
+          - id: docs/get-mobi-css
+          - id: docs/plugins-and-themes
+      - id: docs/built-in-plugins
+        sub_menu:
+          - id: docs/reset
+          - id: docs/top-gap
+          - id: docs/show-hide-on-mobile
+          - id: docs/flexbox
+          - id: docs/container
+          - id: docs/button
+          - id: docs/form
+          - id: docs/scroll-view
+          - id: docs/table
+          - id: docs/text
+      - id: docs/customize
+        sub_menu:
+          - id: docs/build-tools
+          - id: docs/variables
+          - id: docs/create-a-plugin
+          - id: docs/create-a-theme
+  - id: plugins
+  - id: themes
+  - id: about
+    menu:
+      - id: about/about
+        sub_menu:
+          - id: about/community
+          - id: about/support
+
 
 plugins:
   - title: Reset

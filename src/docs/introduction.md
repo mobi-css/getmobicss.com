@@ -1,6 +1,6 @@
 # Introduction
 
-Mobi.css is a lightweight, scalable, mobile-first css framework.
+> Mobi.css is a lightweight, scalable, mobile-first css framework.
 
 Here is how to quickly get started with Mobi.css and a template starter page.
 

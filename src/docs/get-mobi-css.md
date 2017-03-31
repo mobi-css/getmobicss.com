@@ -24,7 +24,7 @@ unpkg is a good choice:
 
 ## Download
 
-You can download Mobi.css in the [release page](https://github.com/mobi-css/mobi.css/releases).
+You can download Mobi.css in [this page](https://github.com/mobi-css/mobi.css/releases).
 
 Once downloaded, unzip the compressed folder to see the structure of (the compiled) Mobi.css. You'll see something like this:
 

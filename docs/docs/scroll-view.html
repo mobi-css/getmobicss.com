@@ -682,8 +682,13 @@
             <div class="site-height-0 site-aside hide-on-mobile unit-1-4"></div>
             <article class="site-article unit-3-4 unit-1-on-mobile">
               <h1 id="scroll-view">Scroll View</h1>
-<p>Use <code>.scroll-view</code> to make a block element scrollable:</p>
-<div class="top-gap scroll-view" style="max-height:400px;">
+<blockquote>
+<p>Make a block element scrollable.</p>
+</blockquote>
+<h2 id="vertical-scroll">Vertical Scroll</h2>
+<p>Use <code>.scroll-view</code> to make a block element scrollable.</p>
+<p>You need to manually set the <code>height</code> or <code>max-height</code> for it.</p>
+<div class="top-gap scroll-view" style="height:300px;">
   <h2>琵琶行</h2>
   <address>作者：白居易</address>
   <p>
@@ -733,7 +738,7 @@
     座中泣下谁最多？江州司马青衫湿。
   </p>
 </div>
-<pre><code class="language-html">&lt;div class=&quot;scroll-view&quot; style=&quot;max-height:400px;&quot;&gt;
+<pre><code class="language-html">&lt;div class=&quot;scroll-view&quot; style=&quot;height:300px;&quot;&gt;
   &lt;h2&gt;琵琶行&lt;/h2&gt;
   &lt;address&gt;作者：白居易&lt;/address&gt;
   &lt;p&gt;
@@ -741,6 +746,19 @@
     ...&lt;br/&gt;
     座中泣下谁最多？江州司马青衫湿。
   &lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="horizontal-scroll">Horizontal scroll</h2>
+<p>If content inside <code>.scroll-view</code> is wider than the <code>.scroll-view</code> element, then it will be horizontal scrollable.</p>
+<div class="top-gap scroll-view">
+  <div style="width:1000px;">
+    <img src="http://lorempixel.com/200/150/"/><img src="http://lorempixel.com/300/150/"/><img src="http://lorempixel.com/100/150/"/><img src="http://lorempixel.com/400/150/"/>
+  </div>
+</div>
+<pre><code class="language-html">&lt;div class=&quot;top-gap scroll-view&quot;&gt;
+  &lt;div style=&quot;width:1000px;&quot;&gt;
+    &lt;img src=&quot;&quot;/&gt;&lt;img src=&quot;&quot;/&gt;&lt;img src=&quot;&quot;/&gt;&lt;img src=&quot;&quot;/&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 

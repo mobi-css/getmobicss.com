@@ -1,12 +1,14 @@
 # Form
 
+> The form control styles.
+
+### Basic forms
+
 Mobi.css believes that on mobile devices, **each row should have only one input**.
 
 You should add `.form` to a `<form>` element and add `.btn` to each button.
 
-### Basic forms
-
-<form class="form" action="#Basic-forms">
+<form class="form" action="#">
   <input type="text" placeholder="Name"/>
   <input type="password" placeholder="Password"/>
   <label class="flex-middle"><input type="checkbox"/>I agree to terms.</label>
@@ -14,7 +16,7 @@ You should add `.form` to a `<form>` element and add `.btn` to each button.
 </form>
 
 ```html
-<form class="form" action="#Basic-forms">
+<form class="form" action="#">
   <input type="text" placeholder="Name"/>
   <input type="email" placeholder="Email"/>
   <label class="flex-middle"><input type="checkbox"/>I agree to terms.</label>
@@ -24,7 +26,7 @@ You should add `.form` to a `<form>` element and add `.btn` to each button.
 
 ### Complicated forms
 
-If you want to have multiple inputs in one row, you should use the grid system.
+If you want to have multiple inputs in one row, you should use flexbox layout.
 
 <form class="form" action="#Complicated-forms">
   <div class="flex-left units-gap">
@@ -116,4 +118,4 @@ If you want to have multiple inputs in one row, you should use the grid system.
 </form>
 ```
 
-**Warning** when you are using `<label>` element, you can add `class="flex-middle"` if it's the parent of `radio` or `checkbox` label, this makes the radio buttons align middle vertically.
+When you are using `<label>` element, you can add `class="flex-middle"` if it's the parent of `radio` or `checkbox` label, this makes the radio buttons align middle vertically.

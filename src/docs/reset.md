@@ -1,5 +1,33 @@
 # Reset
 
+> Reset styles makes browsers render all elements more consistently.
+
+## Features
+
+Mobi.css improves [Normalizs.css](https://necolas.github.io/normalize.css/) by optimizing some details for the mobile devices.
+
+- Friendly to content-rich webpage
+- Do not reset form input and table
+- Follow the rules of margin-top only
+
+### Margin-top only
+
+Nearly all margins in Mobi.css have a `0` value for `margin-bottom`. For vertical spacing, Mobi.css use `margin-top` to make content flow clearly.
+
+This technique allows each section to determine the spacing it needs from the element above it.
+
+### Sizing
+
+`font-size: 10px` is set to `<html>` to simplify the use of `rem`.
+
+That is to say, `1rem === 10px`.
+
+Most of `font-size`, `margin`, `padding` or `width` should use `rem` as the length unit.
+
+The `font-size` for `<body>` is `1.6rem`.
+
+There are only two sizes of `margin-top`. One is `1.5rem`, the other is `3rem`. The `margin-top` of heading is set to `3rem` while other block elements is `1.5rem`.
+
 Here are the example of common elements.
 
 ## Headings

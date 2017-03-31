@@ -1,2 +1,6 @@
+const normalize = require('path').normalize;
+
+// https://github.com/xcatliu/pagic/issues/9
+
 module.exports = ({ path, current_check_prefix }) =>
-  path.indexOf(current_check_prefix) === 0 || path.indexOf(`./${current_check_prefix}`) === 0;
+  normalize(path).indexOf(normalize(current_check_prefix)) === 0;

@@ -173,19 +173,19 @@ nav:
 
 plugins:
   - title: Reset
-    description: The reset styles that improved from Normalize.css with more suitability for mobile devices.
+    description: Reset styles makes browsers render all elements more consistently.
     github: https://github.com/mobi-css/mobi-plugin-reset
   - title: Top Gap
     description: Set top gaps between block elements.
     github: https://github.com/mobi-css/mobi-plugin-top-gap
   - title: Show Hide on Mobile
-    description: Only show element on mobile or hide element on mobile.
+    description: Show element on mobile or hide element on mobile.
     github: https://github.com/mobi-css/mobi-plugin-show-hide-on-mobile
   - title: Flexbox
-    description: Use CSS3 flexbox to layout.
+    description: Use flexbox to layout.
     github: https://github.com/mobi-css/mobi-plugin-flexbox
   - title: Container
-    description: Three types of containers -- normal, wider and fluid.
+    description: "Three types of containers: normal, wider and fluid."
     github: https://github.com/mobi-css/mobi-plugin-container
   - title: Button
     description: Use buttons for actions in forms, dialogs, and more.

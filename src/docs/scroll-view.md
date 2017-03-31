@@ -1,8 +1,14 @@
 # Scroll View
 
-Use `.scroll-view` to make a block element scrollable:
+> Make a block element scrollable.
 
-<div class="top-gap scroll-view" style="max-height:400px;">
+## Vertical Scroll
+
+Use `.scroll-view` to make a block element scrollable.
+
+You need to manually set the `height` or `max-height` for it.
+
+<div class="top-gap scroll-view" style="height:300px;">
   <h2>琵琶行</h2>
   <address>作者：白居易</address>
   <p>
@@ -54,7 +60,7 @@ Use `.scroll-view` to make a block element scrollable:
 </div>
 
 ```html
-<div class="scroll-view" style="max-height:400px;">
+<div class="scroll-view" style="height:300px;">
   <h2>琵琶行</h2>
   <address>作者：白居易</address>
   <p>
@@ -62,5 +68,23 @@ Use `.scroll-view` to make a block element scrollable:
     ...<br/>
     座中泣下谁最多？江州司马青衫湿。
   </p>
+</div>
+```
+
+## Horizontal scroll
+
+If content inside `.scroll-view` is wider than the `.scroll-view` element, then it will be horizontal scrollable.
+
+<div class="top-gap scroll-view">
+  <div style="width:1000px;">
+    <img src="http://lorempixel.com/200/150/"/><img src="http://lorempixel.com/300/150/"/><img src="http://lorempixel.com/100/150/"/><img src="http://lorempixel.com/400/150/"/>
+  </div>
+</div>
+
+```html
+<div class="top-gap scroll-view">
+  <div style="width:1000px;">
+    <img src=""/><img src=""/><img src=""/><img src=""/>
+  </div>
 </div>
 ```

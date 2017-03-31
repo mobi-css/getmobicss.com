@@ -688,16 +688,17 @@
 <p>The default bundled Mobi.css only contains basic plugin (aka reset, container, flexbox, e.g.). But with SASS, you can <code>@import</code> any plugins as you like.</p>
 <p>Don't want to use SASS? No problem!</p>
 <p>Actually each plugin provides a standalone version, which means you can simply add <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/plugin-a.css&quot;/&gt;</code> to include the plugin.</p>
-<p>That's say, a plugin is a standalone css library. <strong>You can even use it without Mobi.css</strong>.</p>
+<p>That is to say, a plugin is a standalone css library. <strong>You can even use it without Mobi.css</strong>.</p>
 <h2 id="theme-system">Theme system</h2>
-<p>It's easy to create your own theme. There are only a few basic variables need to be customized -- most of variables is caculated by a few basic variables.</p>
-<p>A theme should be compatible with any plugins.</p>
-<p>Like plugins, A theme also provide standalone version.</p>
-<p>Unfortunately, you cannot include the standalone plugin with the standalone theme -- the reason is that the standalone plugin is built with <a href="https://github.com/mobi.css/mobi-theme-base">mobi-theme-base</a>.</p>
+<p>A theme is just a list of variables. It is based on <a href="https://github.com/mobi-css/mobi-theme-base">mobi-theme-base</a>, and may contains some extension variables.</p>
+<p>A plugin should be compatible with any themes. If a plugin use the extension variables which are not exists in mobi-theme-base, it should has a fallback value that only use the base variables.</p>
+<p>Like plugins, A theme also provides a standalone version. The difference is that the standalone version may have a different plugins set with the default bundled Mobi.css</p>
+<p>Unfortunately, you CANNOT use the standalone plugin with the standalone theme -- the reason is that the standalone plugin is built with <a href="https://github.com/mobi.css/mobi-theme-base">mobi-theme-base</a>.</p>
 <p>In this case, you need to build the plugin yourself.</p>
 <blockquote>
 <p>In Mobi.css v3.0.0, we will use css-variables instead of SASS variables. Then it's possible to include standalone plugin with standalone theme.</p>
 </blockquote>
+<p>It's easy to create your own theme. There are only a few basic variables need to be customized.</p>
 
             </article>
           </div>

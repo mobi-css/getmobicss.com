@@ -10,7 +10,7 @@ show_announcement: true
   </h1>
   <div class="flex-center units-gap">
     <div class="unit-0">
-      <a href="docs" class="btn btn-primary top-gap-big">Get Started</a>
+      <a href="docs/introduction.html" class="btn btn-primary top-gap-big">Get Started</a>
     </div>
     <div class="unit-0">
       <a href="https://github.com/mobi-css/mobi.css/releases" class="btn top-gap-big">Download Mobi.css</a>

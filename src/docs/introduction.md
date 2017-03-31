@@ -2,8 +2,6 @@
 
 Mobi.css is a lightweight, scalable, mobile-first css framework.
 
-It's designed for mobile, but also works awesome on desktop.
-
 Here is how to quickly get started with Mobi.css and a template starter page.
 
 ## Quick Start
@@ -14,7 +12,7 @@ Copy and paste the stylesheet `<link>` into your `<head>` before all other style
 <link rel="stylesheet" href="https://unpkg.com/mobi.css/dist/mobi.min.css" />
 ```
 
-This will include the basic classes, actually it's a collections of Mobi.css plugins, you can find the usage in each page:
+This will include the basic classes, actually it's a collections of Mobi.css plugins with the [base theme](https://github.com/mobi-css/mobi-theme-base), you can find the usage in each page:
 
 - [Reset](reset.html)
 - [Top Gap](top-gap.html)
@@ -33,9 +31,9 @@ To load other plugins, you can simply insert the standalone version of the plugi
 <link rel="stylesheet" href="https://unpkg.com/mobi-plugin-color/dist/mobi-plugin-color.min.css" />
 ```
 
-You can find the usage in the [mobi-plugin-color's docs](https://mobi-css.github.io/mobi-plugin-color/).
+You can find the usage in [mobi-plugin-color](https://github.com/mobi-css/mobi-plugin-color).
 
-The list of all the available plugins can be found in the [plugins page](../plugins).
+The list of all the available plugins can be found in the [this page](../plugins).
 
 ## Starter Template
 

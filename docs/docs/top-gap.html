@@ -682,14 +682,23 @@
             <div class="site-height-0 site-aside hide-on-mobile unit-1-4"></div>
             <article class="site-article unit-3-4 unit-1-on-mobile">
               <h1 id="top-gap">Top Gap</h1>
-<p>Mobi.css also provides three classes, <code>.top-gap-big</code>, <code>.top-gap</code> and <code>.top-gap-0</code> to easily override the top margin.</p>
-<div class="top-gap">div.top-gap</div>
-<p class="top-gap-0">p.top-gap-0</p>
-<section class="top-gap-big">section.top-gap-big</section>
+<blockquote>
+<p>Set top gaps between block elements.</p>
+</blockquote>
+<h2 id="override-top-gaps">Override Top Gaps</h2>
+<p>Mobi.css provides three classes, <code>.top-gap-big</code>, <code>.top-gap</code> and <code>.top-gap-0</code> to easily override the top margin.</p>
+<p>Setting an element to <code>.top-gap-big</code> will make it's <code>margin-top</code> to <code>3rem</code>, while <code>.top-gap</code> is <code>1.5rem</code> and <code>top-gap-0</code> is <code>0</code>.</p>
+<div class="site-box top-gap">div.top-gap</div>
+<p class="site-box top-gap-0">p.top-gap-0</p>
+<section class="site-box top-gap-big">section.top-gap-big</section>
 <pre><code class="language-html">&lt;div class=&quot;top-gap&quot;&gt;div.top-gap&lt;/div&gt;
 &lt;p class=&quot;top-gap-0&quot;&gt;p.top-gap-0&lt;/p&gt;
 &lt;section class=&quot;top-gap-big&quot;&gt;section.top-gap-big&lt;/section&gt;
 </code></pre>
+<h2 id="important">Important</h2>
+<p>We think when you set <code>.top-gap*</code> to an element, you are very sure that the <code>margin-top</code> of this element should be the value you set.</p>
+<p>So both <code>.top-gap-big</code>, <code>.top-gap</code> and <code>.top-gap-0</code> are set <code>margin-top</code> with <code>!important</code>.</p>
+<p>This can avoid <code>margin-top</code> being overided.</p>
 
             </article>
           </div>

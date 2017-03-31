@@ -682,16 +682,19 @@
             <div class="site-height-0 site-aside hide-on-mobile unit-1-4"></div>
             <article class="site-article unit-3-4 unit-1-on-mobile">
               <h1 id="form">Form</h1>
+<blockquote>
+<p>The form control styles.</p>
+</blockquote>
+<h3 id="basic-forms">Basic forms</h3>
 <p>Mobi.css believes that on mobile devices, <strong>each row should have only one input</strong>.</p>
 <p>You should add <code>.form</code> to a <code>&lt;form&gt;</code> element and add <code>.btn</code> to each button.</p>
-<h3 id="basic-forms">Basic forms</h3>
-<form class="form" action="#Basic-forms">
+<form class="form" action="#">
   <input type="text" placeholder="Name"/>
   <input type="password" placeholder="Password"/>
   <label class="flex-middle"><input type="checkbox"/>I agree to terms.</label>
   <input class="btn" type="submit" value="Sign Up Now"/>
 </form>
-<pre><code class="language-html">&lt;form class=&quot;form&quot; action=&quot;#Basic-forms&quot;&gt;
+<pre><code class="language-html">&lt;form class=&quot;form&quot; action=&quot;#&quot;&gt;
   &lt;input type=&quot;text&quot; placeholder=&quot;Name&quot;/&gt;
   &lt;input type=&quot;email&quot; placeholder=&quot;Email&quot;/&gt;
   &lt;label class=&quot;flex-middle&quot;&gt;&lt;input type=&quot;checkbox&quot;/&gt;I agree to terms.&lt;/label&gt;
@@ -699,7 +702,7 @@
 &lt;/form&gt;
 </code></pre>
 <h3 id="complicated-forms">Complicated forms</h3>
-<p>If you want to have multiple inputs in one row, you should use the grid system.</p>
+<p>If you want to have multiple inputs in one row, you should use flexbox layout.</p>
 <form class="form" action="#Complicated-forms">
   <div class="flex-left units-gap">
     <label class="unit-0 text-right" for="multiple-inputs-name" style="width:85px;">Name: </label>
@@ -787,7 +790,7 @@
   &lt;/div&gt;
 &lt;/form&gt;
 </code></pre>
-<p><strong>Warning</strong> when you are using <code>&lt;label&gt;</code> element, you can add <code>class=&quot;flex-middle&quot;</code> if it's the parent of <code>radio</code> or <code>checkbox</code> label, this makes the radio buttons align middle vertically.</p>
+<p>When you are using <code>&lt;label&gt;</code> element, you can add <code>class=&quot;flex-middle&quot;</code> if it's the parent of <code>radio</code> or <code>checkbox</code> label, this makes the radio buttons align middle vertically.</p>
 
             </article>
           </div>

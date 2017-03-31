@@ -1,38 +1,10 @@
 # Button
 
-## Input
+> Use buttons for actions in forms, dialogs, and more.
 
-<input type="button" class="btn" value=".btn"/>
-<input type="button" class="btn btn-primary" value=".btn.btn-primary"/>
-<input type="button" class="btn btn-danger" value=".btn.btn-danger"/>
+## Basic Button
 
-```html
-<input type="button" class="btn" value=".btn"/>
-<input type="button" class="btn btn-primary" value=".btn.btn-primary"/>
-<input type="button" class="btn btn-danger" value=".btn.btn-danger"/>
-```
-
-<input type="reset" class="btn" value=".btn"/>
-<input type="reset" class="btn btn-primary" value=".btn.btn-primary"/>
-<input type="reset" class="btn btn-danger" value=".btn.btn-danger"/>
-
-```html
-<input type="reset" class="btn" value=".btn"/>
-<input type="reset" class="btn btn-primary" value=".btn.btn-primary"/>
-<input type="reset" class="btn btn-danger" value=".btn.btn-danger"/>
-```
-
-<input type="submit" class="btn" value=".btn"/>
-<input type="submit" class="btn btn-primary" value=".btn.btn-primary"/>
-<input type="submit" class="btn btn-danger" value=".btn.btn-danger"/>
-
-```html
-<input type="submit" class="btn" value=".btn"/>
-<input type="submit" class="btn btn-primary" value=".btn.btn-primary"/>
-<input type="submit" class="btn btn-danger" value=".btn.btn-danger"/>
-```
-
-## Button
+There are three types of buttons: default, primary and danger.
 
 <button type="button" class="btn">.btn</button>
 <button type="button" class="btn btn-primary">.btn.btn-primary</button>
@@ -44,24 +16,16 @@
 <button type="button" class="btn btn-danger">.btn.btn-danger</button>
 ```
 
-<button type="reset" class="btn">.btn</button>
-<button type="reset" class="btn btn-primary">.btn.btn-primary</button>
-<button type="reset" class="btn btn-danger">.btn.btn-danger</button>
+## Input Button
+
+<input type="button" class="btn" value=".btn"/>
+<input type="button" class="btn btn-primary" value=".btn.btn-primary"/>
+<input type="button" class="btn btn-danger" value=".btn.btn-danger"/>
 
 ```html
-<button type="reset" class="btn">.btn</button>
-<button type="reset" class="btn btn-primary">.btn.btn-primary</button>
-<button type="reset" class="btn btn-danger">.btn.btn-danger</button>
-```
-
-<button type="submit" class="btn">.btn</button>
-<button type="submit" class="btn btn-primary">.btn.btn-primary</button>
-<button type="submit" class="btn btn-danger">.btn.btn-danger></button>
-
-```html
-<button type="submit" class="btn">.btn</button>
-<button type="submit" class="btn btn-primary">.btn.btn-primary</button>
-<button type="submit" class="btn btn-danger">.btn.btn-danger></button>
+<input type="button" class="btn" value=".btn"/>
+<input type="button" class="btn btn-primary" value=".btn.btn-primary"/>
+<input type="button" class="btn btn-danger" value=".btn.btn-danger"/>
 ```
 
 ## Link Button
@@ -88,19 +52,9 @@
 <input type="button" class="btn btn-danger" value=".btn.btn-danger" disabled/>
 ```
 
-<a href="javascript:void(0);" class="btn" disabled>.btn</a>
-<a href="javascript:void(0);" class="btn btn-primary" disabled>.btn.btn-primary</a>
-<a href="javascript:void(0);" class="btn btn-danger" disabled>.btn.btn-danger</a>
-
-```html
-<a href="javascript:void(0);" class="btn" disabled>.btn</a>
-<a href="javascript:void(0);" class="btn btn-primary" disabled>.btn.btn-primary</a>
-<a href="javascript:void(0);" class="btn btn-danger" disabled>.btn.btn-danger</a>
-```
-
 ## Block Button
 
-By default the `.btn` is a inline-block button, we can add `.btn-block` to get the block button:
+By default the `.btn` is a `inline-block` button, we can add `.btn-block` to get the `block` button:
 
 <input type="button" class="btn btn-block" value=".btn.btn-block"/>
 

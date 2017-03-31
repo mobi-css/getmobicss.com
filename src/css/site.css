@@ -143,3 +143,8 @@ a.site-text-plain.current {
 .site-link-faded:hover {
   opacity: 1;
 }
+
+.site-box {
+  border: 1px solid hsla(120, 40%, 55%, 0.3);
+  background-color: hsla(120, 40%, 55%, 0.15);
+}

@@ -682,6 +682,95 @@
             <div class="site-height-0 site-aside hide-on-mobile unit-1-4"></div>
             <article class="site-article unit-3-4 unit-1-on-mobile">
               <h1 id="variables">Variables</h1>
+<p>The base variables are located in <a href="https://github.com/mobi-css/mobi-theme-base">mobi-theme-base</a>.</p>
+<h2 id="naming-convention">Naming convention</h2>
+<p>All variables need to be named as <code>${rule}-${element}-${modifier}</code></p>
+<h2 id="colors">Colors</h2>
+<p>There are only a few colors in base theme:</p>
+<pre><code class="language-html">// Add !default so _custom.scss can override it
+$color-background: white !default;
+$color-text: #333 !default;
+$color-text-muted: #777 !default;
+$color-border: #ddd !default;
+
+$color-primary: hsl(210, 70%, 50%) !default;
+$color-danger: hsl(0, 65%, 60%) !default;
+
+$color-background-faded: darken($color-background, 5%) !default;
+</code></pre>
+<h2 id="layout">Layout</h2>
+<pre><code class="language-html">$max-width-container: 80rem !default;
+$max-width-container-wider: 120rem !default;
+
+$width-breakpoint: 768px !default;
+</code></pre>
+<h2 id="spacing">Spacing</h2>
+<p><code>size-base</code> is set to <code>&lt;html&gt;</code>. Other sizes is based on it.</p>
+<pre><code class="language-html">// The base size, all other size are based on it
+$size-base: 10px !default;
+
+$width-gap: 1.5rem !default;
+$width-gap-double: $width-gap * 2 !default;
+$width-gap-half: $width-gap * 0.5 !default;
+
+$width-padding-input: 0.5rem !default;
+
+$width-border-radius: 0.3rem !default;
+
+$width-border: 1px !default;
+
+$padding-code: 0.2em 0.3em !default;
+</code></pre>
+<h2 id="typography">Typography</h2>
+<pre><code class="language-html">$font-size: 1.6rem !default;
+
+$font-size-h1: 3.2rem !default;
+$font-size-h2: 2.6rem !default;
+$font-size-h3: 2.2rem !default;
+$font-size-h4: 2rem !default;
+$font-size-h5: 1.8rem !default;
+$font-size-h6: 1.6rem !default;
+
+$font-size-pre: 1.3rem !default;
+
+$font-size-small: 85% !default;
+
+$line-height: 1.5 !default;
+
+$line-height-input: 1.25 !default;
+// line-height need to be set to pre, not code
+$line-height-pre: 1.2 !default;
+
+$font-weight-bold: 600 !default;
+
+$font-family:
+  // Safari for OS X and iOS (San Francisco)
+  -apple-system,
+  // Chrome for OS X (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  'Segoe UI',
+  // Android
+  'Roboto',
+  // Linux
+  'Oxygen', // KDE
+  'Ubuntu',
+  'Cantarell', // GNOME
+  // Firefox OS [R.I.P.]
+  'Fira Sans',
+  // Older Android
+  'Droid Sans',
+  // Chinese font for OSX and iOS
+  'Hiragino Sans GB',
+  // Chinese font for Windows
+  'Microsoft Yahei', '微软雅黑',
+  // Basic web fallback
+  Arial, Helvetica, STHeiti, sans-serif,
+  // Emoji
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
+
+$font-family-monospace: Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace !default;
+</code></pre>
 
             </article>
           </div>

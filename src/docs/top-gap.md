@@ -8,9 +8,9 @@ Mobi.css provides three classes, `.top-gap-big`, `.top-gap` and `.top-gap-0` to 
 
 Setting an element to `.top-gap-big` will make it's `margin-top` to `3rem`, while `.top-gap` is `1.5rem` and `top-gap-0` is `0`.
 
-<div class="site-box top-gap">div.top-gap</div>
-<p class="site-box top-gap-0">p.top-gap-0</p>
-<section class="site-box top-gap-big">section.top-gap-big</section>
+<div class="top-gap">div.top-gap</div>
+<p class="top-gap-0">p.top-gap-0</p>
+<section class="top-gap-big">section.top-gap-big</section>
 
 ```html
 <div class="top-gap">div.top-gap</div>

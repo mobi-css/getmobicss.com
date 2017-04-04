@@ -1,7 +1,7 @@
 <div class="flex-center">
 <div class="container-wider">
 
-# Container Wider
+# Container wider
 
 ```html
 <div class="flex-center">

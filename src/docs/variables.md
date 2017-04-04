@@ -10,7 +10,7 @@ All variables need to be named as `${rule}-${element}-${modifier}`
 
 There are only a few colors in base theme:
 
-```html
+```scss
 // Add !default so _custom.scss can override it
 $color-background: white !default;
 $color-text: #333 !default;
@@ -25,9 +25,9 @@ $color-background-faded: darken($color-background, 5%) !default;
 
 ## Layout
 
-```html
-$max-width-container: 80rem !default;
-$max-width-container-wider: 120rem !default;
+```scss
+$max-width-container: 800px !default;
+$max-width-container-wider: 1200px !default;
 
 $width-breakpoint: 768px !default;
 ```
@@ -36,17 +36,17 @@ $width-breakpoint: 768px !default;
 
 `size-base` is set to `<html>`. Other sizes is based on it.
 
-```html
+```scss
 // The base size, all other size are based on it
 $size-base: 10px !default;
 
-$width-gap: 1.5rem !default;
+$width-gap: $size-base * 1.5 !default;
 $width-gap-double: $width-gap * 2 !default;
 $width-gap-half: $width-gap * 0.5 !default;
 
-$width-padding-input: 0.5rem !default;
+$width-padding-input: $size-base * 0.5 !default;
 
-$width-border-radius: 0.3rem !default;
+$width-border-radius: $size-base * 0.3 !default;
 
 $width-border: 1px !default;
 
@@ -55,17 +55,17 @@ $padding-code: 0.2em 0.3em !default;
 
 ## Typography
 
-```html
-$font-size: 1.6rem !default;
+```scss
+$font-size: $size-base * 1.6 !default;
 
-$font-size-h1: 3.2rem !default;
-$font-size-h2: 2.6rem !default;
-$font-size-h3: 2.2rem !default;
-$font-size-h4: 2rem !default;
-$font-size-h5: 1.8rem !default;
-$font-size-h6: 1.6rem !default;
+$font-size-h1: $size-base * 3.2 !default;
+$font-size-h2: $size-base * 2.6 !default;
+$font-size-h3: $size-base * 2.2 !default;
+$font-size-h4: $size-base * 2 !default;
+$font-size-h5: $size-base * 1.8 !default;
+$font-size-h6: $size-base * 1.6 !default;
 
-$font-size-pre: 1.3rem !default;
+$font-size-pre: $size-base * 1.3 !default;
 
 $font-size-small: 85% !default;
 

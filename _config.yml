@@ -200,11 +200,14 @@ plugins:
     description: The basic styles for table.
     github: https://github.com/mobi-css/mobi-plugin-table
   - title: Text
-    description: Utilities to create align text or colored text.
+    description: Utilities to create aligned text or colored text.
     github: https://github.com/mobi-css/mobi-plugin-text
   - title: Color
     description: Add more colors to your website.
     github: https://github.com/mobi-css/mobi-plugin-color
+  - title: Prism
+    description: The default theme for highlighter Prism.
+    github: https://github.com/mobi-css/mobi-plugin-prism
 
 
 themes:

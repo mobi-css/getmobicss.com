@@ -8,9 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,
       maximum-scale=1.0, user-scalable=no"/>
 
-    <title>Scroll View | Mobi.css</title>
+    <title>Scroll view | Mobi.css</title>
 
     <link rel="stylesheet" href="../css/mobi.css/mobi.min.css" />
+    <link rel="stylesheet" href="../css/mobi.css/mobi-plugin-prism.min.css" />
     <link rel="stylesheet" href="../css/site.css" />
   </head>
 
@@ -681,11 +682,11 @@
           <div class="flex-left units-gap-big">
             <div class="site-height-0 site-aside hide-on-mobile unit-1-4"></div>
             <article class="site-article unit-3-4 unit-1-on-mobile">
-              <h1 id="scroll-view">Scroll View</h1>
+              <h1 id="scroll-view">Scroll view</h1>
 <blockquote>
 <p>Make a block element scrollable.</p>
 </blockquote>
-<h2 id="vertical-scroll">Vertical Scroll</h2>
+<h2 id="vertical-scroll">Vertical scroll</h2>
 <p>Use <code>.scroll-view</code> to make a block element scrollable.</p>
 <p>You need to manually set the <code>height</code> or <code>max-height</code> for it.</p>
 <div class="top-gap scroll-view" style="height:300px;">
@@ -738,15 +739,15 @@
     座中泣下谁最多？江州司马青衫湿。
   </p>
 </div>
-<pre><code class="language-html">&lt;div class=&quot;scroll-view&quot; style=&quot;height:300px;&quot;&gt;
-  &lt;h2&gt;琵琶行&lt;/h2&gt;
-  &lt;address&gt;作者：白居易&lt;/address&gt;
-  &lt;p&gt;
-    浔阳江头夜送客，枫叶荻花秋瑟瑟。&lt;br/&gt;
-    ...&lt;br/&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>scroll-view<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">height</span><span class="token punctuation">:</span><span class="token number">300</span>px<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>琵琶行<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>address</span><span class="token punctuation">></span></span>作者：白居易<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>address</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>
+    浔阳江头夜送客，枫叶荻花秋瑟瑟。<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/></span></span>
+    ...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/></span></span>
     座中泣下谁最多？江州司马青衫湿。
-  &lt;/p&gt;
-&lt;/div&gt;
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
 </code></pre>
 <h2 id="horizontal-scroll">Horizontal scroll</h2>
 <p>If content inside <code>.scroll-view</code> is wider than the <code>.scroll-view</code> element, then it will be horizontal scrollable.</p>
@@ -755,11 +756,11 @@
     <img src="http://lorempixel.com/200/150/"/><img src="http://lorempixel.com/300/150/"/><img src="http://lorempixel.com/100/150/"/><img src="http://lorempixel.com/400/150/"/>
   </div>
 </div>
-<pre><code class="language-html">&lt;div class=&quot;top-gap scroll-view&quot;&gt;
-  &lt;div style=&quot;width:1000px;&quot;&gt;
-    &lt;img src=&quot;&quot;/&gt;&lt;img src=&quot;&quot;/&gt;&lt;img src=&quot;&quot;/&gt;&lt;img src=&quot;&quot;/&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>top-gap scroll-view<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">width</span><span class="token punctuation">:</span><span class="token number">1000</span>px<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
 </code></pre>
 
             </article>

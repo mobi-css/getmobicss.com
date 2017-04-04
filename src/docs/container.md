@@ -19,7 +19,7 @@ Here are the most common layout mode:
 - [Container Fluid](#container-fluid) ([Live demo](container/fluid))
   - [Container Fluid with Sidebar](#container-fluid-with-sidebar) ([Live demo](container/fluid/sidebar))
 
-## Simple Container
+## Simple container
 
 Let's start from a simple `container`:
 
@@ -33,7 +33,7 @@ Let's start from a simple `container`:
 </div>
 ```
 
-## Container Wider
+## Container wider
 
 `container-wider` has a wider width:
 
@@ -47,7 +47,7 @@ Let's start from a simple `container`:
 </div>
 ```
 
-### Container Wider with Sidebar
+### Container wider with sidebar
 
 It's easy to add a sidebar for `container-wider`:
 
@@ -70,7 +70,7 @@ It's easy to add a sidebar for `container-wider`:
 
 In the above case, sidebar will have 1/4 width on desktop and will fill the whole width on mobile.
 
-#### Container Wider with Sidebar Hide on Mobile
+#### Container wider with sidebar hide on mobile
 
 Sometimes we need to hide the sidebar on mobile.
 
@@ -93,7 +93,7 @@ We can add `hide-on-mobile` to sidebar to achieve this:
 </div>
 ```
 
-#### Container Wider with Fixed Width Sidebar
+#### Container wider with fixed width sidebar
 
 Sidebar can also has fixed width:
 
@@ -114,7 +114,7 @@ Sidebar can also has fixed width:
 </div>
 ```
 
-#### Container Wider with Left and Right Sidebar
+#### Container wider with left and right sidebar
 
 We can add two sidebars:
 
@@ -138,7 +138,7 @@ We can add two sidebars:
 </div>
 ```
 
-## Container Fluid
+## Container fluid
 
 `container-fluid` will fill the whole width of the browser:
 
@@ -152,7 +152,7 @@ We can add two sidebars:
 </div>
 ```
 
-### Container Fluid with Sidebar
+### Container fluid with sidebar
 
 Usually there is a fixed width sidebar in `container-fluid`:
 

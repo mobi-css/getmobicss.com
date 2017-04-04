@@ -1,8 +1,8 @@
-# Show Hide on Mobile
+# Show hide on mobile
 
 > Show element on mobile or hide element on mobile.
 
-## One Breakpoint
+## One breakpoint
 
 There are only one breakpoint in Mobi.css. It separates the mobile and desktop.
 
@@ -10,7 +10,7 @@ Device with width less than `768px` will be recognized as mobile device.
 
 Device with width equal or more than `768px` will be recognized as desktop device.
 
-## Show on Mobile
+## Show on mobile
 
 Element with `.show-on-mobile` will only show on mobile:
 
@@ -24,7 +24,7 @@ Element with `.show-on-mobile` will only show on mobile:
 </p>
 ```
 
-## Hide on Mobile
+## Hide on mobile
 
 Element with `.hide-on-mobile` will hide on mobile and show on desktop:
 

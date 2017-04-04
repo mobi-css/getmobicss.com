@@ -27,7 +27,7 @@
     "eslint": "^3.4.0",
     "eslint-config-airbnb-base": "^5.0.3",
     "eslint-plugin-import": "^1.14.0",
-    "pagic": "^0.5.0",
+    "pagic": "^0.6.0",
     "stylelint": "^7.9.0",
     "stylelint-config-standard": "^16.0.0"
   }

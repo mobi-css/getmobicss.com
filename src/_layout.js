@@ -4,7 +4,7 @@ const sidebar = require('./_partial/_sidebar');
 const article = require('./_partial/_article');
 const googleAnalytics = require('./_partial/_google-analytics');
 
-module.exports = ({ content, relativeToRoot, frontMatter, title, path, config }) => {
+module.exports = ({ content, relativeToRoot, frontMatter, title, filePath, config }) => {
   if (frontMatter.redirect) {
     return `
       <!doctype html>
@@ -24,8 +24,8 @@ module.exports = ({ content, relativeToRoot, frontMatter, title, path, config })
     <html lang="en">
       ${head({ relativeToRoot, title })}
       <body>
-        ${header({ relativeToRoot, path, config })}
-        ${sidebar({ relativeToRoot, frontMatter, path, config })}
+        ${header({ relativeToRoot, filePath, config })}
+        ${sidebar({ relativeToRoot, frontMatter, filePath, config })}
         ${article({ content, frontMatter })}
         ${googleAnalytics()}
       </body>

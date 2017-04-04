@@ -1,4 +1,4 @@
-# Plugins and Themes
+# Plugins and themes
 
 What makes Mobi.css great is the plugin and theme system.
 

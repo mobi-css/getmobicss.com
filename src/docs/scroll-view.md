@@ -1,8 +1,8 @@
-# Scroll View
+# Scroll view
 
 > Make a block element scrollable.
 
-## Vertical Scroll
+## Vertical scroll
 
 Use `.scroll-view` to make a block element scrollable.
 

@@ -11,6 +11,7 @@
     <title>Get Mobi.css | Mobi.css</title>
 
     <link rel="stylesheet" href="../css/mobi.css/mobi.min.css" />
+    <link rel="stylesheet" href="../css/mobi.css/mobi-plugin-prism.min.css" />
     <link rel="stylesheet" href="../css/site.css" />
   </head>
 
@@ -685,12 +686,12 @@
 <p>There are a few easy ways to quickly get Mobi.css.</p>
 <h2 id="cdnjs">cdnjs</h2>
 <p>The easiest way to include Mobi.css is using <a href="https://cdnjs.com/libraries/mobi.css">cdnjs</a>:</p>
-<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/mobi.css/2.0.0-alpha.8/mobi.min.css&quot; /&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdnjs.cloudflare.com/ajax/libs/mobi.css/2.0.0-alpha.9/mobi.min.css<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
 </code></pre>
 <h2 id="unpkg">unpkg</h2>
 <p>cndjs may have some delay to fetch the latest version.</p>
 <p>unpkg is a good choice:</p>
-<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/mobi.css/dist/mobi.min.css&quot; /&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://unpkg.com/mobi.css/dist/mobi.min.css<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
 </code></pre>
 <blockquote>
 <p>Warning: this will fetch the latest version of Mobi.css, please carefully include it.</p>
@@ -698,19 +699,19 @@
 <h2 id="download">Download</h2>
 <p>You can download Mobi.css in <a href="https://github.com/mobi-css/mobi.css/releases">this page</a>.</p>
 <p>Once downloaded, unzip the compressed folder to see the structure of (the compiled) Mobi.css. You'll see something like this:</p>
-<pre><code class="language-shell">mobi.css/
-└── dist/
-    ├── mobi.css
-    ├── mobi.min.css
-    └── mobi.min.css.map
+<pre class="language-autoit"><code class="language-autoit">mobi<span class="token punctuation">.</span>css<span class="token operator">/</span>
+└── dist<span class="token operator">/</span>
+    ├── mobi<span class="token punctuation">.</span>css
+    ├── mobi<span class="token punctuation">.</span>min<span class="token punctuation">.</span>css
+    └── mobi<span class="token punctuation">.</span>min<span class="token punctuation">.</span>css<span class="token punctuation">.</span>map
 </code></pre>
 <p>Please use <code>dist/mobi.min.css</code> for the compressed version.</p>
 <h2 id="npm">npm</h2>
 <p>Use npm to install Mobi.css:</p>
-<pre><code class="language-shell">npm install --save mobi.css
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> --save mobi.css
 </code></pre>
 <p>Then you can build Mobi.css to your project using SASS:</p>
-<pre><code class="language-scss">@import 'mobi.css/src/mobi';
+<pre class="language-scss"><code class="language-scss"><span class="token keyword">@import</span> <span class="token string">'mobi.css/src/mobi'</span><span class="token punctuation">;</span>
 </code></pre>
 <p>Be sure you have added node_modules to your Sass's <a href="http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory">load_paths</a>.</p>
 

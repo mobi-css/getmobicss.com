@@ -1,8 +1,8 @@
-# Top Gap
+# Top gap
 
 > Set top gaps between block elements.
 
-## Override Top Gaps
+## Override top gaps
 
 Mobi.css provides three classes, `.top-gap-big`, `.top-gap` and `.top-gap-0` to easily override the top margin.
 

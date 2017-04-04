@@ -16,7 +16,7 @@ Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante so
 
 <div class="unit">
 
-# Container Wider with Left and Right Sidebar
+# Container wider with left and right sidebar
 
 ```html
 <div class="flex-center">

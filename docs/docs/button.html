@@ -11,6 +11,7 @@
     <title>Button | Mobi.css</title>
 
     <link rel="stylesheet" href="../css/mobi.css/mobi.min.css" />
+    <link rel="stylesheet" href="../css/mobi.css/mobi-plugin-prism.min.css" />
     <link rel="stylesheet" href="../css/site.css" />
   </head>
 
@@ -685,43 +686,43 @@
 <blockquote>
 <p>Use buttons for actions in forms, dialogs, and more.</p>
 </blockquote>
-<h2 id="basic-button">Basic Button</h2>
+<h2 id="basic-button">Basic button</h2>
 <p>There are three types of buttons: default, primary and danger.</p>
 <p><button type="button" class="btn">.btn</button>
 <button type="button" class="btn btn-primary">.btn.btn-primary</button>
 <button type="button" class="btn btn-danger">.btn.btn-danger</button></p>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;.btn&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;.btn.btn-primary&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;.btn.btn-danger&lt;/button&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>.btn<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>.btn.btn-primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-danger<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>.btn.btn-danger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
 </code></pre>
-<h2 id="input-button">Input Button</h2>
+<h2 id="input-button">Input button</h2>
 <input type="button" class="btn" value=".btn"/>
 <input type="button" class="btn btn-primary" value=".btn.btn-primary"/>
 <input type="button" class="btn btn-danger" value=".btn.btn-danger"/>
-<pre><code class="language-html">&lt;input type=&quot;button&quot; class=&quot;btn&quot; value=&quot;.btn&quot;/&gt;
-&lt;input type=&quot;button&quot; class=&quot;btn btn-primary&quot; value=&quot;.btn.btn-primary&quot;/&gt;
-&lt;input type=&quot;button&quot; class=&quot;btn btn-danger&quot; value=&quot;.btn.btn-danger&quot;/&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.btn<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.btn.btn-primary<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-danger<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.btn.btn-danger<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
 </code></pre>
-<h2 id="link-button">Link Button</h2>
+<h2 id="link-button">Link button</h2>
 <p><a href="javascript:void(0);" class="btn">.btn</a>
 <a href="javascript:void(0);" class="btn btn-primary">.btn.btn-primary</a>
 <a href="javascript:void(0);" class="btn btn-danger">.btn.btn-danger</a></p>
-<pre><code class="language-html">&lt;a href=&quot;javascript:void(0);&quot; class=&quot;btn&quot;&gt;.btn&lt;/a&gt;
-&lt;a href=&quot;javascript:void(0);&quot; class=&quot;btn btn-primary&quot;&gt;.btn.btn-primary&lt;/a&gt;
-&lt;a href=&quot;javascript:void(0);&quot; class=&quot;btn btn-danger&quot;&gt;.btn.btn-danger&lt;/a&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>javascript:void(0);<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>.btn<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>javascript:void(0);<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>.btn.btn-primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>javascript:void(0);<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-danger<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>.btn.btn-danger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
 </code></pre>
-<h2 id="disabled-button">Disabled Button</h2>
+<h2 id="disabled-button">Disabled button</h2>
 <input type="button" class="btn" value=".btn" disabled/>
 <input type="button" class="btn btn-primary" value=".btn.btn-primary" disabled/>
 <input type="button" class="btn btn-danger" value=".btn.btn-danger" disabled/>
-<pre><code class="language-html">&lt;input type=&quot;button&quot; class=&quot;btn&quot; value=&quot;.btn&quot; disabled/&gt;
-&lt;input type=&quot;button&quot; class=&quot;btn btn-primary&quot; value=&quot;.btn.btn-primary&quot; disabled/&gt;
-&lt;input type=&quot;button&quot; class=&quot;btn btn-danger&quot; value=&quot;.btn.btn-danger&quot; disabled/&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.btn<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.btn.btn-primary<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-danger<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.btn.btn-danger<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">/></span></span>
 </code></pre>
-<h2 id="block-button">Block Button</h2>
+<h2 id="block-button">Block button</h2>
 <p>By default the <code>.btn</code> is a <code>inline-block</code> button, we can add <code>.btn-block</code> to get the <code>block</code> button:</p>
 <input type="button" class="btn btn-block" value=".btn.btn-block"/>
-<pre><code class="language-html">&lt;input type=&quot;button&quot; class=&quot;btn btn-block&quot; value=&quot;.btn.btn-block&quot;/&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-block<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.btn.btn-block<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
 </code></pre>
 
             </article>

@@ -16,7 +16,7 @@ Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante so
 
 <div class="unit">
 
-# Container Fluid with Sidebar
+# Container fluid with sidebar
 
 ```html
 <div class="flex-center">

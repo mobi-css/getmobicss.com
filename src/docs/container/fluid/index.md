@@ -1,7 +1,7 @@
 <div class="flex-center">
 <div class="container-fluid">
 
-# Container Fluid
+# Container fluid
 
 ```html
 <div class="flex-center">

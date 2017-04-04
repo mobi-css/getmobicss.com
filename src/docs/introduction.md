@@ -4,7 +4,7 @@
 
 Here is how to quickly get started with Mobi.css and a template starter page.
 
-## Quick Start
+## Quick start
 
 Copy and paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load Mobi.css:
 
@@ -35,7 +35,7 @@ You can find the usage in [mobi-plugin-color](https://github.com/mobi-css/mobi-p
 
 The list of all the available plugins can be found in the [this page](../plugins).
 
-## Starter Template
+## Starter template
 
 Here is a Mobi.css template page that conforms to the modern HTML5 specification:
 

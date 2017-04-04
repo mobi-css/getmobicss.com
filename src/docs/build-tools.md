@@ -1,4 +1,4 @@
-# Build Tools
+# Build tools
 
 To customize Mobi.css, you need to be familiar with some tools.
 
@@ -12,7 +12,7 @@ Once cloned Mobi.css main repository or plugin/theme repos, the `package.json` d
 
 The basic scripts are `npm install`, `npm start` and `npm test`:
 
-```shell
+```bash
 npm install     # Install the dependencies
 npm start       # Build css, js and docs. Serve public. Watch changes
 npm test        # Run lint and tests
@@ -20,7 +20,7 @@ npm test        # Run lint and tests
 
 Other useful scripts:
 
-```shell
+```bash
 npm run build   # Build css, js and docs
 npm run lint    # Lint styles and scripts
 npm version patch/minor/major

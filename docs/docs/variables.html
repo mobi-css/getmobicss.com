@@ -11,6 +11,7 @@
     <title>Variables | Mobi.css</title>
 
     <link rel="stylesheet" href="../css/mobi.css/mobi.min.css" />
+    <link rel="stylesheet" href="../css/mobi.css/mobi-plugin-prism.min.css" />
     <link rel="stylesheet" href="../css/site.css" />
   </head>
 
@@ -687,89 +688,89 @@
 <p>All variables need to be named as <code>${rule}-${element}-${modifier}</code></p>
 <h2 id="colors">Colors</h2>
 <p>There are only a few colors in base theme:</p>
-<pre><code class="language-html">// Add !default so _custom.scss can override it
-$color-background: white !default;
-$color-text: #333 !default;
-$color-text-muted: #777 !default;
-$color-border: #ddd !default;
+<pre class="language-scss"><code class="language-scss"><span class="token comment" spellcheck="true">// Add !default so _custom.scss can override it</span>
+<span class="token property"><span class="token variable">$color-background</span></span><span class="token punctuation">:</span> white <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$color-text</span></span><span class="token punctuation">:</span> <span class="token hexcode">#333</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$color-text-muted</span></span><span class="token punctuation">:</span> <span class="token hexcode">#777</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$color-border</span></span><span class="token punctuation">:</span> <span class="token hexcode">#ddd</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 
-$color-primary: hsl(210, 70%, 50%) !default;
-$color-danger: hsl(0, 65%, 60%) !default;
+<span class="token property"><span class="token variable">$color-primary</span></span><span class="token punctuation">:</span> <span class="token function">hsl</span><span class="token punctuation">(</span><span class="token number">210</span>, <span class="token number">70%</span>, <span class="token number">50%</span><span class="token punctuation">)</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$color-danger</span></span><span class="token punctuation">:</span> <span class="token function">hsl</span><span class="token punctuation">(</span><span class="token number">0</span>, <span class="token number">65%</span>, <span class="token number">60%</span><span class="token punctuation">)</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 
-$color-background-faded: darken($color-background, 5%) !default;
+<span class="token property"><span class="token variable">$color-background-faded</span></span><span class="token punctuation">:</span> <span class="token function">darken</span><span class="token punctuation">(</span><span class="token variable">$color-background</span>, <span class="token number">5%</span><span class="token punctuation">)</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 </code></pre>
 <h2 id="layout">Layout</h2>
-<pre><code class="language-html">$max-width-container: 80rem !default;
-$max-width-container-wider: 120rem !default;
+<pre class="language-scss"><code class="language-scss"><span class="token property"><span class="token variable">$max-width-container</span></span><span class="token punctuation">:</span> <span class="token number">800</span>px <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$max-width-container-wider</span></span><span class="token punctuation">:</span> <span class="token number">1200</span>px <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 
-$width-breakpoint: 768px !default;
+<span class="token property"><span class="token variable">$width-breakpoint</span></span><span class="token punctuation">:</span> <span class="token number">768</span>px <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 </code></pre>
 <h2 id="spacing">Spacing</h2>
 <p><code>size-base</code> is set to <code>&lt;html&gt;</code>. Other sizes is based on it.</p>
-<pre><code class="language-html">// The base size, all other size are based on it
-$size-base: 10px !default;
+<pre class="language-scss"><code class="language-scss"><span class="token comment" spellcheck="true">// The base size, all other size are based on it</span>
+<span class="token property"><span class="token variable">$size-base</span></span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 
-$width-gap: 1.5rem !default;
-$width-gap-double: $width-gap * 2 !default;
-$width-gap-half: $width-gap * 0.5 !default;
+<span class="token property"><span class="token variable">$width-gap</span></span><span class="token punctuation">:</span> <span class="token variable">$size-base</span> <span class="token operator">*</span> <span class="token number">1.5</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$width-gap-double</span></span><span class="token punctuation">:</span> <span class="token variable">$width-gap</span> <span class="token operator">*</span> <span class="token number">2</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$width-gap-half</span></span><span class="token punctuation">:</span> <span class="token variable">$width-gap</span> <span class="token operator">*</span> <span class="token number">0.5</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 
-$width-padding-input: 0.5rem !default;
+<span class="token property"><span class="token variable">$width-padding-input</span></span><span class="token punctuation">:</span> <span class="token variable">$size-base</span> <span class="token operator">*</span> <span class="token number">0.5</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 
-$width-border-radius: 0.3rem !default;
+<span class="token property"><span class="token variable">$width-border-radius</span></span><span class="token punctuation">:</span> <span class="token variable">$size-base</span> <span class="token operator">*</span> <span class="token number">0.3</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 
-$width-border: 1px !default;
+<span class="token property"><span class="token variable">$width-border</span></span><span class="token punctuation">:</span> <span class="token number">1</span>px <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 
-$padding-code: 0.2em 0.3em !default;
+<span class="token property"><span class="token variable">$padding-code</span></span><span class="token punctuation">:</span> <span class="token number">0.2</span>em <span class="token number">0.3</span>em <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 </code></pre>
 <h2 id="typography">Typography</h2>
-<pre><code class="language-html">$font-size: 1.6rem !default;
+<pre class="language-scss"><code class="language-scss"><span class="token property"><span class="token variable">$font-size</span></span><span class="token punctuation">:</span> <span class="token variable">$size-base</span> <span class="token operator">*</span> <span class="token number">1.6</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 
-$font-size-h1: 3.2rem !default;
-$font-size-h2: 2.6rem !default;
-$font-size-h3: 2.2rem !default;
-$font-size-h4: 2rem !default;
-$font-size-h5: 1.8rem !default;
-$font-size-h6: 1.6rem !default;
+<span class="token property"><span class="token variable">$font-size-h1</span></span><span class="token punctuation">:</span> <span class="token variable">$size-base</span> <span class="token operator">*</span> <span class="token number">3.2</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$font-size-h2</span></span><span class="token punctuation">:</span> <span class="token variable">$size-base</span> <span class="token operator">*</span> <span class="token number">2.6</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$font-size-h3</span></span><span class="token punctuation">:</span> <span class="token variable">$size-base</span> <span class="token operator">*</span> <span class="token number">2.2</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$font-size-h4</span></span><span class="token punctuation">:</span> <span class="token variable">$size-base</span> <span class="token operator">*</span> <span class="token number">2</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$font-size-h5</span></span><span class="token punctuation">:</span> <span class="token variable">$size-base</span> <span class="token operator">*</span> <span class="token number">1.8</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$font-size-h6</span></span><span class="token punctuation">:</span> <span class="token variable">$size-base</span> <span class="token operator">*</span> <span class="token number">1.6</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 
-$font-size-pre: 1.3rem !default;
+<span class="token property"><span class="token variable">$font-size-pre</span></span><span class="token punctuation">:</span> <span class="token variable">$size-base</span> <span class="token operator">*</span> <span class="token number">1.3</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 
-$font-size-small: 85% !default;
+<span class="token property"><span class="token variable">$font-size-small</span></span><span class="token punctuation">:</span> <span class="token number">85%</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 
-$line-height: 1.5 !default;
+<span class="token property"><span class="token variable">$line-height</span></span><span class="token punctuation">:</span> <span class="token number">1.5</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 
-$line-height-input: 1.25 !default;
-// line-height need to be set to pre, not code
-$line-height-pre: 1.2 !default;
+<span class="token property"><span class="token variable">$line-height-input</span></span><span class="token punctuation">:</span> <span class="token number">1.25</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// line-height need to be set to pre, not code</span>
+<span class="token property"><span class="token variable">$line-height-pre</span></span><span class="token punctuation">:</span> <span class="token number">1.2</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 
-$font-weight-bold: 600 !default;
+<span class="token property"><span class="token variable">$font-weight-bold</span></span><span class="token punctuation">:</span> <span class="token number">600</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 
-$font-family:
-  // Safari for OS X and iOS (San Francisco)
+<span class="token property"><span class="token variable">$font-family</span></span><span class="token punctuation">:</span>
+  <span class="token comment" spellcheck="true">// Safari for OS X and iOS (San Francisco)</span>
   -apple-system,
-  // Chrome for OS X (San Francisco)
+  <span class="token comment" spellcheck="true">// Chrome for OS X (San Francisco)</span>
   BlinkMacSystemFont,
-  // Windows
-  'Segoe UI',
-  // Android
-  'Roboto',
-  // Linux
-  'Oxygen', // KDE
-  'Ubuntu',
-  'Cantarell', // GNOME
-  // Firefox OS [R.I.P.]
-  'Fira Sans',
-  // Older Android
-  'Droid Sans',
-  // Chinese font for OSX and iOS
-  'Hiragino Sans GB',
-  // Chinese font for Windows
-  'Microsoft Yahei', '微软雅黑',
-  // Basic web fallback
+  <span class="token comment" spellcheck="true">// Windows</span>
+  <span class="token string">'Segoe UI'</span>,
+  <span class="token comment" spellcheck="true">// Android</span>
+  <span class="token string">'Roboto'</span>,
+  <span class="token comment" spellcheck="true">// Linux</span>
+  <span class="token string">'Oxygen'</span>, <span class="token comment" spellcheck="true">// KDE</span>
+  <span class="token string">'Ubuntu'</span>,
+  <span class="token string">'Cantarell'</span>, <span class="token comment" spellcheck="true">// GNOME</span>
+  <span class="token comment" spellcheck="true">// Firefox OS [R.I.P.]</span>
+  <span class="token string">'Fira Sans'</span>,
+  <span class="token comment" spellcheck="true">// Older Android</span>
+  <span class="token string">'Droid Sans'</span>,
+  <span class="token comment" spellcheck="true">// Chinese font for OSX and iOS</span>
+  <span class="token string">'Hiragino Sans GB'</span>,
+  <span class="token comment" spellcheck="true">// Chinese font for Windows</span>
+  <span class="token string">'Microsoft Yahei'</span>, <span class="token string">'微软雅黑'</span>,
+  <span class="token comment" spellcheck="true">// Basic web fallback</span>
   Arial, Helvetica, STHeiti, sans-serif,
-  // Emoji
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
+  <span class="token comment" spellcheck="true">// Emoji</span>
+  <span class="token string">'Apple Color Emoji'</span>, <span class="token string">'Segoe UI Emoji'</span>, <span class="token string">'Segoe UI Symbol'</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 
-$font-family-monospace: Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace !default;
+<span class="token property"><span class="token variable">$font-family-monospace</span></span><span class="token punctuation">:</span> Menlo, Monaco, Consolas, <span class="token string">"Liberation Mono"</span>, <span class="token string">"Courier New"</span>, monospace <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
 </code></pre>
 
             </article>

@@ -16,7 +16,7 @@ Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante so
 
 <div class="unit-3-4 unit-1-on-mobile">
 
-# Container Wider with Sidebar Hide on Mobile
+# Container wider with sidebar hide on mobile
 
 ```html
 <div class="flex-center">

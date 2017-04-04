@@ -8,9 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,
       maximum-scale=1.0, user-scalable=no"/>
 
-    <title>Build Tools | Mobi.css</title>
+    <title>Build tools | Mobi.css</title>
 
     <link rel="stylesheet" href="../css/mobi.css/mobi.min.css" />
+    <link rel="stylesheet" href="../css/mobi.css/mobi-plugin-prism.min.css" />
     <link rel="stylesheet" href="../css/site.css" />
   </head>
 
@@ -681,23 +682,23 @@
           <div class="flex-left units-gap-big">
             <div class="site-height-0 site-aside hide-on-mobile unit-1-4"></div>
             <article class="site-article unit-3-4 unit-1-on-mobile">
-              <h1 id="build-tools">Build Tools</h1>
+              <h1 id="build-tools">Build tools</h1>
 <p>To customize Mobi.css, you need to be familiar with some tools.</p>
 <h2 id="npm">npm</h2>
 <p>npm is the node package manager.</p>
 <p>We use npm to install, run scripts, manage versions.</p>
 <p>Once cloned Mobi.css main repository or plugin/theme repos, the <code>package.json</code> descripts some avalible scripts.</p>
 <p>The basic scripts are <code>npm install</code>, <code>npm start</code> and <code>npm test</code>:</p>
-<pre><code class="language-shell">npm install     # Install the dependencies
-npm start       # Build css, js and docs. Serve public. Watch changes
-npm test        # Run lint and tests
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span>     <span class="token comment" spellcheck="true"># Install the dependencies</span>
+<span class="token function">npm</span> start       <span class="token comment" spellcheck="true"># Build css, js and docs. Serve public. Watch changes</span>
+<span class="token function">npm</span> <span class="token function">test</span>        <span class="token comment" spellcheck="true"># Run lint and tests</span>
 </code></pre>
 <p>Other useful scripts:</p>
-<pre><code class="language-shell">npm run build   # Build css, js and docs
-npm run lint    # Lint styles and scripts
-npm version patch/minor/major
-                # Update the version. This will run preversion and version scripts
-npm publish     # Publish the current version
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> run build   <span class="token comment" spellcheck="true"># Build css, js and docs</span>
+<span class="token function">npm</span> run lint    <span class="token comment" spellcheck="true"># Lint styles and scripts</span>
+<span class="token function">npm</span> version patch/minor/major
+                <span class="token comment" spellcheck="true"># Update the version. This will run preversion and version scripts</span>
+<span class="token function">npm</span> publish     <span class="token comment" spellcheck="true"># Publish the current version</span>
 </code></pre>
 <h2 id="gulp">gulp</h2>
 <p>gulp is a task runner for development.</p>

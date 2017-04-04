@@ -1,8 +1,8 @@
 # Text
 
-> Utilities to create align text or colored text.
+> Utilities to create aligned text or colored text.
 
-## Text Align
+## Text align
 
 <p class="text-left">.text-left</p>
 <p class="text-center">.text-center</p>
@@ -14,7 +14,7 @@
 <p class="text-right">.text-right</p>
 ```
 
-## Text Color
+## Text color
 
 <p class="text-muted">.text-muted</p>
 <p class="text-primary">.text-primary</p>
@@ -36,7 +36,7 @@
 <p><a class="text-danger" href="#">a.text-danger</a></p>
 ```
 
-## Text Size
+## Text size
 
 <p class="text-small">.text-small</p>
 

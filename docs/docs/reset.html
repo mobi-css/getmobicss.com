@@ -11,6 +11,7 @@
     <title>Reset | Mobi.css</title>
 
     <link rel="stylesheet" href="../css/mobi.css/mobi.min.css" />
+    <link rel="stylesheet" href="../css/mobi.css/mobi-plugin-prism.min.css" />
     <link rel="stylesheet" href="../css/site.css" />
   </head>
 
@@ -736,21 +737,21 @@
   <dt>Milk</dt>
   <dd>White cold drink</dd>
 </dl>
-<pre><code class="language-html">&lt;dl&gt;
-  &lt;dt&gt;Coffee&lt;/dt&gt;
-  &lt;dd&gt;Black hot drink&lt;/dd&gt;
-  &lt;dt&gt;Milk&lt;/dt&gt;
-  &lt;dd&gt;White cold drink&lt;/dd&gt;
-&lt;/dl&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dl</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">></span></span>Coffee<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">></span></span>Black hot drink<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">></span></span>Milk<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">></span></span>White cold drink<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dl</span><span class="token punctuation">></span></span>
 </code></pre>
 <pre><code>// Use &lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt; to create code blocks.
 document.write('Hello World');</code></pre>
 <blockquote>
   <p>Use &lt;blockquote&gt; to create block quotation.</p>
 </blockquote>
-<pre><code class="language-html">&lt;blockquote&gt;
-  &lt;p&gt;Use &amp;lt;blockquote&amp;gt; to create block quotation.&lt;/p&gt;
-&lt;/blockquote&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Use <span class="token entity" title="&lt;">&amp;lt;</span>blockquote<span class="token entity" title="&gt;">&amp;gt;</span> to create block quotation.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">></span></span>
 </code></pre>
 <p>Use <code>&lt;hr&gt;</code> to create horizontal rules:</p>
 <hr/>
@@ -759,10 +760,10 @@ document.write('Hello World');</code></pre>
   <img src="http://lorempixel.com/600/300/" alt="Random Image"/>
   <figcaption>Figure caption: Random Image</figcaption>
 </figure>
-<pre><code class="language-html">&lt;figure&gt;
-  &lt;img src=&quot;/assets/img/mobi-logo-512.png&quot; alt=&quot;Mobi.css Logo&quot;/&gt;
-  &lt;figcaption&gt;Figure caption: Mobi.css Logo&lt;/figcaption&gt;
-&lt;/figure&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/img/mobi-logo-512.png<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Mobi.css Logo<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figcaption</span><span class="token punctuation">></span></span>Figure caption: Mobi.css Logo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figcaption</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">></span></span>
 </code></pre>
 <h2 id="inline-text-semantics">Inline text semantics</h2>
 <p>Use <code>&lt;a&gt;</code> to create <a href="#">links</a>.</p>
@@ -783,19 +784,19 @@ Use <code>&lt;samp&gt;</code> to create sample output from a computer: <samp>Bui
 <p>Use <code>&lt;br/&gt;</code> to create line<br/>breaks.</p>
 <p>Use <code>&lt;span&gt;</code> to create inline container: I <span style="color:red;">love</span> Mobi.css.</p>
 <p>Use <code>&lt;abbr&gt;</code> to create <abbr title="The HTML <abbr> element (or HTML Abbreviation Element) represents an abbreviation and optionally provides a full description for it.">abbreviation elements</abbr>.</p>
-<pre><code class="language-html">&lt;abbr title=&quot;The HTML &lt;abbr&gt; element (or HTML Abbreviation Element) represents an abbreviation and optionally provides a full description for it.&quot;&gt;abbreviation elements&lt;/abbr&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>abbr</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>The HTML &lt;abbr<span class="token punctuation">></span> element (or HTML Abbreviation Element) represents an abbreviation and optionally provides a full description for it.<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>abbreviation elements<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>abbr</span><span class="token punctuation">></span></span>
 </code></pre>
 <p>Use <code>&lt;cite&gt;</code> to create citation elements: <cite><a href="http://getmobicss.com">Mobi.css</a></cite>.</p>
-<pre><code class="language-html">&lt;cite&gt;&lt;a href=&quot;http://getmobicss.com&quot;&gt;Mobi.css&lt;/a&gt;&lt;/cite&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://getmobicss.com<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Mobi.css<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">></span></span>
 </code></pre>
 <p>Use <code>&lt;data&gt;</code> to link a given content with a machine-readable translation: <data value="100000">Beijing</data>.</p>
-<pre><code class="language-html">&lt;data value=&quot;100000&quot;&gt;Beijing&lt;/data&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>data</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100000<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Beijing<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>data</span><span class="token punctuation">></span></span>
 </code></pre>
 <p>Use <code>&lt;time&gt;</code> to create time: <time datetime="2016-09-30T00:00">Sep 30</time>.</p>
-<pre><code class="language-html">&lt;time datetime=&quot;2016-09-30T00:00&quot;&gt;Sep 30&lt;/time&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>time</span> <span class="token attr-name">datetime</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>2016-09-30T00:00<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Sep 30<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>time</span><span class="token punctuation">></span></span>
 </code></pre>
 <p>Use <code>&lt;q&gt;</code> to create inline quotations: <q>I love Mobi.css</q>, xcatliu said.</p>
-<pre><code class="language-html">&lt;q&gt;I love Mobi.css&lt;/q&gt;, xcatliu said.
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q</span><span class="token punctuation">></span></span>I love Mobi.css<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q</span><span class="token punctuation">></span></span>, xcatliu said.
 </code></pre>
 <p>Use <code>&lt;ruby&gt;</code>, <code>&lt;rp&gt;</code>, <code>&lt;rt&gt;</code> to create ruby annotations:</p>
 <ruby>
@@ -805,33 +806,33 @@ Use <code>&lt;samp&gt;</code> to create sample output from a computer: <samp>Bui
   澡 <rp>(</rp><rt>nǐ</rt><rp>)</rp>
   了 <rp>(</rp><rt>le</rt><rp>)</rp>
 </ruby>
-<pre><code class="language-html">&lt;ruby&gt;
-  我 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;lǎn&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
-  去 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;de&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
-  洗 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;lǐ&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
-  澡 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;nǐ&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
-  了 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;le&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
-&lt;/ruby&gt;
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ruby</span><span class="token punctuation">></span></span>
+  我 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rp</span><span class="token punctuation">></span></span>(<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rp</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rt</span><span class="token punctuation">></span></span>lǎn<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rt</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rp</span><span class="token punctuation">></span></span>)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rp</span><span class="token punctuation">></span></span>
+  去 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rp</span><span class="token punctuation">></span></span>(<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rp</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rt</span><span class="token punctuation">></span></span>de<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rt</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rp</span><span class="token punctuation">></span></span>)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rp</span><span class="token punctuation">></span></span>
+  洗 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rp</span><span class="token punctuation">></span></span>(<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rp</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rt</span><span class="token punctuation">></span></span>lǐ<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rt</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rp</span><span class="token punctuation">></span></span>)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rp</span><span class="token punctuation">></span></span>
+  澡 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rp</span><span class="token punctuation">></span></span>(<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rp</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rt</span><span class="token punctuation">></span></span>nǐ<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rt</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rp</span><span class="token punctuation">></span></span>)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rp</span><span class="token punctuation">></span></span>
+  了 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rp</span><span class="token punctuation">></span></span>(<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rp</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rt</span><span class="token punctuation">></span></span>le<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rt</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rp</span><span class="token punctuation">></span></span>)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rp</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ruby</span><span class="token punctuation">></span></span>
 </code></pre>
 <p>Use <code>&lt;bdi&gt;</code> to create text that be formatted in a <bdi>DIFFERENT DIRECTION</bdi> from other text outside it.<br>
 Use <code>&lt;bdo&gt;</code> to <bdo dir="rtl">OVERRIDE</bdo> the current directionality of text.</p>
-<pre><code class="language-html">text that be formatted in a &lt;bdi&gt;DIFFERENT DIRECTION&lt;/bdi&gt; from other text outside it.
-&lt;bdo dir=&quot;rtl&quot;&gt;OVERRIDE&lt;/bdo&gt; the current directionality of text.
+<pre class="language-html"><code class="language-html">text that be formatted in a <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bdi</span><span class="token punctuation">></span></span>DIFFERENT DIRECTION<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>bdi</span><span class="token punctuation">></span></span> from other text outside it.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bdo</span> <span class="token attr-name">dir</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>rtl<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>OVERRIDE<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>bdo</span><span class="token punctuation">></span></span> the current directionality of text.
 </code></pre>
 <p><code>&lt;bdi&gt;</code> is not working in iOS and Chrome. Don't use it in your project, use <code>&lt;bdo&gt;</code> instead.</p>
 <p>Use <code>&lt;dfn&gt;</code> to create a defining instance of a term:<br>
 <dfn id="dfn-mobicss">Mobi.css</dfn> is a lightweight, flexible css framework that focus on mobile.<br>
 What is Mobi.css? You can find the definition <a href="#dfn-mobicss">here</a>.</p>
-<pre><code class="language-html">&lt;dfn id=&quot;dfn-mobicss&quot;&gt;Mobi.css&lt;/dfn&gt; is a lightweight, flexible css framework with focus on mobile.
-What is Mobi.css? You can find the definition &lt;a href=&quot;#dfn-mobicss&quot;&gt;here&lt;/a&gt;.
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dfn</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dfn-mobicss<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Mobi.css<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dfn</span><span class="token punctuation">></span></span> is a lightweight, flexible css framework with focus on mobile.
+What is Mobi.css? You can find the definition <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#dfn-mobicss<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>here<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>.
 </code></pre>
 <p>Use <code>&lt;var&gt;</code> to create a variable in a mathematical expression or a programming context:</p>
 <p>A simple equation: <var>x</var> = <var>y</var> + 2</p>
-<pre><code class="language-html">A simple equation: &lt;var&gt;x&lt;/var&gt; = &lt;var&gt;y&lt;/var&gt; + 2
+<pre class="language-html"><code class="language-html">A simple equation: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>var</span><span class="token punctuation">></span></span>x<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>var</span><span class="token punctuation">></span></span> = <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>var</span><span class="token punctuation">></span></span>y<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>var</span><span class="token punctuation">></span></span> + 2
 </code></pre>
 <p>Use <code>&lt;wbr/&gt;</code> to create a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location:</p>
 <p>http://this<wbr/>.is<wbr/>.a<wbr/>.really<wbr/>.long<wbr/>.example<wbr/>.com/With<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages<wbr/>/deeper<wbr/>/level<wbr/>/pages</p>
-<pre><code class="language-html">http://this&lt;wbr/&gt;.is&lt;wbr/&gt;.a&lt;wbr/&gt;.really&lt;wbr/&gt;.long&lt;wbr/&gt;.example&lt;wbr/&gt;.com/With&lt;wbr/&gt;/deeper&lt;wbr/&gt;/level&lt;wbr/&gt;/pages&lt;wbr/&gt;/deeper&lt;wbr/&gt;/level&lt;wbr/&gt;/pages&lt;wbr/&gt;/deeper&lt;wbr/&gt;/level&lt;wbr/&gt;/pages&lt;wbr/&gt;/deeper&lt;wbr/&gt;/level&lt;wbr/&gt;/pages&lt;wbr/&gt;/deeper&lt;wbr/&gt;/level&lt;wbr/&gt;/pages
+<pre class="language-html"><code class="language-html">http://this<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>.is<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>.a<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>.really<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>.long<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>.example<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>.com/With<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>/deeper<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>/level<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>/pages<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>/deeper<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>/level<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>/pages<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>/deeper<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>/level<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>/pages<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>/deeper<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>/level<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>/pages<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>/deeper<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>/level<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>wbr</span><span class="token punctuation">/></span></span>/pages
 </code></pre>
 
             </article>

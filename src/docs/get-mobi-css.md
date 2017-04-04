@@ -7,7 +7,7 @@ There are a few easy ways to quickly get Mobi.css.
 The easiest way to include Mobi.css is using [cdnjs](https://cdnjs.com/libraries/mobi.css):
 
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mobi.css/2.0.0-alpha.8/mobi.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mobi.css/2.0.0-alpha.9/mobi.min.css" />
 ```
 
 ## unpkg
@@ -28,7 +28,7 @@ You can download Mobi.css in [this page](https://github.com/mobi-css/mobi.css/re
 
 Once downloaded, unzip the compressed folder to see the structure of (the compiled) Mobi.css. You'll see something like this:
 
-```shell
+```
 mobi.css/
 └── dist/
     ├── mobi.css
@@ -42,7 +42,7 @@ Please use `dist/mobi.min.css` for the compressed version.
 
 Use npm to install Mobi.css:
 
-```shell
+```bash
 npm install --save mobi.css
 ```
 

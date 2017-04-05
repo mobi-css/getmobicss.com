@@ -20,9 +20,9 @@ A theme is just a list of variables. It is based on [mobi-theme-base](https://gi
 
 A plugin should be compatible with any themes. If a plugin use the extension variables which are not exists in mobi-theme-base, it should has a fallback value that only use the base variables.
 
-Like plugins, A theme also provides a standalone version. The difference is that the standalone version may have a different plugins set with the default bundled Mobi.css
+Like plugins, A theme also provides a standalone version. The difference is that the standalone version may have a different plugins set.
 
-Unfortunately, you CANNOT use the standalone plugin with the standalone theme -- the reason is that the standalone plugin is built with [mobi-theme-base](https://github.com/mobi.css/mobi-theme-base).
+Unfortunately, you CANNOT use the standalone plugin with the standalone theme, the reason is that the standalone plugin is built with [mobi-theme-base](https://github.com/mobi.css/mobi-theme-base).
 
 In this case, you need to build the plugin yourself.
 

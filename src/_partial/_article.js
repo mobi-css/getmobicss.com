@@ -33,7 +33,7 @@ module.exports = ({ content, frontMatter }) => {
 function renderAnnouncement() {
   return `
     <p class="site-warning text-center">
-      WARNING: This is the alpha version of Mobi.css 2, please goto <a href="http://v1.getmobicss.com">http://v1.getmobicss.com</a> for a stable version.
+      WARNING: This is the beta version of Mobi.css 2, please goto <a href="http://v1.getmobicss.com">http://v1.getmobicss.com</a> for a stable version.
     </p>
   `;
 }

@@ -66,7 +66,7 @@ document.write('Hello World');</code></pre>
 
 ```html
 <blockquote>
-  <p>Use &lt;blockquote&gt; to create block quotation.</p>
+  <p>Use <blockquote> to create block quotation.</p>
 </blockquote>
 ```
 
@@ -77,13 +77,13 @@ Use `<hr>` to create horizontal rules:
 Use `<figure>` and `<figcaption>` to create self-contained content:
 
 <figure>
-  <img src="http://lorempixel.com/600/300/" alt="Random Image"/>
+  <img src="http://getmobicss.com/img/mobi-logo.png" height="200" alt="Mobi.css Logo"/>
   <figcaption>Figure caption: Random Image</figcaption>
 </figure>
 
 ```html
 <figure>
-  <img src="/assets/img/mobi-logo-512.png" alt="Mobi.css Logo"/>
+  <img src="http://getmobicss.com/img/mobi-logo.png" height="200" alt="Mobi.css Logo"/>
   <figcaption>Figure caption: Mobi.css Logo</figcaption>
 </figure>
 ```

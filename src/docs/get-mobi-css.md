@@ -7,7 +7,7 @@ There are a few easy ways to quickly get Mobi.css.
 The easiest way to include Mobi.css is using [cdnjs](https://cdnjs.com/libraries/mobi.css):
 
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mobi.css/2.0.0-alpha.10/mobi.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mobi.css/2.0.0-beta.1/mobi.min.css" />
 ```
 
 ## unpkg

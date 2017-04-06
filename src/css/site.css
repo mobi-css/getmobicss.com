@@ -89,19 +89,6 @@ a.site-text-plain.current {
   font-weight: 600;
 }
 
-/* warning */
-.site-warning {
-  background-color: #db5757;
-  color: white;
-  margin-top: 0;
-  padding: 15px;
-}
-
-.site-warning a {
-  color: white;
-  text-decoration: underline;
-}
-
 /* z-index */
 .site-header {
   z-index: 10;

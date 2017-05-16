@@ -160,7 +160,7 @@ Usually there is a fixed width sidebar in `container-fluid`:
 
 ```html
 <div class="flex-center">
-  <div class="container-wider">
+  <div class="container-fluid">
     <div class="flex-left flex-wrap units-gap-big">
       <div class="unit-0 unit-1-on-mobile" style="width:300px">
         Sidebar

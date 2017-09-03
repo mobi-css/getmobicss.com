@@ -28,7 +28,7 @@
     "eslint": "^4.6.0",
     "eslint-config-alloy": "^1.0.0",
     "gulp": "^3.9.1",
-    "mobi-util-build-css": "^3.0.2",
+    "mobi-util-build-css": "^3.0.0",
     "pagic": "^0.6.0",
     "stylelint": "^8.0.0",
     "stylelint-config-standard": "^17.0.0"
@@ -36,6 +36,6 @@
   "dependencies": {
     "mobi-plugin-color": "^1.0.0",
     "mobi-plugin-prism": "^1.0.0",
-    "mobi.css": "^3.0.2"
+    "mobi.css": "^3.0.3"
   }
 }

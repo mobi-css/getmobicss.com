@@ -1,8 +1,8 @@
-# Scroll view
+# Scroll View
 
 > Make a block element scrollable.
 
-## Vertical scroll
+## Vertical Scroll
 
 Use `.scroll-view` to make a block element scrollable.
 
@@ -71,7 +71,7 @@ You need to manually set the `height` or `max-height` for it.
 </div>
 ```
 
-## Horizontal scroll
+## Horizontal Scroll
 
 If content inside `.scroll-view` is wider than the `.scroll-view` element, then it will be horizontal scrollable.
 

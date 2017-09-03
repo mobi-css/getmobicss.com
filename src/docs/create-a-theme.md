@@ -1,3 +1,3 @@
-# Create a theme
+# Create a Theme
 
-TBD
+Please take [mobi-plugin-dark](https://github.com/mobi-css/mobi-plugin-dark) as an example.

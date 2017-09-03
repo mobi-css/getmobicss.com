@@ -10,10 +10,7 @@
 
     <title>Get Mobi.css | Mobi.css</title>
 
-    <link rel="stylesheet" href="../css/mobi.css/mobi.min.css" />
-    <link rel="stylesheet" href="../css/mobi.css/mobi-plugin-color.min.css" />
-    <link rel="stylesheet" href="../css/mobi.css/mobi-plugin-prism.min.css" />
-    <link rel="stylesheet" href="../css/site.css" />
+    <link rel="stylesheet" href="../css/site.min.css" />
   </head>
 
       <body>
@@ -684,25 +681,24 @@
             <div class="site-height-0 site-aside hide-on-mobile unit-1-4"></div>
             <article class="site-article unit-3-4 unit-1-on-mobile">
               <h1 id="get-mobicss">Get Mobi.css</h1>
-<p>There are a few easy ways to quickly get Mobi.css.</p>
+<p>There are a few easy ways to quickly get Mobi.css</p>
 <h2 id="cdnjs">cdnjs</h2>
 <p>The easiest way to include Mobi.css is using <a href="https://cdnjs.com/libraries/mobi.css">cdnjs</a>:</p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdnjs.cloudflare.com/ajax/libs/mobi.css/2.0.0-beta.1/mobi.min.css<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdnjs.cloudflare.com/ajax/libs/mobi.css/3.0.2/mobi.min.css<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
 </code></pre>
 <h2 id="unpkg">unpkg</h2>
 <p>cndjs may have some delay to fetch the latest version.</p>
 <p>unpkg is a good choice:</p>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://unpkg.com/mobi.css/dist/mobi.min.css<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
 </code></pre>
-<blockquote>
-<p>Warning: this will fetch the latest version of Mobi.css, please carefully include it.</p>
-</blockquote>
+<p>Please notice that this will always fetch the latest version of Mobi.css, which may have breaking changes between major versions, please carefully use it.</p>
 <h2 id="download">Download</h2>
 <p>You can download Mobi.css in <a href="https://github.com/mobi-css/mobi.css/releases">this page</a>.</p>
 <p>Once downloaded, unzip the compressed folder to see the structure of (the compiled) Mobi.css. You'll see something like this:</p>
 <pre class="language-autoit"><code class="language-autoit">mobi<span class="token punctuation">.</span>css<span class="token operator">/</span>
 └── dist<span class="token operator">/</span>
     ├── mobi<span class="token punctuation">.</span>css
+    ├── mobi<span class="token punctuation">.</span>css<span class="token punctuation">.</span>map
     ├── mobi<span class="token punctuation">.</span>min<span class="token punctuation">.</span>css
     └── mobi<span class="token punctuation">.</span>min<span class="token punctuation">.</span>css<span class="token punctuation">.</span>map
 </code></pre>
@@ -711,10 +707,65 @@
 <p>Use npm to install Mobi.css:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> --save mobi.css
 </code></pre>
-<p>Then you can build Mobi.css to your project using SASS:</p>
-<pre class="language-scss"><code class="language-scss"><span class="token keyword">@import</span> <span class="token string">'mobi.css/src/mobi'</span><span class="token punctuation">;</span>
+<p>You can also use npm to install Mobi.css, and then build Mobi.css to your project with <a href="http://postcss.org/">PostCSS</a>, <a href="http://cssnext.io/">cssnext</a> and other plugins:</p>
+<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@import</span> <span class="token string">'mobi.css'</span><span class="token punctuation">;</span></span>
+
+<span class="token comment" spellcheck="true">/* Use variables which declared in mobi-theme-base */</span>
+<span class="token selector"><span class="token class">.your-custom-class-name</span> </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color-primary<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
-<p>Be sure you have added node_modules to your Sass's <a href="http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory">load_paths</a>.</p>
+<p>There are a lot of ways to build css with PostCSS and it's plugins, take gulp as an example:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> gulp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> postcss <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-postcss'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> atImport <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'postcss-import'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> cssNext <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'postcss-cssnext'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> pxtorem <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'postcss-pxtorem'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> cssnano <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'cssnano'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> sourcemaps <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-sourcemaps'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> rename <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-rename'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> browserlist <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token string">'last 5 iOS versions'</span><span class="token punctuation">,</span>
+    <span class="token string">'last 5 Android versions'</span><span class="token punctuation">,</span>
+    <span class="token string">'last 5 ChromeAndroid versions'</span><span class="token punctuation">,</span>
+    <span class="token string">'last 5 UCAndroid versions'</span><span class="token punctuation">,</span>
+    <span class="token string">'last 5 FirefoxAndroid versions'</span><span class="token punctuation">,</span>
+    <span class="token string">'last 5 OperaMini versions'</span><span class="token punctuation">,</span>
+    <span class="token string">'last 5 OperaMobile versions'</span><span class="token punctuation">,</span>
+    <span class="token string">'last 5 Samsung versions'</span><span class="token punctuation">,</span>
+
+    <span class="token string">'last 3 Chrome versions'</span><span class="token punctuation">,</span>
+    <span class="token string">'last 3 Firefox versions'</span><span class="token punctuation">,</span>
+    <span class="token string">'last 3 Edge versions'</span><span class="token punctuation">,</span>
+    <span class="token string">'last 3 Opera versions'</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> plugins <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token function">atImport</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">cssNext</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        browsers<span class="token punctuation">:</span> browserlist
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">pxtorem</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        propList<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token string">'font'</span><span class="token punctuation">,</span> <span class="token string">'font-size'</span><span class="token punctuation">,</span> <span class="token string">'line-height'</span><span class="token punctuation">,</span> <span class="token string">'letter-spacing'</span><span class="token punctuation">,</span>
+            <span class="token string">'margin*'</span><span class="token punctuation">,</span> <span class="token string">'padding*'</span><span class="token punctuation">,</span> <span class="token string">'border-radius'</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">cssnano</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'build:css'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>callback<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    gulp<span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span><span class="token string">'src/css/site.css'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>sourcemaps<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">postcss</span><span class="token punctuation">(</span>plugins<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">rename</span><span class="token punctuation">(</span><span class="token string">'site.min.css'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>sourcemaps<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'./'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span><span class="token string">'dist/css'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>I would recommend you a tool to do all above build steps, <a href="build-tools.html#mobi-util-build-css">mobi-util-build-css</a></p>
 
             </article>
           </div>

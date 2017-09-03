@@ -113,6 +113,14 @@ pages:
   github:
     title: GitHub
     link: https://github.com/mobi-css/mobi.css
+  docs:
+    title: Docs
+    link: /docs/introduction.html
+    current_check_prefix: docs
+  about:
+    title: About
+    link: /about/community.html
+    current_check_prefix: about
   docs/getting-started:
     title: Getting Started
     link: /docs/introduction.html
@@ -122,17 +130,9 @@ pages:
   docs/customize:
     title: Customize
     link: /docs/build-tools.html
-  about/about:
+  about/index:
     title: About
     link: /about/community.html
-  docs:
-    title: Docs
-    link: /docs/introduction.html
-    current_check_prefix: docs
-  about:
-    title: About
-    link: /about/community.html
-    current_check_prefix: about
 
 
 nav:
@@ -165,7 +165,7 @@ nav:
   - id: themes
   - id: about
     menu:
-      - id: about/about
+      - id: about/index
         sub_menu:
           - id: about/community
           - id: about/support
@@ -174,46 +174,46 @@ nav:
 plugins:
   - title: Reset
     description: Reset styles makes browsers render all elements more consistently.
-    github: https://github.com/mobi-css/mobi-plugin-reset
+    link: /docs/reset.html
   - title: Top Gap
     description: Set top gaps between block elements.
-    github: https://github.com/mobi-css/mobi-plugin-top-gap
+    link: /docs/top-gap.html
   - title: Show Hide on Mobile
-    description: Show element on mobile or hide element on mobile.
-    github: https://github.com/mobi-css/mobi-plugin-show-hide-on-mobile
+    description: Show or hide an element on mobile.
+    link: /docs/show-hide-on-mobile.html
   - title: Flexbox
     description: Use flexbox to layout.
-    github: https://github.com/mobi-css/mobi-plugin-flexbox
+    link: /docs/flexbox.html
   - title: Container
-    description: "Three types of containers: normal, wider and fluid."
-    github: https://github.com/mobi-css/mobi-plugin-container
+    description: The container plugin for Mobi.css
+    link: /docs/container.html
   - title: Button
-    description: Use buttons for actions in forms, dialogs, and more.
-    github: https://github.com/mobi-css/mobi-plugin-button
+    description: The button plugin for Mobi.css
+    link: /docs/button.html
   - title: Form
-    description: The form control styles.
-    download: https://github.com/mobi-css/mobi-plugin-form/releases
+    description: The form plugin for Mobi.css
+    link: /docs/form.html
   - title: Scroll View
     description: Make a block element scrollable.
-    github: https://github.com/mobi-css/mobi-plugin-scroll-view
+    link: /docs/scroll-view.html
   - title: Table
-    description: The basic styles for table.
-    github: https://github.com/mobi-css/mobi-plugin-table
+    description: The table plugin for Mobi.css
+    link: /docs/table.html
   - title: Text
     description: Utilities to create aligned text or colored text.
-    github: https://github.com/mobi-css/mobi-plugin-text
+    link: /docs/text.html
   - title: Color
     description: Add more colors to your website.
-    github: https://github.com/mobi-css/mobi-plugin-color
+    link: https://github.com/mobi-css/mobi-plugin-color
   - title: Prism
-    description: The default theme for highlighter Prism.
-    github: https://github.com/mobi-css/mobi-plugin-prism
+    description: The styles for highlighter Prism.
+    link: https://github.com/mobi-css/mobi-plugin-prism
 
 
 themes:
   - title: Base
-    description: The base theme.
-    github: https://github.com/mobi-css/mobi-theme-base
+    description: The base theme for Mobi.css
+    link: /docs/variables.html
   - title: Dark
     description: In the dark I see your smile.
-    github: https://github.com/mobi-css/mobi-theme-dark
+    link: https://github.com/mobi-css/mobi-theme-dark

@@ -1,7 +1,5 @@
 # Container
 
-> Three types of containers: normal, wider and fluid.
-
 ## Introduction
 
 There are 3 kinds of containers, `.container`, `.container-wider` and `.container-fluid`. We can use them to build whether a simple layout or a complex layout.
@@ -10,20 +8,20 @@ A container doesn't have a center alignment, we need to use `.flex-center` as a 
 
 Here are the most common layout mode:
 
-- [Simple Container](#simple-container) ([Live demo](container))
-- [Container Wider](#container-wider) ([Live demo](container/wider))
-  - [Container Wider with Sidebar](#container-wider-with-sidebar) ([Live demo](container/wider/sidebar))
-    - [Container Wider with Sidebar Hide on Mobile](#container-wider-with-sidebar-hide-on-mobile) ([Live demo](container/wider/sidebar/hide-on-mobile))
-    - [Container Wider with Fixed Width Sidebar](#container-wider-with-fixed-width-sidebar) ([Live demo](container/wider/sidebar/fixed-width))
-    - [Container Wider with Left and Right Sidebar](#container-wider-with-left-and-right-sidebar) ([Live demo](container/wider/sidebar/left-and-right))
-- [Container Fluid](#container-fluid) ([Live demo](container/fluid))
-  - [Container Fluid with Sidebar](#container-fluid-with-sidebar) ([Live demo](container/fluid/sidebar))
+- [Simple Container](#simple-container) ([Live demo](container/index.html))
+- [Container Wider](#container-wider) ([Live demo](container/wider/index.html))
+  - [Container Wider with Sidebar](#container-wider-with-sidebar) ([Live demo](container/wider/sidebar/index.html))
+    - [Container Wider with Sidebar Hide on Mobile](#container-wider-with-sidebar-hide-on-mobile) ([Live demo](container/wider/sidebar/hide-on-mobile/index.html))
+    - [Container Wider with Fixed Width Sidebar](#container-wider-with-fixed-width-sidebar) ([Live demo](container/wider/sidebar/fixed-width/index.html))
+    - [Container Wider with Left and Right Sidebar](#container-wider-with-left-and-right-sidebar) ([Live demo](container/wider/sidebar/left-and-right/index.html))
+- [Container Fluid](#container-fluid) ([Live demo](container/fluid/index.html))
+  - [Container Fluid with Sidebar](#container-fluid-with-sidebar) ([Live demo](container/fluid/sidebar/index.html))
 
-## Simple container
+## Simple Container
 
 Let's start from a simple `container`:
 
-[Live demo](container)
+[Live demo](container/index.html)
 
 ```html
 <div class="flex-center">
@@ -33,11 +31,11 @@ Let's start from a simple `container`:
 </div>
 ```
 
-## Container wider
+## Container Wider
 
 `container-wider` has a wider width:
 
-[Live demo](container/wider)
+[Live demo](container/wider/index.html)
 
 ```html
 <div class="flex-center">
@@ -47,11 +45,11 @@ Let's start from a simple `container`:
 </div>
 ```
 
-### Container wider with sidebar
+### Container Wider with Sidebar
 
 It's easy to add a sidebar for `container-wider`:
 
-[Live demo](container/wider/sidebar)
+[Live demo](container/wider/sidebar/index.html)
 
 ```html
 <div class="flex-center">
@@ -70,13 +68,13 @@ It's easy to add a sidebar for `container-wider`:
 
 In the above case, sidebar will have 1/4 width on desktop and will fill the whole width on mobile.
 
-#### Container wider with sidebar hide on mobile
+#### Container Wider with Sidebar Hide on Mobile
 
 Sometimes we need to hide the sidebar on mobile.
 
 We can add `hide-on-mobile` to sidebar to achieve this:
 
-[Live demo](container/wider/sidebar/hide-on-mobile)
+[Live demo](container/wider/sidebar/hide-on-mobile/index.html)
 
 ```html
 <div class="flex-center">
@@ -93,11 +91,11 @@ We can add `hide-on-mobile` to sidebar to achieve this:
 </div>
 ```
 
-#### Container wider with fixed width sidebar
+#### Container Wider with Fixed Width Sidebar
 
 Sidebar can also has fixed width:
 
-[Live demo](container/wider/sidebar/fixed-width)
+[Live demo](container/wider/sidebar/fixed-width/index.html)
 
 ```html
 <div class="flex-center">
@@ -114,11 +112,11 @@ Sidebar can also has fixed width:
 </div>
 ```
 
-#### Container wider with left and right sidebar
+#### Container Wider with Left and Right Sidebar
 
 We can add two sidebars:
 
-[Live demo](container/wider/sidebar/left-and-right)
+[Live demo](container/wider/sidebar/left-and-right/index.html)
 
 ```html
 <div class="flex-center">
@@ -138,11 +136,11 @@ We can add two sidebars:
 </div>
 ```
 
-## Container fluid
+## Container Fluid
 
 `container-fluid` will fill the whole width of the browser:
 
-[Live demo](container/fluid)
+[Live demo](container/fluid/index.html)
 
 ```html
 <div class="flex-center">
@@ -152,11 +150,11 @@ We can add two sidebars:
 </div>
 ```
 
-### Container fluid with sidebar
+### Container Fluid with Sidebar
 
 Usually there is a fixed width sidebar in `container-fluid`:
 
-[Live demo](container/fluid/sidebar)
+[Live demo](container/fluid/sidebar/index.html)
 
 ```html
 <div class="flex-center">

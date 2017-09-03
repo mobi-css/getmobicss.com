@@ -8,7 +8,7 @@ Mobi.css improves [Normalizs.css](https://necolas.github.io/normalize.css/) by o
 
 - Friendly to content-rich webpage
 - Do not reset form input and table
-- Follow the rules of margin-top only
+- Follow the rule of margin-top-only
 
 Nearly all margins in Mobi.css have a `0` value for `margin-bottom`. For vertical spacing, Mobi.css use `margin-top` to make content flow clearly.
 
@@ -27,7 +27,7 @@ Here are the example of common elements.
 ##### h5. Mobi.css
 ###### h6. Mobi.css
 
-## Text content
+## Text Content
 
 - Unordered List
 - Unordered List
@@ -88,7 +88,7 @@ Use `<figure>` and `<figcaption>` to create self-contained content:
 </figure>
 ```
 
-## Inline text semantics
+## Inline Text Semantics
 
 Use `<a>` to create <a href="#">links</a>.
 
@@ -149,20 +149,20 @@ Use `<q>` to create inline quotations: <q>I love Mobi.css</q>, xcatliu said.
 Use `<ruby>`, `<rp>`, `<rt>` to create ruby annotations:
 
 <ruby>
-  我 <rp>(</rp><rt>lǎn</rt><rp>)</rp>
-  去 <rp>(</rp><rt>de</rt><rp>)</rp>
-  洗 <rp>(</rp><rt>lǐ</rt><rp>)</rp>
-  澡 <rp>(</rp><rt>nǐ</rt><rp>)</rp>
-  了 <rp>(</rp><rt>le</rt><rp>)</rp>
+  床 <rp>(</rp><rt>chuáng</rt><rp>)</rp>
+  前 <rp>(</rp><rt>qiáng</rt><rp>)</rp>
+  明 <rp>(</rp><rt>míng</rt><rp>)</rp>
+  月 <rp>(</rp><rt>yuè</rt><rp>)</rp>
+  光 <rp>(</rp><rt>guāng</rt><rp>)</rp>
 </ruby>
 
 ```html
 <ruby>
-  我 <rp>(</rp><rt>lǎn</rt><rp>)</rp>
-  去 <rp>(</rp><rt>de</rt><rp>)</rp>
-  洗 <rp>(</rp><rt>lǐ</rt><rp>)</rp>
-  澡 <rp>(</rp><rt>nǐ</rt><rp>)</rp>
-  了 <rp>(</rp><rt>le</rt><rp>)</rp>
+  我 <rp>(</rp><rt>chuáng</rt><rp>)</rp>
+  去 <rp>(</rp><rt>qiáng</rt><rp>)</rp>
+  洗 <rp>(</rp><rt>míng</rt><rp>)</rp>
+  澡 <rp>(</rp><rt>yuè</rt><rp>)</rp>
+  了 <rp>(</rp><rt>guāng</rt><rp>)</rp>
 </ruby>
 ```
 

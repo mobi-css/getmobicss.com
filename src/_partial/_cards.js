@@ -9,11 +9,11 @@ module.exports = ({ relativeToRoot, cards }) => `
 `;
 
 function renderCards({ cards }) {
-  return cards.reduce((previous, { title, description, github }) => `
+  return cards.reduce((previous, { title, description, link }) => `
     ${previous}
     <div class="unit-1-3 unit-1-on-mobile">
       <h5>
-        <a href="${github}">${title}</a>
+        <a href="${link}">${title}</a>
       </h5>
       <p class="text-small">${description}</p>
     </div>

@@ -1,8 +1,6 @@
 # Form
 
-> The form control styles.
-
-### Basic forms
+### Basic Forms
 
 Mobi.css believes that on mobile devices, **each row should have only one input**.
 
@@ -24,7 +22,7 @@ You should add `.form` to a `<form>` element and add `.btn` to each button.
 </form>
 ```
 
-### Complicated forms
+### Complicated Forms
 
 If you want to have multiple inputs in one row, you should use flexbox layout.
 

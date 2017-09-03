@@ -8,12 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,
       maximum-scale=1.0, user-scalable=no"/>
 
-    <title>Plugins and themes | Mobi.css</title>
+    <title>Plugins and Themes | Mobi.css</title>
 
-    <link rel="stylesheet" href="../css/mobi.css/mobi.min.css" />
-    <link rel="stylesheet" href="../css/mobi.css/mobi-plugin-color.min.css" />
-    <link rel="stylesheet" href="../css/mobi.css/mobi-plugin-prism.min.css" />
-    <link rel="stylesheet" href="../css/site.css" />
+    <link rel="stylesheet" href="../css/site.min.css" />
   </head>
 
       <body>
@@ -683,24 +680,24 @@
           <div class="flex-left units-gap-big">
             <div class="site-height-0 site-aside hide-on-mobile unit-1-4"></div>
             <article class="site-article unit-3-4 unit-1-on-mobile">
-              <h1 id="plugins-and-themes">Plugins and themes</h1>
+              <h1 id="plugins-and-themes">Plugins and Themes</h1>
 <p>What makes Mobi.css great is the plugin and theme system.</p>
-<h2 id="plugin-system">Plugin system</h2>
+<h2 id="plugin-system">Plugin System</h2>
 <p>Plugin system makes css scalable.</p>
-<p>The default bundled Mobi.css only contains basic plugin (aka reset, container, flexbox, e.g.). But with SASS, you can <code>@import</code> any plugins as you like.</p>
-<p>Don't want to use SASS? No problem!</p>
-<p>Actually each plugin provides a standalone version, which means you can simply add <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/plugin-a.css&quot;/&gt;</code> to include the plugin.</p>
+<p>The default bundled Mobi.css only contains basic plugin (aka reset, container, flexbox, e.g.). But with <a href="https://github.com/postcss/postcss-import">postcss-import</a>, you can <code>@import</code> any plugins as you like.</p>
+<p>Don't want to use PostCSS? No problem!</p>
+<p>Actually each plugin provides a standalone version, which means you can simply add <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/plugin.css&quot;/&gt;</code> to include the plugin.</p>
 <p>That is to say, a plugin is a standalone css library. <strong>You can even use it without Mobi.css</strong>.</p>
-<h2 id="theme-system">Theme system</h2>
-<p>A theme is just a list of variables. It is based on <a href="https://github.com/mobi-css/mobi-theme-base">mobi-theme-base</a>, and may contains some extension variables.</p>
+<h2 id="theme-system">Theme System</h2>
+<p>A theme is just a list of variables. It is based on <a href="https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-theme-base">mobi-theme-base</a>, and may contains some extension variables.</p>
 <p>A plugin should be compatible with any themes. If a plugin use the extension variables which are not exists in mobi-theme-base, it should has a fallback value that only use the base variables.</p>
 <p>Like plugins, A theme also provides a standalone version. The difference is that the standalone version may have a different plugins set.</p>
 <p>Unfortunately, you CANNOT use the standalone plugin with the standalone theme, the reason is that the standalone plugin is built with <a href="https://github.com/mobi.css/mobi-theme-base">mobi-theme-base</a>.</p>
 <p>In this case, you need to build the plugin yourself.</p>
 <blockquote>
-<p>In Mobi.css v3.0.0, we will use css-variables instead of SASS variables. Then it's possible to include standalone plugin with standalone theme.</p>
+<p>In the future, we will offer a version with the future css features include css-variables. Then it's possible to include standalone plugin with standalone theme.</p>
 </blockquote>
-<p>It's easy to create your own theme. There are only a few basic variables need to be customized.</p>
+<p>It's easy to create your own theme. There are only <a href="variables.html">a few basic variables need to be customized</a>.</p>
 
             </article>
           </div>

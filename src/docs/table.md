@@ -1,8 +1,6 @@
 # Table
 
-> The basic styles for table.
-
-## Simple table
+## Simple Table
 
 Add a `.table` class to `<table>` element:
 
@@ -66,7 +64,7 @@ Add a `.table` class to `<table>` element:
 </table>
 ```
 
-## Scrollable table
+## Scrollable Table
 
 Tables typically render out of the viewable area on small mobile devices. If so, use the `.scroll-view` wrapper to make your table scrollable.
 
@@ -150,7 +148,7 @@ Tables typically render out of the viewable area on small mobile devices. If so,
 </div>
 ```
 
-## Caption in table
+## Caption in Table
 
 <table class="table">
   <caption>Table Caption</caption>

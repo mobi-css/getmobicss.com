@@ -22,7 +22,7 @@ show_announcement: true
   <div class="unit-1-3 unit-1-on-mobile">
     <h3 class="site-text-plain">Lightweight</h3>
     <p>
-      The default bundle of Mobi.css provides the basic styles to build clean and elegant webpages. It's <strong>only 3kb</strong> after gzipped, and it's very easy to get started.
+      The default bundle of Mobi.css provides the basic styles to build clean and elegant webpages. It's <strong>only 2.6kb</strong> after gzipped, and it's very easy to get started.
     </p>
   </div>
   <div class="unit-1-3 unit-1-on-mobile">

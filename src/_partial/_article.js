@@ -31,11 +31,12 @@ module.exports = ({ content, frontMatter }) => {
 };
 
 function renderAnnouncement() {
-  return `
-    <div class="container-fluid bg-danger text-inverse">
-      <p class="text-center">
-        WARNING: This is the beta version of Mobi.css 2, please goto <a href="http://v1.getmobicss.com" class="text-inverse">http://v1.getmobicss.com</a> for a stable version.
-      </p>
-    </div>
-  `;
+  return '';
+  // return `
+  //   <div class="container-fluid bg-danger text-inverse">
+  //     <p class="text-center">
+  //       WARNING: This is the beta version of Mobi.css 2, please goto <a href="http://v1.getmobicss.com" class="text-inverse">http://v1.getmobicss.com</a> for a stable version.
+  //     </p>
+  //   </div>
+  // `;
 }

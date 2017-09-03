@@ -12,7 +12,7 @@ Copy and paste the stylesheet `<link>` into your `<head>` before all other style
 <link rel="stylesheet" href="https://unpkg.com/mobi.css/dist/mobi.min.css" />
 ```
 
-This will include the basic classes, actually it's a collections of Mobi.css plugins with the [base theme](https://github.com/mobi-css/mobi-theme-base), you can find the usage in each page:
+This will include the basic classes, actually it's a collections of Mobi.css plugins with the base theme， you can find the usage in each page:
 
 - [Reset](reset.html)
 - [Top Gap](top-gap.html)
@@ -33,7 +33,7 @@ To load other plugins, you can simply insert the standalone version of the plugi
 
 You can find the usage in [mobi-plugin-color](https://github.com/mobi-css/mobi-plugin-color).
 
-The list of all the available plugins can be found in the [this page](../plugins).
+The list of all the available plugins can be found in [this page](../plugins).
 
 ## Starter template
 

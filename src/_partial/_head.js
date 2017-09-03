@@ -7,9 +7,6 @@ module.exports = ({ relativeToRoot, title }) => `
 
     <title>${title ? `${title} | ` : ''}Mobi.css</title>
 
-    <link rel="stylesheet" href="${relativeToRoot}/css/mobi.css/mobi.min.css" />
-    <link rel="stylesheet" href="${relativeToRoot}/css/mobi.css/mobi-plugin-color.min.css" />
-    <link rel="stylesheet" href="${relativeToRoot}/css/mobi.css/mobi-plugin-prism.min.css" />
-    <link rel="stylesheet" href="${relativeToRoot}/css/site.css" />
+    <link rel="stylesheet" href="${relativeToRoot}/css/site.min.css" />
   </head>
 `;

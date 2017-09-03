@@ -1,107 +1,109 @@
 # Variables
 
-The base variables are located in [mobi-theme-base](https://github.com/mobi-css/mobi-theme-base).
+The base variables are located in [mobi-theme-base](https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-theme-base).
 
-## Naming convention
+Mobi.css use the future's CSS syntax `--variable-name` to declare css variables, and use `cssnext` to compile it.
 
-All variables need to be named as `${rule}-${element}-${modifier}`
+For more detail, please checkout [cssnext features](http://cssnext.io/features/).
+
+## Naming Convention
+
+All variables need to be named as `--rule-element-modifier`.
 
 ## Colors
 
 There are only a few colors in base theme:
 
-```scss
-// Add !default so _custom.scss can override it
-$color-background: white !default;
-$color-text: #333 !default;
-$color-text-muted: #777 !default;
-$color-border: #ddd !default;
+```css
+:root {
+    --color-background: white;
+    --color-text: #333;
+    --color-text-muted: #777;
+    --color-border: #ddd;
 
-$color-primary: hsl(210, 70%, 50%) !default;
-$color-danger: hsl(0, 65%, 60%) !default;
+    --color-primary: hsl(210, 70%, 50%);
+    --color-danger: hsl(0, 65%, 60%);
 
-$color-background-faded: darken($color-background, 5%) !default;
+    --color-background-faded: color(var(--color-background) lightness(-5%));
+}
 ```
+
+Variables are declared in the `:root` selector. It's the same in the following code snippet。
 
 ## Layout
 
-```scss
-$max-width-container: 800px !default;
-$max-width-container-wider: 1200px !default;
+```css
+    --max-width-container: 800px;
+    --max-width-container-wider: 1200px;
+```
 
-$width-breakpoint: 768px !default;
+## Media Query
+
+```css
+    @custom-media --mobile-viewport (max-width: 767px);
+    @custom-media --desktop-viewport (min-width: 768px);
 ```
 
 ## Spacing
 
-`size-base` is set to `<html>`. Other sizes is based on it.
+```css
+    --size-base: 10px;
 
-```scss
-// The base size, all other size are based on it
-$size-base: 10px !default;
+    --width-gap: calc(var(--size-base) * 1.5);
+    --width-gap-double: calc(var(--width-gap) * 2);
+    --width-gap-half: calc(var(--width-gap) * 0.5);
 
-$width-gap: $size-base * 1.5 !default;
-$width-gap-double: $width-gap * 2 !default;
-$width-gap-half: $width-gap * 0.5 !default;
+    --width-padding-input: calc(var(--size-base) * 0.5);
 
-$width-padding-input: $size-base * 0.5 !default;
+    --width-border-radius: calc(var(--size-base) * 0.5);
 
-$width-border-radius: $size-base * 0.3 !default;
+    --width-border: 1px;
 
-$width-border: 1px !default;
+    --padding-code: 0.2em 0.3em;
 
-$padding-code: 0.2em 0.3em !default;
 ```
 
 ## Typography
 
-```scss
-$font-size: $size-base * 1.6 !default;
+```css
+    --font-size: calc(var(--size-base) * 1.6);
 
-$font-size-h1: $size-base * 3.2 !default;
-$font-size-h2: $size-base * 2.6 !default;
-$font-size-h3: $size-base * 2.2 !default;
-$font-size-h4: $size-base * 2 !default;
-$font-size-h5: $size-base * 1.8 !default;
-$font-size-h6: $size-base * 1.6 !default;
+    --font-size-h1: calc(var(--size-base) * 3.2);
+    --font-size-h2: calc(var(--size-base) * 2.6);
+    --font-size-h3: calc(var(--size-base) * 2.2);
+    --font-size-h4: calc(var(--size-base) * 2);
+    --font-size-h5: calc(var(--size-base) * 1.8);
+    --font-size-h6: calc(var(--size-base) * 1.6);
 
-$font-size-pre: $size-base * 1.3 !default;
+    --font-size-pre: calc(var(--size-base) * 1.3);
 
-$font-size-small: 85% !default;
+    --font-size-small: 85%;
 
-$line-height: 1.5 !default;
+    --line-height: 1.5;
+    --line-height-input: 1.25;
+    --line-height-pre: 1.2;
 
-$line-height-input: 1.25 !default;
-// line-height need to be set to pre, not code
-$line-height-pre: 1.2 !default;
+    --font-weight-bold: 600;
 
-$font-weight-bold: 600 !default;
+    --font-family:
+        /* Safari for OS X and iOS (San Francisco) */
+        '-apple-system',
+        /* Chrome for OS X (San Francisco) */
+        'BlinkMacSystemFont',
+        /* Chinese font for OSX and iOS */
+        'Hiragino Sans GB',
+        /* Android */
+        'Roboto',
+        /* Windows */
+        'Segoe UI',
+        /* Chinese font for Windows */
+        'Microsoft Yahei', '微软雅黑',
+        /* Linux */
+        'Oxygen-Sans', 'Ubuntu', 'Cantarell',
+        /* Basic web fallback */
+        'Helvetica', 'Arial', 'STHeiti', sans-serif,
+        /* Emoji */
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-$font-family:
-  // Safari for OS X and iOS (San Francisco)
-  -apple-system,
-  // Chrome for OS X (San Francisco)
-  BlinkMacSystemFont,
-  // Windows
-  'Segoe UI',
-  // Android
-  'Roboto',
-  // Linux
-  'Oxygen', // KDE
-  'Ubuntu',
-  'Cantarell', // GNOME
-  // Firefox OS [R.I.P.]
-  'Fira Sans',
-  // Older Android
-  'Droid Sans',
-  // Chinese font for OSX and iOS
-  'Hiragino Sans GB',
-  // Chinese font for Windows
-  'Microsoft Yahei', '微软雅黑',
-  // Basic web fallback
-  Arial, Helvetica, STHeiti, sans-serif,
-  // Emoji
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
-
-$font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+    --font-family-monospace: 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
 ```

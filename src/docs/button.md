@@ -1,8 +1,6 @@
 # Button
 
-> Use buttons for actions in forms, dialogs, and more.
-
-## Basic button
+## Basic Button
 
 There are three types of buttons: default, primary and danger.
 
@@ -16,7 +14,7 @@ There are three types of buttons: default, primary and danger.
 <button type="button" class="btn btn-danger">.btn.btn-danger</button>
 ```
 
-## Input button
+## Input Button
 
 <input type="button" class="btn" value=".btn"/>
 <input type="button" class="btn btn-primary" value=".btn.btn-primary"/>
@@ -28,7 +26,7 @@ There are three types of buttons: default, primary and danger.
 <input type="button" class="btn btn-danger" value=".btn.btn-danger"/>
 ```
 
-## Link button
+## Link Button
 
 <a href="javascript:void(0);" class="btn">.btn</a>
 <a href="javascript:void(0);" class="btn btn-primary">.btn.btn-primary</a>
@@ -40,7 +38,7 @@ There are three types of buttons: default, primary and danger.
 <a href="javascript:void(0);" class="btn btn-danger">.btn.btn-danger</a>
 ```
 
-## Disabled button
+## Disabled Button
 
 <input type="button" class="btn" value=".btn" disabled/>
 <input type="button" class="btn btn-primary" value=".btn.btn-primary" disabled/>
@@ -52,7 +50,7 @@ There are three types of buttons: default, primary and danger.
 <input type="button" class="btn btn-danger" value=".btn.btn-danger" disabled/>
 ```
 
-## Block button
+## Block Button
 
 By default the `.btn` is a `inline-block` button, we can add `.btn-block` to get the `block` button:
 

@@ -684,12 +684,17 @@
 <blockquote>
 <p>Reset styles makes browsers render all elements more consistently.</p>
 </blockquote>
+<h2 id="standalone-library">Standalone Library</h2>
+<p>You can download the plugin as a standalone library in <a href="https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-plugin-reset/dist">this page</a>.</p>
+<p>Or simply insert this into your <code>&lt;head&gt;</code> element:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://unpkg.com/mobi-plugin-reset/dist/mobi-plugin-reset.min.css<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+</code></pre>
 <h2 id="features">Features</h2>
 <p>Mobi.css improves <a href="https://necolas.github.io/normalize.css/">Normalizs.css</a> by optimizing some details for the mobile devices.</p>
 <ul>
 <li>Friendly to content-rich webpage</li>
 <li>Do not reset form input and table</li>
-<li>Follow the rule of margin-top-only</li>
+<li>Only use margin-top to set gaps between block elements</li>
 </ul>
 <p>Nearly all margins in Mobi.css have a <code>0</code> value for <code>margin-bottom</code>. For vertical spacing, Mobi.css use <code>margin-top</code> to make content flow clearly.</p>
 <p>This technique allows each section to determine the spacing it needs from the element above it.</p>

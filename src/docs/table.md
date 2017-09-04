@@ -1,5 +1,15 @@
 # Table
 
+## Standalone Library
+
+You can download the plugin as a standalone library in [this page](https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-plugin-table/dist).
+
+Or simply insert this into your `<head>` element:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/mobi-plugin-table/dist/mobi-plugin-table.min.css" />
+```
+
 ## Simple Table
 
 Add a `.table` class to `<table>` element:

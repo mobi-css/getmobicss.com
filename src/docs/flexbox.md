@@ -2,6 +2,16 @@
 
 > Use flexbox to layout.
 
+## Standalone Library
+
+You can download the plugin as a standalone library in [this page](https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-plugin-flexbox/dist).
+
+Or simply insert this into your `<head>` element:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/mobi-plugin-flexbox/dist/mobi-plugin-flexbox.min.css" />
+```
+
 ## Container and units
 
 First of all, let's create a `.flex-left` container which contains several `.unit`s. In this case, `.flex-left`'s width is divided equally between `.unit`s.

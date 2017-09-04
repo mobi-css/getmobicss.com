@@ -2,13 +2,23 @@
 
 > Reset styles makes browsers render all elements more consistently.
 
+## Standalone Library
+
+You can download the plugin as a standalone library in [this page](https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-plugin-reset/dist).
+
+Or simply insert this into your `<head>` element:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/mobi-plugin-reset/dist/mobi-plugin-reset.min.css" />
+```
+
 ## Features
 
 Mobi.css improves [Normalizs.css](https://necolas.github.io/normalize.css/) by optimizing some details for the mobile devices.
 
 - Friendly to content-rich webpage
 - Do not reset form input and table
-- Follow the rule of margin-top-only
+- Only use margin-top to set gaps between block elements
 
 Nearly all margins in Mobi.css have a `0` value for `margin-bottom`. For vertical spacing, Mobi.css use `margin-top` to make content flow clearly.
 

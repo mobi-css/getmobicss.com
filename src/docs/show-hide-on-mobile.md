@@ -2,6 +2,16 @@
 
 > Show or hide element on mobile.
 
+## Standalone Library
+
+You can download the plugin as a standalone library in [this page](https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-plugin-show-hide-on-mobile/dist).
+
+Or simply insert this into your `<head>` element:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/mobi-plugin-show-hide-on-mobile/dist/mobi-plugin-show-hide-on-mobile.min.css" />
+```
+
 ## One Breakpoint
 
 There are only one breakpoint in Mobi.css. It separates the mobile and desktop.

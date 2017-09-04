@@ -2,6 +2,16 @@
 
 > Set top gaps between block elements.
 
+## Standalone Library
+
+You can download the plugin as a standalone library in [this page](https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-plugin-top-gap/dist).
+
+Or simply insert this into your `<head>` element:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/mobi-plugin-text/dist/mobi-plugin-top-gap.min.css" />
+```
+
 ## Override Top Gaps
 
 Mobi.css provides three classes, `.top-gap-big`, `.top-gap` and `.top-gap-0` to easily override the top margin.

@@ -1,5 +1,15 @@
 # Button
 
+## Standalone Library
+
+You can download the plugin as a standalone library in [this page](https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-plugin-button/dist).
+
+Or simply insert this into your `<head>` element:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/mobi-plugin-button/dist/mobi-plugin-button.min.css" />
+```
+
 ## Basic Button
 
 There are three types of buttons: default, primary and danger.

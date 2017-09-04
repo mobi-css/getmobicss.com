@@ -2,6 +2,16 @@
 
 > Make a block element scrollable.
 
+## Standalone Library
+
+You can download the plugin as a standalone library in [this page](https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-plugin-scroll-view/dist).
+
+Or simply insert this into your `<head>` element:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/mobi-plugin-scroll-view/dist/mobi-plugin-scroll-view.min.css" />
+```
+
 ## Vertical Scroll
 
 Use `.scroll-view` to make a block element scrollable.

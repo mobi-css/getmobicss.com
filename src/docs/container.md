@@ -1,5 +1,15 @@
 # Container
 
+## Standalone Library
+
+You can download the plugin as a standalone library in [this page](https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-plugin-container/dist).
+
+Or simply insert this into your `<head>` element:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/mobi-plugin-container/dist/mobi-plugin-container.min.css" />
+```
+
 ## Introduction
 
 There are 3 kinds of containers, `.container`, `.container-wider` and `.container-fluid`. We can use them to build whether a simple layout or a complex layout.

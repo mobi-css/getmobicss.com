@@ -1,5 +1,15 @@
 # Form
 
+## Standalone Library
+
+You can download the plugin as a standalone library in [this page](https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-plugin-form/dist).
+
+Or simply insert this into your `<head>` element:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/mobi-plugin-form/dist/mobi-plugin-form.min.css" />
+```
+
 ### Basic Forms
 
 Mobi.css believes that on mobile devices, **each row should have only one input**.

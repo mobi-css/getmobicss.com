@@ -2,6 +2,16 @@
 
 > Utilities to create aligned text or colored text.
 
+## Standalone Library
+
+You can download the plugin as a standalone library in [this page](https://github.com/mobi-css/mobi.css/tree/master/packages/mobi-plugin-text/dist).
+
+Or simply insert this into your `<head>` element:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/mobi-plugin-text/dist/mobi-plugin-text.min.css" />
+```
+
 ## Text Align
 
 <p class="text-left">.text-left</p>

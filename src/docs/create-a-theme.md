@@ -1,3 +1,3 @@
 # Create a Theme
 
-Please take [mobi-plugin-dark](https://github.com/mobi-css/mobi-plugin-dark) as an example.
+Please take [mobi-theme-dark](https://github.com/mobi-css/mobi-theme-dark) as an example.

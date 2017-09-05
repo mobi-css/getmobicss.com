@@ -35,7 +35,8 @@ gulp.task('build:css', (callback) => {
   buildCss({
     src: `${SRC_DIR}/css/_site.css`,
     dist: `${DIST_DIR}/css/site.min.css`,
-    compress: true,
+    enableCompress: true,
+    enablePxtorem: true,
     callback
   });
 });

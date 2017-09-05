@@ -76,29 +76,19 @@ npm install --save-dev mobi-util-build-css
 ```js
 const { clean, buildCSS } = require('mobi-util-build-css');
 
-clean('dist');
 // This will remove `dist` directory
+clean('dist');
 
+// This will compile `src/css/file.css` to `dist/css/file.css` and `dist/css/file.css.map`
 buildCSS({
     src: 'src/css/file.css',
     dist: 'dist/css/file.css',
+    // When enableCompress is true, your css will be compressed. Default to false
+    enableCompress: false,
+    // When enablePxtorem is true, your px will be transformed to rem based on 16px. Default to false
+    enablePxtorem: false,
+    // When prependContent is set, your css will be prepended the content. Please notice that only comments start with /*! will not be removed during compress
+    prependContent: '/*! The meta message */\n',
     callback: () => { console.log('Build done') }
 });
-// This will compile `src/css/file.css` to `dist/css/file.css` and `dist/css/file.css.map`
-
-buildCSS({
-    src: 'src/css/file.css',
-    dist: 'dist/css/file.min.css',
-    compress: true, // default to false
-    callback: () => { console.log('Build done') }
-});
-// This will compile and compress `src/css/file.css` to `dist/css/file.min.css` and `dist/css/file.min.css.map`
-
-buildCSS({
-    src: 'src/css/file.css',
-    dist: 'dist/css/file.min.css',
-    prepend: '/*! The meta message */\n',
-    callback: () => { console.log('Build done') }
-});
-// This will prepend the comments to yielded file. Please notice that only comments start with /*! will not be removed during compress
 ```
